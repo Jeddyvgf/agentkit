@@ -29,6 +29,7 @@
 - [🗂 Repository Structure](#-repository-structure)
 - [🤝 Contributing](#-contributing)
 - [📜 Documentation](#-documentation)
+- [💸 Monetization](#-monetization)
 - [🌙 Nightly Builds](#-nightly-builds)
 - [🚨 Security and bug reports](#-security-and-bug-reports)
 - [📧 Contact](#-contact)
@@ -203,6 +204,10 @@ agentkit/
   - [AgentKit Langchain Extension](https://coinbase.github.io/agentkit/agentkit-langchain/typescript/index.html)
   - [AgentKit Vercel AI SDK Extension](https://coinbase.github.io/agentkit/agentkit-vercel-ai-sdk/typescript/index.html)
   - [AgentKit Model Context Protocol Extension](https://coinbase.github.io/agentkit/agentkit-model-context-protocol/typescript/index.html)
+
+## 💸 Monetization
+
+- [Monetization guide](./MONETIZATION.md)
 
 ## 🌙 Nightly Builds
 
