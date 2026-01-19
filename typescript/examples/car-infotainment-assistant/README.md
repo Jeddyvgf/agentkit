@@ -20,7 +20,7 @@ This is a reference architecture and simulation. It does not integrate with real
 1. Install workspace dependencies:
    - `pnpm -C typescript install`
 2. Build this example:
-   - `pnpm -C typescript --filter car-infotainment-assistant build`
+   - `pnpm -C typescript --filter @coinbase/car-infotainment-assistant-example build`
 3. Run the demo from this directory:
    - `node dist/infotainment.js`
 
