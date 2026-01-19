@@ -101,4 +101,4 @@ The agent is then initialized with the ZeroDev wallet provider, allowing it to u
 
 ## License
 
-Apache-2.0
+Klean-Kut Technologies LLC Proprietary License. See LICENSE.md in the repository root.

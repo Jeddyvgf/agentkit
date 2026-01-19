@@ -54,4 +54,4 @@ npm start
 
 ## License
 
-Apache-2.0
+Klean-Kut Technologies LLC Proprietary License. See LICENSE.md in the repository root.

@@ -5,7 +5,7 @@
   "private": true,
   "type": "module",
   "author": "Ephemera HQ",
-  "license": "Apache-2.0",
+  "license": "LicenseRef-Klean-Kut-Proprietary",
   "scripts": {
     "build": "tsc",
     "start": "npm run build && node dist/chatbot.js",

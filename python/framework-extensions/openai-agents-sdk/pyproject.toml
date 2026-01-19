@@ -5,7 +5,7 @@ description = "Coinbase AgentKit OpenAI Agents SDK extension"
 authors = [{ name = "John Peterson", email = "john.peterson@coinbase.com" }]
 requires-python = "~=3.10"
 readme = "README.md"
-license = "Apache-2.0"
+license = "LicenseRef-Klean-Kut-Proprietary"
 keywords = [
     "coinbase",
     "sdk",
