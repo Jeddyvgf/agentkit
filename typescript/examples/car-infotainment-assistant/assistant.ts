@@ -1,6 +1,7 @@
 import { AudioDspEngine, AutoTuneResult, DspPresetName } from "./audio";
 import { EmergencyAlertService } from "./alerts";
 import { BluetoothManager } from "./bluetooth";
+import { DiagnosticSnapshot, DiagnosticsService } from "./diagnostics";
 import { MusicLibrary, PlaybackController } from "./music";
 import { NavigationService } from "./navigation";
 import { ProfileManager } from "./profiles";
@@ -14,6 +15,8 @@ export interface AssistantContext {
   library: MusicLibrary;
   navigation: NavigationService;
   alerts: EmergencyAlertService;
+  diagnostics: DiagnosticsService;
+  getDiagnosticSnapshot: () => DiagnosticSnapshot;
   profiles: ProfileManager;
   autoTune: () => AutoTuneResult;
 }
@@ -57,6 +60,31 @@ export class DriverAssistant {
       this.context.audio.applyAutoTune(result);
       actions.push("Applied auto-tune profile");
       return { speech: "Auto-tune complete. Sound profile updated.", actions };
+    }
+
+    if (
+      normalized.includes("diagnose") ||
+      normalized.includes("diagnostic") ||
+      normalized.includes("system check")
+    ) {
+      const report = this.context.diagnostics.runAutoScan(this.context.getDiagnosticSnapshot());
+      actions.push("Ran diagnostics scan");
+      const concise = driverState.focusMode === "safety" && driverState.isMoving;
+      return { speech: this.context.diagnostics.summarizeReport(report, concise), actions };
+    }
+
+    if (
+      normalized.includes("troubleshoot") ||
+      normalized.includes("problem") ||
+      normalized.includes("issue")
+    ) {
+      const plan = this.context.diagnostics.troubleshoot(
+        text,
+        this.context.getDiagnosticSnapshot(),
+      );
+      actions.push("Generated troubleshooting plan");
+      const concise = driverState.focusMode === "safety" && driverState.isMoving;
+      return { speech: this.context.diagnostics.summarizePlan(plan, concise), actions };
     }
 
     if (normalized.startsWith("navigate to") || normalized.startsWith("directions to")) {

@@ -1,0 +1,75 @@
+{
+  "version": "2026.01",
+  "entries": [
+    {
+      "id": "BT-001",
+      "category": "bluetooth",
+      "severity": "warning",
+      "title": "Bluetooth audio dropouts",
+      "description": "Audio cuts in and out during playback.",
+      "suspectedCause": "Weak signal strength, interference, or power-saving mode on the phone.",
+      "keywords": ["dropout", "disconnect", "bluetooth", "skipping", "cutting out"],
+      "recommendedSteps": [
+        "Move the phone closer to the head unit.",
+        "Disable aggressive battery saving for media apps.",
+        "Re-pair the phone and retry playback."
+      ]
+    },
+    {
+      "id": "AUD-010",
+      "category": "audio",
+      "severity": "info",
+      "title": "No audio from speakers",
+      "description": "Playback is active but audio is silent.",
+      "suspectedCause": "Muted output, very low volume, or wrong audio source.",
+      "keywords": ["no audio", "silent", "mute", "sound missing"],
+      "recommendedSteps": [
+        "Check mute and volume level.",
+        "Confirm the correct audio source is selected.",
+        "Restart playback on the phone."
+      ]
+    },
+    {
+      "id": "AUD-020",
+      "category": "audio",
+      "severity": "warning",
+      "title": "Bass feels weak",
+      "description": "Low-frequency response is weaker than expected.",
+      "suspectedCause": "Sub level or bass boost not calibrated.",
+      "keywords": ["weak bass", "no bass", "thin sound"],
+      "recommendedSteps": [
+        "Increase sub level in DSP settings.",
+        "Run auto-tune while the cabin is quiet.",
+        "Verify subwoofer wiring and polarity."
+      ]
+    },
+    {
+      "id": "NAV-100",
+      "category": "navigation",
+      "severity": "info",
+      "title": "GPS position jumps",
+      "description": "Location updates are inconsistent or jumpy.",
+      "suspectedCause": "Poor GPS signal or obstructed antenna.",
+      "keywords": ["gps", "location", "jumping", "navigation", "route"],
+      "recommendedSteps": [
+        "Ensure the GPS antenna has a clear sky view.",
+        "Reboot the navigation module.",
+        "Switch to offline mode briefly and refresh."
+      ]
+    },
+    {
+      "id": "SYS-200",
+      "category": "system",
+      "severity": "warning",
+      "title": "Voice assistant not responding",
+      "description": "Assistant does not react to wake words or commands.",
+      "suspectedCause": "Microphone muted or assistant service paused.",
+      "keywords": ["assistant", "voice", "wake word", "not responding", "mic"],
+      "recommendedSteps": [
+        "Check microphone mute status.",
+        "Restart the assistant service.",
+        "Verify driver profile permissions."
+      ]
+    }
+  ]
+}

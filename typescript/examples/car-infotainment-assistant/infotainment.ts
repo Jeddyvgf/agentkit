@@ -4,6 +4,7 @@ import { AudioDspEngine, DspPresetName } from "./audio";
 import { DriverAssistant } from "./assistant";
 import { EmergencyAlertService } from "./alerts";
 import { BluetoothManager } from "./bluetooth";
+import { DiagnosticSnapshot, DiagnosticsService } from "./diagnostics";
 import { MusicLibrary, PlaybackController } from "./music";
 import { NavigationService } from "./navigation";
 import { ProfileManager } from "./profiles";
@@ -25,6 +26,10 @@ async function loadAlerts(): Promise<EmergencyAlertService> {
   return EmergencyAlertService.loadFromFile(resolveDataPath("data", "alerts.sample.json"));
 }
 
+async function loadDiagnostics(): Promise<DiagnosticsService> {
+  return DiagnosticsService.loadFromFile(resolveDataPath("data", "diagnostics.sample.json"));
+}
+
 class InfotainmentSystem {
   private audio: AudioDspEngine;
   private bluetooth: BluetoothManager;
@@ -32,6 +37,7 @@ class InfotainmentSystem {
   private music: PlaybackController;
   private navigation: NavigationService;
   private alerts: EmergencyAlertService;
+  private diagnostics: DiagnosticsService;
   private tuner: AutoTuner;
   private calibration: CalibrationSnapshot;
   private profiles: ProfileManager;
@@ -43,6 +49,7 @@ class InfotainmentSystem {
     library: MusicLibrary,
     alerts: EmergencyAlertService,
     calibration: CalibrationSnapshot,
+    diagnostics: DiagnosticsService,
   ) {
     this.audio = new AudioDspEngine("concert");
     this.bluetooth = new BluetoothManager();
@@ -50,6 +57,7 @@ class InfotainmentSystem {
     this.music = new PlaybackController();
     this.navigation = new NavigationService({ lat: 37.7749, lon: -122.4194 });
     this.alerts = alerts;
+    this.diagnostics = diagnostics;
     this.tuner = new AutoTuner();
     this.calibration = calibration;
     this.profiles = new ProfileManager(ProfileManager.createDefaultProfiles());
@@ -75,6 +83,8 @@ class InfotainmentSystem {
       library: this.library,
       navigation: this.navigation,
       alerts: this.alerts,
+      diagnostics: this.diagnostics,
+      getDiagnosticSnapshot: () => this.buildDiagnosticSnapshot(),
       profiles: this.profiles,
       autoTune: () => this.tuner.analyze(this.calibration),
     });
@@ -102,6 +112,8 @@ class InfotainmentSystem {
     console.log("  location <lat> <lon>           Update vehicle location");
     console.log("  speed <kph>                    Update vehicle speed");
     console.log("  alerts                         Show nearby alerts");
+    console.log("  diagnostics                    Run AI diagnostics scan");
+    console.log("  troubleshoot <symptom>         Troubleshoot an issue");
     console.log("  profile <id>                   Switch driver profile");
     console.log("  assistant <text>               Ask the AI assistant");
     console.log("  exit                           Quit");
@@ -275,6 +287,21 @@ class InfotainmentSystem {
           console.log(`Feed timestamp: ${this.alerts.getFeedTimestamp()}`);
           return true;
         }
+        case "diagnostics":
+        case "diag": {
+          const report = this.diagnostics.runAutoScan(this.buildDiagnosticSnapshot());
+          this.diagnostics.formatReport(report).forEach(line => console.log(line));
+          return true;
+        }
+        case "troubleshoot": {
+          if (!argumentText) {
+            console.log("Provide a symptom description.");
+            return true;
+          }
+          const plan = this.diagnostics.troubleshoot(argumentText, this.buildDiagnosticSnapshot());
+          this.diagnostics.formatPlan(plan).forEach(line => console.log(line));
+          return true;
+        }
         case "profile": {
           if (!argumentText) {
             this.profiles.listProfiles().forEach(profile =>
@@ -318,16 +345,33 @@ class InfotainmentSystem {
       return true;
     }
   }
+
+  private buildDiagnosticSnapshot(): DiagnosticSnapshot {
+    const connection = this.bluetooth.getActiveConnection();
+    const alerts = this.alerts.getAlertsNear(this.vehicleState.location, 50);
+    return {
+      bluetoothConnected: Boolean(connection),
+      bluetoothStreaming: connection?.streaming ?? false,
+      connectedDevice: connection?.device.name,
+      audioPreset: this.audio.getPresetName(),
+      volume: this.audio.getOutputState().volume,
+      playback: this.music.getState(),
+      driverState: this.driverState,
+      vehicleState: this.vehicleState,
+      activeAlertCount: alerts.length,
+    };
+  }
 }
 
 async function main() {
-  const [library, alerts, calibration] = await Promise.all([
+  const [library, alerts, calibration, diagnostics] = await Promise.all([
     loadLibrary(),
     loadAlerts(),
     loadCalibration(),
+    loadDiagnostics(),
   ]);
 
-  const system = new InfotainmentSystem(library, alerts, calibration);
+  const system = new InfotainmentSystem(library, alerts, calibration, diagnostics);
   system.printWelcome();
 
   const rl = readline.createInterface({

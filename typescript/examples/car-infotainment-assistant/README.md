@@ -13,6 +13,7 @@ This is a reference architecture and simulation. It does not integrate with real
 - Navigation routing with ETA and step guidance.
 - GPS-aware emergency alert feed filtering.
 - Driver profiles and safety-focused assistant behavior.
+- AI-style diagnostics, self-checks, and troubleshooting guidance.
 - CLI demo for trying commands and flows.
 
 ## Quickstart
@@ -36,6 +37,8 @@ Note: run the demo from `typescript/examples/car-infotainment-assistant` so the 
 - `play <track or playlist>` - Play music from the library.
 - `nav <destination>` - Start navigation (home, work, airport, downtown, stadium).
 - `alerts` - Show active alerts near current location.
+- `diagnostics` - Run the AI diagnostics scan.
+- `troubleshoot <symptom>` - Get troubleshooting steps.
 - `assistant <text>` - Ask the AI assistant to perform a task.
 
 ## Architecture highlights
@@ -46,6 +49,7 @@ Note: run the demo from `typescript/examples/car-infotainment-assistant` so the 
 - `music.ts` manages tracks, playlists, and playback state.
 - `navigation.ts` computes simple routes and ETA updates.
 - `alerts.ts` filters emergency alerts by GPS range and time.
+- `diagnostics.ts` generates AI-style health checks and troubleshooting steps.
 - `assistant.ts` routes driver requests across modules with safety gating.
 - `infotainment.ts` orchestrates the system and provides the CLI.
 
