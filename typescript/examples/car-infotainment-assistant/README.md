@@ -64,3 +64,10 @@ Note: run the demo from `typescript/examples/car-infotainment-assistant` so the 
 ## Safety note
 
 Driver focus is critical. The assistant shortens responses in safety mode and blocks complex auto-tune actions while moving. Expand this gating and ensure compliance with local regulations.
+
+## License
+
+This example includes a proprietary license draft for Klean Kut Technologies LLC.
+Review it with legal counsel before production use:
+
+- `LICENSE_KLEAN_KUT_TECHNOLOGIES_LLC.md`
