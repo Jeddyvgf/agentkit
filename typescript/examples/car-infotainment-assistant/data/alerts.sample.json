@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2026-01-19T08:45:00Z",
+  "alerts": [
+    {
+      "id": "alert-001",
+      "type": "weather",
+      "severity": "warning",
+      "title": "Severe thunderstorm warning",
+      "description": "Heavy rain and gusts up to 45 mph expected this afternoon.",
+      "regions": [
+        { "center": { "lat": 37.7749, "lon": -122.4194 }, "radiusKm": 35 }
+      ],
+      "validFrom": "2026-01-19T10:00:00Z",
+      "validTo": "2026-01-20T02:00:00Z",
+      "source": "NOAA"
+    },
+    {
+      "id": "alert-002",
+      "type": "safety",
+      "severity": "watch",
+      "title": "Amber alert",
+      "description": "Be on the lookout for a silver SUV heading south on Highway 101.",
+      "regions": [
+        { "center": { "lat": 37.6213, "lon": -122.379 }, "radiusKm": 45 }
+      ],
+      "validFrom": "2026-01-19T09:30:00Z",
+      "validTo": "2026-01-19T23:30:00Z",
+      "source": "State Highway Patrol"
+    },
+    {
+      "id": "alert-003",
+      "type": "infrastructure",
+      "severity": "info",
+      "title": "Bridge maintenance advisory",
+      "description": "Lane reductions on Bay Bridge. Expect 20 minute delays.",
+      "regions": [
+        { "center": { "lat": 37.7983, "lon": -122.3778 }, "radiusKm": 18 }
+      ],
+      "validFrom": "2026-01-19T06:00:00Z",
+      "validTo": "2026-01-19T20:00:00Z",
+      "source": "City DOT"
+    }
+  ]
+}

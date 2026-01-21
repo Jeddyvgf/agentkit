@@ -1,0 +1,17 @@
+{
+  "cabin": "mid-size sedan",
+  "micPosition": "driver headrest",
+  "ambientNoiseDb": 42.5,
+  "samples": [
+    { "hz": 60, "db": 3.2 },
+    { "hz": 90, "db": 2.6 },
+    { "hz": 125, "db": 1.8 },
+    { "hz": 250, "db": -0.6 },
+    { "hz": 500, "db": -1.4 },
+    { "hz": 750, "db": -2.2 },
+    { "hz": 1000, "db": -1.2 },
+    { "hz": 2000, "db": 0.4 },
+    { "hz": 4000, "db": 1.6 },
+    { "hz": 8000, "db": 2.1 }
+  ]
+}
