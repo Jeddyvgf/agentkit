@@ -1,15 +1,21 @@
-Apache-2.0 License
+Klean-Kut Technologies LLC Proprietary License
 
-Copyright 2024 Coinbase
-    
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+Copyright (c) 2026 Klean-Kut Technologies LLC. All rights reserved.
 
-  http://www.apache.org/licenses/LICENSE-2.0
+This software and associated documentation (the "Software") are the
+confidential and proprietary information of Klean-Kut Technologies LLC.
+You may not use, copy, modify, merge, publish, distribute, sublicense,
+or sell copies of the Software, or permit others to do so, except as
+expressly authorized in writing by Klean-Kut Technologies LLC.
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+No license is granted, whether express, implied, or otherwise, under any
+patents, copyrights, trademarks, trade secrets, or other intellectual
+property rights of Klean-Kut Technologies LLC.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL
+KLEAN-KUT TECHNOLOGIES LLC BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING
+FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.

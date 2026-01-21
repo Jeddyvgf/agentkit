@@ -18,7 +18,7 @@
     "test:types": "turbo run test:types"
   },
   "author": "Coinbase Inc.",
-  "license": "Apache-2.0",
+  "license": "LicenseRef-Klean-Kut-Proprietary",
   "repository": "https://github.com/coinbase/agentkit",
   "publishConfig": {
     "provenance": true
