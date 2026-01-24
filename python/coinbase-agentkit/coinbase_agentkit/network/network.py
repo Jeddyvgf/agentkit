@@ -9,7 +9,7 @@ from .chain_definitions import (
     optimism,
     optimism_sepolia,
     polygon,
-    polygon_amoy,
+    polygon_mumbai,
     sepolia,
 )
 
@@ -27,7 +27,7 @@ CHAIN_ID_TO_NETWORK_ID: dict[str, str] = {
     "1": "ethereum-mainnet",
     "11155111": "ethereum-sepolia",
     "137": "polygon-mainnet",
-    "80002": "polygon-amoy",
+    "80001": "polygon-mumbai",
     "8453": "base-mainnet",
     "84532": "base-sepolia",
     "42161": "arbitrum-mainnet",
@@ -46,7 +46,7 @@ NETWORK_ID_TO_CHAIN: dict[str, dict] = {
     "ethereum-mainnet": mainnet,
     "ethereum-sepolia": sepolia,
     "polygon-mainnet": polygon,
-    "polygon-amoy": polygon_amoy,
+    "polygon-mumbai": polygon_mumbai,
     "base-mainnet": base,
     "base-sepolia": base_sepolia,
     "arbitrum-mainnet": arbitrum,
