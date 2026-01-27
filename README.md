@@ -30,6 +30,7 @@
 - [🤝 Contributing](#-contributing)
 - [📜 Documentation](#-documentation)
 - [💸 Monetization](#-monetization)
+- [📦 Deployments](#-deployments)
 - [🌙 Nightly Builds](#-nightly-builds)
 - [🚨 Security and bug reports](#-security-and-bug-reports)
 - [📧 Contact](#-contact)
@@ -208,6 +209,10 @@ agentkit/
 ## 💸 Monetization
 
 - [Monetization guide](./MONETIZATION.md)
+
+## 📦 Deployments
+
+- [Deployment records](./DEPLOYMENTS.md)
 
 ## 🌙 Nightly Builds
 
