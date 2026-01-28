@@ -29,23 +29,44 @@ jobs:
 
       - name: Build AgentKit JSDocs
         run: |
-          mkdir -p docs/agentkit/typescript
-          cp -r typescript/agentkit/docs/* docs/agentkit/typescript
+          mkdir -p docs/11/agentkit/typescript
+          cp -r typescript/agentkit/docs/* docs/11/agentkit/typescript
 
       - name: Build AgentKit LangChain JSDocs
         run: |
-          mkdir -p docs/agentkit-langchain/typescript
-          cp -r typescript/framework-extensions/langchain/docs/* docs/agentkit-langchain/typescript
+          mkdir -p docs/11/agentkit-langchain/typescript
+          cp -r typescript/framework-extensions/langchain/docs/* docs/11/agentkit-langchain/typescript
 
       - name: Build AgentKit Vercel AI SDK JSDocs
         run: |
-          mkdir -p docs/agentkit-vercel-ai-sdk/typescript
-          cp -r typescript/framework-extensions/vercel-ai-sdk/docs/* docs/agentkit-vercel-ai-sdk/typescript
+          mkdir -p docs/11/agentkit-vercel-ai-sdk/typescript
+          cp -r typescript/framework-extensions/vercel-ai-sdk/docs/* docs/11/agentkit-vercel-ai-sdk/typescript
 
       - name: Build AgentKit Model Context Protocol JSDocs
         run: |
-          mkdir -p docs/agentkit-model-context-protocol/typescript
-          cp -r typescript/framework-extensions/model-context-protocol/docs/* docs/agentkit-model-context-protocol/typescript
+          mkdir -p docs/11/agentkit-model-context-protocol/typescript
+          cp -r typescript/framework-extensions/model-context-protocol/docs/* docs/11/agentkit-model-context-protocol/typescript
+
+      - name: Configure custom domain and /11 redirect
+        run: |
+          mkdir -p docs
+          printf "h.l.coins\n" > docs/CNAME
+          touch docs/.nojekyll
+          cat > docs/index.html <<'EOF'
+          <!doctype html>
+          <html lang="en">
+            <head>
+              <meta charset="utf-8" />
+              <meta http-equiv="refresh" content="0; url=./11/" />
+              <meta name="viewport" content="width=device-width, initial-scale=1" />
+              <title>Redirecting…</title>
+              <link rel="canonical" href="./11/" />
+            </head>
+            <body>
+              <p>If you are not redirected, <a href="./11/">click here</a>.</p>
+            </body>
+          </html>
+          EOF
 
       - name: Set up Python 3.10
         uses: actions/setup-python@v4
@@ -71,8 +92,8 @@ jobs:
           cd docs
           make html
           cd ../../..
-          mkdir -p docs/coinbase-agentkit/python
-          cp -r python/coinbase-agentkit/docs/_build/html/* docs/coinbase-agentkit/python
+          mkdir -p docs/11/coinbase-agentkit/python
+          cp -r python/coinbase-agentkit/docs/_build/html/* docs/11/coinbase-agentkit/python
 
       - name: Install dependencies for Coinbase AgentKit LangChain Python
         run: |
@@ -87,8 +108,8 @@ jobs:
           cd docs
           make html
           cd ../../../..
-          mkdir -p docs/coinbase-agentkit-langchain/python
-          cp -r python/framework-extensions/langchain/docs/_build/html/* docs/coinbase-agentkit-langchain/python
+          mkdir -p docs/11/coinbase-agentkit-langchain/python
+          cp -r python/framework-extensions/langchain/docs/_build/html/* docs/11/coinbase-agentkit-langchain/python
 
       - name: Deploy to Github Pages
         uses: peaceiris/actions-gh-pages@v4
