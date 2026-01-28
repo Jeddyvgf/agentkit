@@ -2,6 +2,9 @@ name: Publish Docs to Github Pages
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - cursor/h-l-coins-11-deployment-f6ce
 
 jobs:
   build-and-deploy-docs:
