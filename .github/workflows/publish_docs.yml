@@ -93,7 +93,7 @@ jobs:
           cd python/coinbase-agentkit
           make docs
           cd docs
-          make html
+          uv run make html
           cd ../../..
           mkdir -p docs/11/coinbase-agentkit/python
           cp -r python/coinbase-agentkit/docs/_build/html/* docs/11/coinbase-agentkit/python
@@ -109,7 +109,7 @@ jobs:
           cd python/framework-extensions/langchain
           make docs
           cd docs
-          make html
+          uv run make html
           cd ../../../..
           mkdir -p docs/11/coinbase-agentkit-langchain/python
           cp -r python/framework-extensions/langchain/docs/_build/html/* docs/11/coinbase-agentkit-langchain/python
