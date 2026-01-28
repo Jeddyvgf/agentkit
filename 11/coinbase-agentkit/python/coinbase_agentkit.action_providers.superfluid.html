@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>coinbase_agentkit.action_providers.superfluid package &#8212; Coinbase Agentkit 0.7.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=fe7df9b0"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="coinbase_agentkit.action_providers.twitter package" href="coinbase_agentkit.action_providers.twitter.html" />
+    <link rel="prev" title="coinbase_agentkit.action_providers.ssh package" href="coinbase_agentkit.action_providers.ssh.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="coinbase-agentkit-action-providers-superfluid-package">
+<h1>coinbase_agentkit.action_providers.superfluid package<a class="headerlink" href="#coinbase-agentkit-action-providers-superfluid-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-coinbase_agentkit.action_providers.superfluid.constants">
+<span id="coinbase-agentkit-action-providers-superfluid-constants-module"></span><h2>coinbase_agentkit.action_providers.superfluid.constants module<a class="headerlink" href="#module-coinbase_agentkit.action_providers.superfluid.constants" title="Link to this heading">¶</a></h2>
+<p>Constants for Superfluid action provider.</p>
+</section>
+<section id="module-coinbase_agentkit.action_providers.superfluid.schemas">
+<span id="coinbase-agentkit-action-providers-superfluid-schemas-module"></span><h2>coinbase_agentkit.action_providers.superfluid.schemas module<a class="headerlink" href="#module-coinbase_agentkit.action_providers.superfluid.schemas" title="Link to this heading">¶</a></h2>
+<p>Schemas for Superfluid action provider.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.superfluid.schemas.CreateFlowSchema">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.superfluid.schemas.</span></span><span class="sig-name descname"><span class="pre">CreateFlowSchema</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.superfluid.schemas.CreateFlowSchema" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Input argument schema for creating a flow.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.superfluid.schemas.CreateFlowSchema.flow_rate">
+<span class="sig-name descname"><span class="pre">flow_rate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.superfluid.schemas.CreateFlowSchema.flow_rate" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.superfluid.schemas.CreateFlowSchema.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.superfluid.schemas.CreateFlowSchema.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.superfluid.schemas.CreateFlowSchema.recipient">
+<span class="sig-name descname"><span class="pre">recipient</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.superfluid.schemas.CreateFlowSchema.recipient" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.superfluid.schemas.CreateFlowSchema.token_address">
+<span class="sig-name descname"><span class="pre">token_address</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.superfluid.schemas.CreateFlowSchema.token_address" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.superfluid.schemas.DeleteFlowSchema">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.superfluid.schemas.</span></span><span class="sig-name descname"><span class="pre">DeleteFlowSchema</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.superfluid.schemas.DeleteFlowSchema" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Input argument schema for deleting a flow.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.superfluid.schemas.DeleteFlowSchema.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.superfluid.schemas.DeleteFlowSchema.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.superfluid.schemas.DeleteFlowSchema.recipient">
+<span class="sig-name descname"><span class="pre">recipient</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.superfluid.schemas.DeleteFlowSchema.recipient" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.superfluid.schemas.DeleteFlowSchema.token_address">
+<span class="sig-name descname"><span class="pre">token_address</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.superfluid.schemas.DeleteFlowSchema.token_address" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.superfluid.schemas.UpdateFlowSchema">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.superfluid.schemas.</span></span><span class="sig-name descname"><span class="pre">UpdateFlowSchema</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.superfluid.schemas.UpdateFlowSchema" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Input argument schema for updating a flow.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.superfluid.schemas.UpdateFlowSchema.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.superfluid.schemas.UpdateFlowSchema.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.superfluid.schemas.UpdateFlowSchema.new_flow_rate">
+<span class="sig-name descname"><span class="pre">new_flow_rate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.superfluid.schemas.UpdateFlowSchema.new_flow_rate" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.superfluid.schemas.UpdateFlowSchema.recipient">
+<span class="sig-name descname"><span class="pre">recipient</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.superfluid.schemas.UpdateFlowSchema.recipient" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.superfluid.schemas.UpdateFlowSchema.token_address">
+<span class="sig-name descname"><span class="pre">token_address</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.superfluid.schemas.UpdateFlowSchema.token_address" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-coinbase_agentkit.action_providers.superfluid.superfluid_action_provider">
+<span id="coinbase-agentkit-action-providers-superfluid-superfluid-action-provider-module"></span><h2>coinbase_agentkit.action_providers.superfluid.superfluid_action_provider module<a class="headerlink" href="#module-coinbase_agentkit.action_providers.superfluid.superfluid_action_provider" title="Link to this heading">¶</a></h2>
+<p>Superfluid action provider.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.superfluid.superfluid_action_provider.SuperfluidActionProvider">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.superfluid.superfluid_action_provider.</span></span><span class="sig-name descname"><span class="pre">SuperfluidActionProvider</span></span><a class="headerlink" href="#coinbase_agentkit.action_providers.superfluid.superfluid_action_provider.SuperfluidActionProvider" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="coinbase_agentkit.action_providers.html#coinbase_agentkit.action_providers.action_provider.ActionProvider" title="coinbase_agentkit.action_providers.action_provider.ActionProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">ActionProvider</span></code></a>[<a class="reference internal" href="coinbase_agentkit.wallet_providers.html#coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider" title="coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvmWalletProvider</span></code></a>]</p>
+<p>Provides actions for interacting with Superfluid protocol.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.superfluid.superfluid_action_provider.SuperfluidActionProvider.create_flow">
+<span class="sig-name descname"><span class="pre">create_flow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet_provider</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.superfluid.superfluid_action_provider.SuperfluidActionProvider.create_flow" title="Link to this definition">¶</a></dt>
+<dd><p>Create a money flow using Superfluid.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet_provider</strong> (<a class="reference internal" href="coinbase_agentkit.html#coinbase_agentkit.EvmWalletProvider" title="coinbase_agentkit.EvmWalletProvider"><em>EvmWalletProvider</em></a>) – The wallet provider instance.</p></li>
+<li><p><strong>args</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Input arguments for the action.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the action response or error details.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.superfluid.superfluid_action_provider.SuperfluidActionProvider.delete_flow">
+<span class="sig-name descname"><span class="pre">delete_flow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet_provider</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.superfluid.superfluid_action_provider.SuperfluidActionProvider.delete_flow" title="Link to this definition">¶</a></dt>
+<dd><p>Delete an existing money flow using Superfluid.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet_provider</strong> (<a class="reference internal" href="coinbase_agentkit.html#coinbase_agentkit.EvmWalletProvider" title="coinbase_agentkit.EvmWalletProvider"><em>EvmWalletProvider</em></a>) – The wallet provider instance.</p></li>
+<li><p><strong>args</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Input arguments for the action.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the action response or error details.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.superfluid.superfluid_action_provider.SuperfluidActionProvider.supports_network">
+<span class="sig-name descname"><span class="pre">supports_network</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">network</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.superfluid.superfluid_action_provider.SuperfluidActionProvider.supports_network" title="Link to this definition">¶</a></dt>
+<dd><p>Check if network is supported by Superfluid actions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>network</strong> (<a class="reference internal" href="coinbase_agentkit.network.html#coinbase_agentkit.network.Network" title="coinbase_agentkit.network.Network"><em>Network</em></a>) – The network to check support for.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Whether the network is supported.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.superfluid.superfluid_action_provider.SuperfluidActionProvider.update_flow">
+<span class="sig-name descname"><span class="pre">update_flow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet_provider</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.superfluid.superfluid_action_provider.SuperfluidActionProvider.update_flow" title="Link to this definition">¶</a></dt>
+<dd><p>Update an existing money flow using Superfluid.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet_provider</strong> (<a class="reference internal" href="coinbase_agentkit.html#coinbase_agentkit.EvmWalletProvider" title="coinbase_agentkit.EvmWalletProvider"><em>EvmWalletProvider</em></a>) – The wallet provider instance.</p></li>
+<li><p><strong>args</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Input arguments for the action.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the action response or error details.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.superfluid.superfluid_action_provider.superfluid_action_provider">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.superfluid.superfluid_action_provider.</span></span><span class="sig-name descname"><span class="pre">superfluid_action_provider</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.superfluid.superfluid_action_provider.superfluid_action_provider" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new Superfluid action provider.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A new Superfluid action provider instance.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#coinbase_agentkit.action_providers.superfluid.superfluid_action_provider.SuperfluidActionProvider" title="coinbase_agentkit.action_providers.superfluid.superfluid_action_provider.SuperfluidActionProvider">SuperfluidActionProvider</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-coinbase_agentkit.action_providers.superfluid">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-coinbase_agentkit.action_providers.superfluid" title="Link to this heading">¶</a></h2>
+<p>Superfluid action provider for streaming payments.</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Coinbase Agentkit</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">coinbase_agentkit</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="coinbase_agentkit.html">coinbase_agentkit package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">coinbase_agentkit</a><ul>
+  <li><a href="coinbase_agentkit.html">coinbase_agentkit package</a><ul>
+  <li><a href="coinbase_agentkit.action_providers.html">coinbase_agentkit.action_providers package</a><ul>
+      <li>Previous: <a href="coinbase_agentkit.action_providers.ssh.html" title="previous chapter">coinbase_agentkit.action_providers.ssh package</a></li>
+      <li>Next: <a href="coinbase_agentkit.action_providers.twitter.html" title="next chapter">coinbase_agentkit.action_providers.twitter package</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/coinbase_agentkit.action_providers.superfluid.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

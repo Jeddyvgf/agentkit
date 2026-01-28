@@ -1,0 +1,45 @@
+coinbase\_agentkit.action\_providers.ssh package
+================================================
+
+Submodules
+----------
+
+coinbase\_agentkit.action\_providers.ssh.connection module
+----------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.action_providers.ssh.connection
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+coinbase\_agentkit.action\_providers.ssh.connection\_pool module
+----------------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.action_providers.ssh.connection_pool
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+coinbase\_agentkit.action\_providers.ssh.schemas module
+-------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.action_providers.ssh.schemas
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+coinbase\_agentkit.action\_providers.ssh.ssh\_action\_provider module
+---------------------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.action_providers.ssh.ssh_action_provider
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: coinbase_agentkit.action_providers.ssh
+   :members:
+   :undoc-members:
+   :show-inheritance:

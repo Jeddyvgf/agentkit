@@ -1,0 +1,29 @@
+coinbase\_agentkit.action\_providers.nillion package
+====================================================
+
+Submodules
+----------
+
+coinbase\_agentkit.action\_providers.nillion.nillion\_action\_provider module
+-----------------------------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.action_providers.nillion.nillion_action_provider
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+coinbase\_agentkit.action\_providers.nillion.schemas module
+-----------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.action_providers.nillion.schemas
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: coinbase_agentkit.action_providers.nillion
+   :members:
+   :undoc-members:
+   :show-inheritance:

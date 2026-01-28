@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>coinbase_agentkit.action_providers.x402 package &#8212; Coinbase Agentkit 0.7.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=fe7df9b0"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="coinbase_agentkit.analytics package" href="coinbase_agentkit.analytics.html" />
+    <link rel="prev" title="coinbase_agentkit.action_providers.wow.uniswap package" href="coinbase_agentkit.action_providers.wow.uniswap.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="coinbase-agentkit-action-providers-x402-package">
+<h1>coinbase_agentkit.action_providers.x402 package<a class="headerlink" href="#coinbase-agentkit-action-providers-x402-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-coinbase_agentkit.action_providers.x402.schemas">
+<span id="coinbase-agentkit-action-providers-x402-schemas-module"></span><h2>coinbase_agentkit.action_providers.x402.schemas module<a class="headerlink" href="#module-coinbase_agentkit.action_providers.x402.schemas" title="Link to this heading">¶</a></h2>
+<p>Schemas for x402 action providers.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.DirectX402RequestSchema">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.x402.schemas.</span></span><span class="sig-name descname"><span class="pre">DirectX402RequestSchema</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.DirectX402RequestSchema" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Schema for direct x402 payment requests.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.DirectX402RequestSchema.Config">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Config</span></span><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.DirectX402RequestSchema.Config" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Pydantic config.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.DirectX402RequestSchema.Config.title">
+<span class="sig-name descname"><span class="pre">title</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Instructions</span> <span class="pre">for</span> <span class="pre">making</span> <span class="pre">an</span> <span class="pre">HTTP</span> <span class="pre">request</span> <span class="pre">with</span> <span class="pre">automatic</span> <span class="pre">x402</span> <span class="pre">payment</span> <span class="pre">handling.</span> <span class="pre">WARNING:</span> <span class="pre">This</span> <span class="pre">bypasses</span> <span class="pre">user</span> <span class="pre">confirmation</span> <span class="pre">-</span> <span class="pre">only</span> <span class="pre">use</span> <span class="pre">when</span> <span class="pre">explicitly</span> <span class="pre">told</span> <span class="pre">to</span> <span class="pre">skip</span> <span class="pre">confirmation!'</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.DirectX402RequestSchema.Config.title" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.DirectX402RequestSchema.body">
+<span class="sig-name descname"><span class="pre">body</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code><span class="pre">]</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.DirectX402RequestSchema.body" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.DirectX402RequestSchema.headers">
+<span class="sig-name descname"><span class="pre">headers</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.DirectX402RequestSchema.headers" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.DirectX402RequestSchema.method">
+<span class="sig-name descname"><span class="pre">method</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code><span class="pre">[</span><code class="docutils literal notranslate"><span class="pre">'GET'</span></code><span class="pre">,</span> <code class="docutils literal notranslate"><span class="pre">'POST'</span></code><span class="pre">,</span> <code class="docutils literal notranslate"><span class="pre">'PUT'</span></code><span class="pre">,</span> <code class="docutils literal notranslate"><span class="pre">'DELETE'</span></code><span class="pre">,</span> <code class="docutils literal notranslate"><span class="pre">'PATCH'</span></code><span class="pre">]</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.DirectX402RequestSchema.method" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.DirectX402RequestSchema.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'title':</span> <span class="pre">'Instructions</span> <span class="pre">for</span> <span class="pre">making</span> <span class="pre">an</span> <span class="pre">HTTP</span> <span class="pre">request</span> <span class="pre">with</span> <span class="pre">automatic</span> <span class="pre">x402</span> <span class="pre">payment</span> <span class="pre">handling.</span> <span class="pre">WARNING:</span> <span class="pre">This</span> <span class="pre">bypasses</span> <span class="pre">user</span> <span class="pre">confirmation</span> <span class="pre">-</span> <span class="pre">only</span> <span class="pre">use</span> <span class="pre">when</span> <span class="pre">explicitly</span> <span class="pre">told</span> <span class="pre">to</span> <span class="pre">skip</span> <span class="pre">confirmation!'}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.DirectX402RequestSchema.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.DirectX402RequestSchema.url">
+<span class="sig-name descname"><span class="pre">url</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.DirectX402RequestSchema.url" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.HttpRequestSchema">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.x402.schemas.</span></span><span class="sig-name descname"><span class="pre">HttpRequestSchema</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.HttpRequestSchema" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Schema for making basic HTTP requests.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.HttpRequestSchema.Config">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Config</span></span><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.HttpRequestSchema.Config" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Pydantic config.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.HttpRequestSchema.Config.title">
+<span class="sig-name descname"><span class="pre">title</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Instructions</span> <span class="pre">for</span> <span class="pre">making</span> <span class="pre">a</span> <span class="pre">basic</span> <span class="pre">HTTP</span> <span class="pre">request'</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.HttpRequestSchema.Config.title" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.HttpRequestSchema.body">
+<span class="sig-name descname"><span class="pre">body</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code><span class="pre">]</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.HttpRequestSchema.body" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.HttpRequestSchema.headers">
+<span class="sig-name descname"><span class="pre">headers</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.HttpRequestSchema.headers" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.HttpRequestSchema.method">
+<span class="sig-name descname"><span class="pre">method</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code><span class="pre">[</span><code class="docutils literal notranslate"><span class="pre">'GET'</span></code><span class="pre">,</span> <code class="docutils literal notranslate"><span class="pre">'POST'</span></code><span class="pre">,</span> <code class="docutils literal notranslate"><span class="pre">'PUT'</span></code><span class="pre">,</span> <code class="docutils literal notranslate"><span class="pre">'DELETE'</span></code><span class="pre">,</span> <code class="docutils literal notranslate"><span class="pre">'PATCH'</span></code><span class="pre">]</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.HttpRequestSchema.method" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.HttpRequestSchema.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'title':</span> <span class="pre">'Instructions</span> <span class="pre">for</span> <span class="pre">making</span> <span class="pre">a</span> <span class="pre">basic</span> <span class="pre">HTTP</span> <span class="pre">request'}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.HttpRequestSchema.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.HttpRequestSchema.url">
+<span class="sig-name descname"><span class="pre">url</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.HttpRequestSchema.url" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.x402.schemas.</span></span><span class="sig-name descname"><span class="pre">RetryWithX402Schema</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Schema for retrying requests with x402 payment.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.Config">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Config</span></span><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.Config" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Pydantic config.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.Config.title">
+<span class="sig-name descname"><span class="pre">title</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Instructions</span> <span class="pre">for</span> <span class="pre">retrying</span> <span class="pre">a</span> <span class="pre">request</span> <span class="pre">with</span> <span class="pre">x402</span> <span class="pre">payment</span> <span class="pre">after</span> <span class="pre">receiving</span> <span class="pre">a</span> <span class="pre">402</span> <span class="pre">response'</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.Config.title" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.asset">
+<span class="sig-name descname"><span class="pre">asset</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.asset" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.body">
+<span class="sig-name descname"><span class="pre">body</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code><span class="pre">]</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.body" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.description" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.extra">
+<span class="sig-name descname"><span class="pre">extra</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">,</span> <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.extra" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.headers">
+<span class="sig-name descname"><span class="pre">headers</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.headers" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.max_amount_required">
+<span class="sig-name descname"><span class="pre">max_amount_required</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.max_amount_required" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.max_timeout_seconds">
+<span class="sig-name descname"><span class="pre">max_timeout_seconds</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.max_timeout_seconds" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.method">
+<span class="sig-name descname"><span class="pre">method</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code><span class="pre">[</span><code class="docutils literal notranslate"><span class="pre">'GET'</span></code><span class="pre">,</span> <code class="docutils literal notranslate"><span class="pre">'POST'</span></code><span class="pre">,</span> <code class="docutils literal notranslate"><span class="pre">'PUT'</span></code><span class="pre">,</span> <code class="docutils literal notranslate"><span class="pre">'DELETE'</span></code><span class="pre">,</span> <code class="docutils literal notranslate"><span class="pre">'PATCH'</span></code><span class="pre">]</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.method" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.mime_type">
+<span class="sig-name descname"><span class="pre">mime_type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.mime_type" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'title':</span> <span class="pre">'Instructions</span> <span class="pre">for</span> <span class="pre">retrying</span> <span class="pre">a</span> <span class="pre">request</span> <span class="pre">with</span> <span class="pre">x402</span> <span class="pre">payment</span> <span class="pre">after</span> <span class="pre">receiving</span> <span class="pre">a</span> <span class="pre">402</span> <span class="pre">response'}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.network">
+<span class="sig-name descname"><span class="pre">network</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.network" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.output_schema">
+<span class="sig-name descname"><span class="pre">output_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">,</span> <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.output_schema" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.pay_to">
+<span class="sig-name descname"><span class="pre">pay_to</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.pay_to" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.resource">
+<span class="sig-name descname"><span class="pre">resource</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.resource" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.scheme">
+<span class="sig-name descname"><span class="pre">scheme</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.scheme" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.url">
+<span class="sig-name descname"><span class="pre">url</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.schemas.RetryWithX402Schema.url" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-coinbase_agentkit.action_providers.x402.x402_action_provider">
+<span id="coinbase-agentkit-action-providers-x402-x402-action-provider-module"></span><h2>coinbase_agentkit.action_providers.x402.x402_action_provider module<a class="headerlink" href="#module-coinbase_agentkit.action_providers.x402.x402_action_provider" title="Link to this heading">¶</a></h2>
+<p>x402 action provider.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.x402_action_provider.x402ActionProvider">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.x402.x402_action_provider.</span></span><span class="sig-name descname"><span class="pre">x402ActionProvider</span></span><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.x402_action_provider.x402ActionProvider" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="coinbase_agentkit.action_providers.html#coinbase_agentkit.action_providers.action_provider.ActionProvider" title="coinbase_agentkit.action_providers.action_provider.ActionProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">ActionProvider</span></code></a>[<a class="reference internal" href="coinbase_agentkit.wallet_providers.html#coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider" title="coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvmWalletProvider</span></code></a>]</p>
+<p>Provides actions for interacting with x402.</p>
+<p>This provider enables making HTTP requests to x402-protected endpoints with optional payment handling.
+It supports both a recommended two-step flow and a direct payment flow.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.x402_action_provider.x402ActionProvider.make_http_request">
+<span class="sig-name descname"><span class="pre">make_http_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet_provider</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.x402_action_provider.x402ActionProvider.make_http_request" title="Link to this definition">¶</a></dt>
+<dd><p>Make initial HTTP request and handle 402 responses.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet_provider</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="coinbase_agentkit.wallet_providers.html#coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider" title="coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvmWalletProvider</span></code></a></span>) – The wallet provider (not used for initial request).</p></li>
+<li><p><strong>args</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</span>) – Request parameters including URL, method, headers, and body.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>JSON string containing response data or payment requirements.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.x402_action_provider.x402ActionProvider.make_http_request_with_x402">
+<span class="sig-name descname"><span class="pre">make_http_request_with_x402</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet_provider</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.x402_action_provider.x402ActionProvider.make_http_request_with_x402" title="Link to this definition">¶</a></dt>
+<dd><p>Make HTTP request with automatic x402 payment handling.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet_provider</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="coinbase_agentkit.wallet_providers.html#coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider" title="coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvmWalletProvider</span></code></a></span>) – The wallet provider to use for payment signing.</p></li>
+<li><p><strong>args</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</span>) – Request parameters including URL, method, headers, and body.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>JSON string containing response data and optional payment proof.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.x402_action_provider.x402ActionProvider.retry_with_x402">
+<span class="sig-name descname"><span class="pre">retry_with_x402</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet_provider</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.x402_action_provider.x402ActionProvider.retry_with_x402" title="Link to this definition">¶</a></dt>
+<dd><p>Retry a request with x402 payment after receiving payment details.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.x402_action_provider.x402ActionProvider.supports_network">
+<span class="sig-name descname"><span class="pre">supports_network</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">network</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.x402_action_provider.x402ActionProvider.supports_network" title="Link to this definition">¶</a></dt>
+<dd><p>Check if the network is supported by this action provider.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>network</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="coinbase_agentkit.network.html#coinbase_agentkit.network.network.Network" title="coinbase_agentkit.network.network.Network"><code class="xref py py-class docutils literal notranslate"><span class="pre">Network</span></code></a></span>) – The network to check support for.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Whether the network is supported.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.x402_action_provider.x402_action_provider">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.x402.x402_action_provider.</span></span><span class="sig-name descname"><span class="pre">x402_action_provider</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.x402_action_provider.x402_action_provider" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new x402 action provider.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A new x402 action provider instance.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#coinbase_agentkit.action_providers.x402.x402_action_provider.x402ActionProvider" title="coinbase_agentkit.action_providers.x402.x402_action_provider.x402ActionProvider">x402ActionProvider</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-coinbase_agentkit.action_providers.x402">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-coinbase_agentkit.action_providers.x402" title="Link to this heading">¶</a></h2>
+<p>CDP EVM Server action provider for CDP protocol interactions.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.x402.x402_action_provider">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.x402.</span></span><span class="sig-name descname"><span class="pre">x402_action_provider</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.x402.x402_action_provider" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new x402 action provider.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A new x402 action provider instance.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="coinbase_agentkit.action_providers.html#coinbase_agentkit.action_providers.x402ActionProvider" title="coinbase_agentkit.action_providers.x402ActionProvider">x402ActionProvider</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Coinbase Agentkit</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">coinbase_agentkit</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="coinbase_agentkit.html">coinbase_agentkit package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">coinbase_agentkit</a><ul>
+  <li><a href="coinbase_agentkit.html">coinbase_agentkit package</a><ul>
+  <li><a href="coinbase_agentkit.action_providers.html">coinbase_agentkit.action_providers package</a><ul>
+      <li>Previous: <a href="coinbase_agentkit.action_providers.wow.uniswap.html" title="previous chapter">coinbase_agentkit.action_providers.wow.uniswap package</a></li>
+      <li>Next: <a href="coinbase_agentkit.analytics.html" title="next chapter">coinbase_agentkit.analytics package</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/coinbase_agentkit.action_providers.x402.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

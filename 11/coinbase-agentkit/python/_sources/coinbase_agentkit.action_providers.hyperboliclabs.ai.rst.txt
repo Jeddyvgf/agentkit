@@ -1,0 +1,53 @@
+coinbase\_agentkit.action\_providers.hyperboliclabs.ai package
+==============================================================
+
+Submodules
+----------
+
+coinbase\_agentkit.action\_providers.hyperboliclabs.ai.action\_provider module
+------------------------------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.action_providers.hyperboliclabs.ai.action_provider
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+coinbase\_agentkit.action\_providers.hyperboliclabs.ai.schemas module
+---------------------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.action_providers.hyperboliclabs.ai.schemas
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+coinbase\_agentkit.action\_providers.hyperboliclabs.ai.service module
+---------------------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.action_providers.hyperboliclabs.ai.service
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+coinbase\_agentkit.action\_providers.hyperboliclabs.ai.types module
+-------------------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.action_providers.hyperboliclabs.ai.types
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+coinbase\_agentkit.action\_providers.hyperboliclabs.ai.utils module
+-------------------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.action_providers.hyperboliclabs.ai.utils
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: coinbase_agentkit.action_providers.hyperboliclabs.ai
+   :members:
+   :undoc-members:
+   :show-inheritance:

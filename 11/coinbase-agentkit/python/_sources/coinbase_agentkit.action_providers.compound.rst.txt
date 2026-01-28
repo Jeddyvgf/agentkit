@@ -1,0 +1,45 @@
+coinbase\_agentkit.action\_providers.compound package
+=====================================================
+
+Submodules
+----------
+
+coinbase\_agentkit.action\_providers.compound.compound\_action\_provider module
+-------------------------------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.action_providers.compound.compound_action_provider
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+coinbase\_agentkit.action\_providers.compound.constants module
+--------------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.action_providers.compound.constants
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+coinbase\_agentkit.action\_providers.compound.schemas module
+------------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.action_providers.compound.schemas
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+coinbase\_agentkit.action\_providers.compound.utils module
+----------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.action_providers.compound.utils
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: coinbase_agentkit.action_providers.compound
+   :members:
+   :undoc-members:
+   :show-inheritance:

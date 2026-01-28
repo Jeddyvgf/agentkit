@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>coinbase_agentkit.action_providers.hyperboliclabs package &#8212; Coinbase Agentkit 0.7.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=fe7df9b0"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="coinbase_agentkit.action_providers.hyperboliclabs.ai package" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html" />
+    <link rel="prev" title="coinbase_agentkit.action_providers.erc721 package" href="coinbase_agentkit.action_providers.erc721.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="coinbase-agentkit-action-providers-hyperboliclabs-package">
+<h1>coinbase_agentkit.action_providers.hyperboliclabs package<a class="headerlink" href="#coinbase-agentkit-action-providers-hyperboliclabs-package" title="Link to this heading">¶</a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Link to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html">coinbase_agentkit.action_providers.hyperboliclabs.ai package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#module-coinbase_agentkit.action_providers.hyperboliclabs.ai.action_provider">coinbase_agentkit.action_providers.hyperboliclabs.ai.action_provider module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.action_provider.AIActionProvider"><code class="docutils literal notranslate"><span class="pre">AIActionProvider</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.action_provider.AIActionProvider.description"><code class="docutils literal notranslate"><span class="pre">AIActionProvider.description</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.action_provider.AIActionProvider.generate_audio"><code class="docutils literal notranslate"><span class="pre">AIActionProvider.generate_audio()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.action_provider.AIActionProvider.generate_image"><code class="docutils literal notranslate"><span class="pre">AIActionProvider.generate_image()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.action_provider.AIActionProvider.generate_text"><code class="docutils literal notranslate"><span class="pre">AIActionProvider.generate_text()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.action_provider.ai_action_provider"><code class="docutils literal notranslate"><span class="pre">ai_action_provider()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#module-coinbase_agentkit.action_providers.hyperboliclabs.ai.schemas">coinbase_agentkit.action_providers.hyperboliclabs.ai.schemas module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.schemas.GenerateAudioSchema"><code class="docutils literal notranslate"><span class="pre">GenerateAudioSchema</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.schemas.GenerateAudioSchema.language"><code class="docutils literal notranslate"><span class="pre">GenerateAudioSchema.language</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.schemas.GenerateAudioSchema.model_config"><code class="docutils literal notranslate"><span class="pre">GenerateAudioSchema.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.schemas.GenerateAudioSchema.speaker"><code class="docutils literal notranslate"><span class="pre">GenerateAudioSchema.speaker</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.schemas.GenerateAudioSchema.speed"><code class="docutils literal notranslate"><span class="pre">GenerateAudioSchema.speed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.schemas.GenerateAudioSchema.text"><code class="docutils literal notranslate"><span class="pre">GenerateAudioSchema.text</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.schemas.GenerateImageSchema"><code class="docutils literal notranslate"><span class="pre">GenerateImageSchema</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.schemas.GenerateImageSchema.height"><code class="docutils literal notranslate"><span class="pre">GenerateImageSchema.height</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.schemas.GenerateImageSchema.model_config"><code class="docutils literal notranslate"><span class="pre">GenerateImageSchema.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.schemas.GenerateImageSchema.model_name"><code class="docutils literal notranslate"><span class="pre">GenerateImageSchema.model_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.schemas.GenerateImageSchema.negative_prompt"><code class="docutils literal notranslate"><span class="pre">GenerateImageSchema.negative_prompt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.schemas.GenerateImageSchema.num_images"><code class="docutils literal notranslate"><span class="pre">GenerateImageSchema.num_images</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.schemas.GenerateImageSchema.prompt"><code class="docutils literal notranslate"><span class="pre">GenerateImageSchema.prompt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.schemas.GenerateImageSchema.steps"><code class="docutils literal notranslate"><span class="pre">GenerateImageSchema.steps</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.schemas.GenerateImageSchema.width"><code class="docutils literal notranslate"><span class="pre">GenerateImageSchema.width</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.schemas.GenerateTextSchema"><code class="docutils literal notranslate"><span class="pre">GenerateTextSchema</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.schemas.GenerateTextSchema.model"><code class="docutils literal notranslate"><span class="pre">GenerateTextSchema.model</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.schemas.GenerateTextSchema.model_config"><code class="docutils literal notranslate"><span class="pre">GenerateTextSchema.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.schemas.GenerateTextSchema.prompt"><code class="docutils literal notranslate"><span class="pre">GenerateTextSchema.prompt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.schemas.GenerateTextSchema.system_prompt"><code class="docutils literal notranslate"><span class="pre">GenerateTextSchema.system_prompt</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#module-coinbase_agentkit.action_providers.hyperboliclabs.ai.service">coinbase_agentkit.action_providers.hyperboliclabs.ai.service module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.service.AIService"><code class="docutils literal notranslate"><span class="pre">AIService</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.service.AIService.generate_audio"><code class="docutils literal notranslate"><span class="pre">AIService.generate_audio()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.service.AIService.generate_image"><code class="docutils literal notranslate"><span class="pre">AIService.generate_image()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.service.AIService.generate_text"><code class="docutils literal notranslate"><span class="pre">AIService.generate_text()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#module-coinbase_agentkit.action_providers.hyperboliclabs.ai.types">coinbase_agentkit.action_providers.hyperboliclabs.ai.types module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.AudioGenerationRequest"><code class="docutils literal notranslate"><span class="pre">AudioGenerationRequest</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.AudioGenerationRequest.language"><code class="docutils literal notranslate"><span class="pre">AudioGenerationRequest.language</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.AudioGenerationRequest.model_config"><code class="docutils literal notranslate"><span class="pre">AudioGenerationRequest.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.AudioGenerationRequest.noise_scale"><code class="docutils literal notranslate"><span class="pre">AudioGenerationRequest.noise_scale</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.AudioGenerationRequest.noise_scale_w"><code class="docutils literal notranslate"><span class="pre">AudioGenerationRequest.noise_scale_w</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.AudioGenerationRequest.sdp_ratio"><code class="docutils literal notranslate"><span class="pre">AudioGenerationRequest.sdp_ratio</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.AudioGenerationRequest.speaker"><code class="docutils literal notranslate"><span class="pre">AudioGenerationRequest.speaker</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.AudioGenerationRequest.speed"><code class="docutils literal notranslate"><span class="pre">AudioGenerationRequest.speed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.AudioGenerationRequest.text"><code class="docutils literal notranslate"><span class="pre">AudioGenerationRequest.text</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.AudioGenerationRequest.validate_language"><code class="docutils literal notranslate"><span class="pre">AudioGenerationRequest.validate_language()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.AudioGenerationRequest.validate_speaker"><code class="docutils literal notranslate"><span class="pre">AudioGenerationRequest.validate_speaker()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.AudioGenerationResponse"><code class="docutils literal notranslate"><span class="pre">AudioGenerationResponse</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.AudioGenerationResponse.audio"><code class="docutils literal notranslate"><span class="pre">AudioGenerationResponse.audio</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.AudioGenerationResponse.duration"><code class="docutils literal notranslate"><span class="pre">AudioGenerationResponse.duration</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.AudioGenerationResponse.model_config"><code class="docutils literal notranslate"><span class="pre">AudioGenerationResponse.model_config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionRequest"><code class="docutils literal notranslate"><span class="pre">ChatCompletionRequest</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionRequest.frequency_penalty"><code class="docutils literal notranslate"><span class="pre">ChatCompletionRequest.frequency_penalty</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionRequest.logit_bias"><code class="docutils literal notranslate"><span class="pre">ChatCompletionRequest.logit_bias</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionRequest.logprobs"><code class="docutils literal notranslate"><span class="pre">ChatCompletionRequest.logprobs</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionRequest.max_tokens"><code class="docutils literal notranslate"><span class="pre">ChatCompletionRequest.max_tokens</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionRequest.messages"><code class="docutils literal notranslate"><span class="pre">ChatCompletionRequest.messages</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionRequest.min_p"><code class="docutils literal notranslate"><span class="pre">ChatCompletionRequest.min_p</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionRequest.model"><code class="docutils literal notranslate"><span class="pre">ChatCompletionRequest.model</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionRequest.model_config"><code class="docutils literal notranslate"><span class="pre">ChatCompletionRequest.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionRequest.n"><code class="docutils literal notranslate"><span class="pre">ChatCompletionRequest.n</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionRequest.presence_penalty"><code class="docutils literal notranslate"><span class="pre">ChatCompletionRequest.presence_penalty</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionRequest.repetition_penalty"><code class="docutils literal notranslate"><span class="pre">ChatCompletionRequest.repetition_penalty</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionRequest.seed"><code class="docutils literal notranslate"><span class="pre">ChatCompletionRequest.seed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionRequest.stop"><code class="docutils literal notranslate"><span class="pre">ChatCompletionRequest.stop</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionRequest.stream"><code class="docutils literal notranslate"><span class="pre">ChatCompletionRequest.stream</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionRequest.temperature"><code class="docutils literal notranslate"><span class="pre">ChatCompletionRequest.temperature</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionRequest.top_k"><code class="docutils literal notranslate"><span class="pre">ChatCompletionRequest.top_k</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionRequest.top_logprobs"><code class="docutils literal notranslate"><span class="pre">ChatCompletionRequest.top_logprobs</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionRequest.top_p"><code class="docutils literal notranslate"><span class="pre">ChatCompletionRequest.top_p</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionRequest.user"><code class="docutils literal notranslate"><span class="pre">ChatCompletionRequest.user</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionResponse"><code class="docutils literal notranslate"><span class="pre">ChatCompletionResponse</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionResponse.choices"><code class="docutils literal notranslate"><span class="pre">ChatCompletionResponse.choices</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionResponse.created"><code class="docutils literal notranslate"><span class="pre">ChatCompletionResponse.created</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionResponse.id"><code class="docutils literal notranslate"><span class="pre">ChatCompletionResponse.id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionResponse.model"><code class="docutils literal notranslate"><span class="pre">ChatCompletionResponse.model</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionResponse.model_config"><code class="docutils literal notranslate"><span class="pre">ChatCompletionResponse.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionResponse.object"><code class="docutils literal notranslate"><span class="pre">ChatCompletionResponse.object</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionResponse.usage"><code class="docutils literal notranslate"><span class="pre">ChatCompletionResponse.usage</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionResponseChoice"><code class="docutils literal notranslate"><span class="pre">ChatCompletionResponseChoice</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionResponseChoice.finish_reason"><code class="docutils literal notranslate"><span class="pre">ChatCompletionResponseChoice.finish_reason</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionResponseChoice.index"><code class="docutils literal notranslate"><span class="pre">ChatCompletionResponseChoice.index</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionResponseChoice.message"><code class="docutils literal notranslate"><span class="pre">ChatCompletionResponseChoice.message</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionResponseChoice.model_config"><code class="docutils literal notranslate"><span class="pre">ChatCompletionResponseChoice.model_config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionResponseMessage"><code class="docutils literal notranslate"><span class="pre">ChatCompletionResponseMessage</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionResponseMessage.content"><code class="docutils literal notranslate"><span class="pre">ChatCompletionResponseMessage.content</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionResponseMessage.model_config"><code class="docutils literal notranslate"><span class="pre">ChatCompletionResponseMessage.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionResponseMessage.role"><code class="docutils literal notranslate"><span class="pre">ChatCompletionResponseMessage.role</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionResponseMessage.validate_role"><code class="docutils literal notranslate"><span class="pre">ChatCompletionResponseMessage.validate_role()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionResponseUsage"><code class="docutils literal notranslate"><span class="pre">ChatCompletionResponseUsage</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionResponseUsage.completion_tokens"><code class="docutils literal notranslate"><span class="pre">ChatCompletionResponseUsage.completion_tokens</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionResponseUsage.model_config"><code class="docutils literal notranslate"><span class="pre">ChatCompletionResponseUsage.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionResponseUsage.prompt_tokens"><code class="docutils literal notranslate"><span class="pre">ChatCompletionResponseUsage.prompt_tokens</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatCompletionResponseUsage.total_tokens"><code class="docutils literal notranslate"><span class="pre">ChatCompletionResponseUsage.total_tokens</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatMessage"><code class="docutils literal notranslate"><span class="pre">ChatMessage</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatMessage.content"><code class="docutils literal notranslate"><span class="pre">ChatMessage.content</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatMessage.model_config"><code class="docutils literal notranslate"><span class="pre">ChatMessage.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatMessage.role"><code class="docutils literal notranslate"><span class="pre">ChatMessage.role</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ChatMessage.validate_role"><code class="docutils literal notranslate"><span class="pre">ChatMessage.validate_role()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.GeneratedImage"><code class="docutils literal notranslate"><span class="pre">GeneratedImage</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.GeneratedImage.image"><code class="docutils literal notranslate"><span class="pre">GeneratedImage.image</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.GeneratedImage.index"><code class="docutils literal notranslate"><span class="pre">GeneratedImage.index</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.GeneratedImage.model_config"><code class="docutils literal notranslate"><span class="pre">GeneratedImage.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.GeneratedImage.random_seed"><code class="docutils literal notranslate"><span class="pre">GeneratedImage.random_seed</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageGenerationRequest"><code class="docutils literal notranslate"><span class="pre">ImageGenerationRequest</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageGenerationRequest.backend"><code class="docutils literal notranslate"><span class="pre">ImageGenerationRequest.backend</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageGenerationRequest.cfg_scale"><code class="docutils literal notranslate"><span class="pre">ImageGenerationRequest.cfg_scale</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageGenerationRequest.controlnet_image"><code class="docutils literal notranslate"><span class="pre">ImageGenerationRequest.controlnet_image</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageGenerationRequest.controlnet_name"><code class="docutils literal notranslate"><span class="pre">ImageGenerationRequest.controlnet_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageGenerationRequest.enable_refiner"><code class="docutils literal notranslate"><span class="pre">ImageGenerationRequest.enable_refiner</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageGenerationRequest.height"><code class="docutils literal notranslate"><span class="pre">ImageGenerationRequest.height</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageGenerationRequest.loras"><code class="docutils literal notranslate"><span class="pre">ImageGenerationRequest.loras</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageGenerationRequest.model_config"><code class="docutils literal notranslate"><span class="pre">ImageGenerationRequest.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageGenerationRequest.model_name"><code class="docutils literal notranslate"><span class="pre">ImageGenerationRequest.model_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageGenerationRequest.negative_prompt"><code class="docutils literal notranslate"><span class="pre">ImageGenerationRequest.negative_prompt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageGenerationRequest.num_images"><code class="docutils literal notranslate"><span class="pre">ImageGenerationRequest.num_images</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageGenerationRequest.prompt"><code class="docutils literal notranslate"><span class="pre">ImageGenerationRequest.prompt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageGenerationRequest.seed"><code class="docutils literal notranslate"><span class="pre">ImageGenerationRequest.seed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageGenerationRequest.steps"><code class="docutils literal notranslate"><span class="pre">ImageGenerationRequest.steps</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageGenerationRequest.style_preset"><code class="docutils literal notranslate"><span class="pre">ImageGenerationRequest.style_preset</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageGenerationRequest.width"><code class="docutils literal notranslate"><span class="pre">ImageGenerationRequest.width</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageGenerationResponse"><code class="docutils literal notranslate"><span class="pre">ImageGenerationResponse</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageGenerationResponse.images"><code class="docutils literal notranslate"><span class="pre">ImageGenerationResponse.images</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageGenerationResponse.inference_time"><code class="docutils literal notranslate"><span class="pre">ImageGenerationResponse.inference_time</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageGenerationResponse.model_config"><code class="docutils literal notranslate"><span class="pre">ImageGenerationResponse.model_config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageMetadata"><code class="docutils literal notranslate"><span class="pre">ImageMetadata</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageMetadata.cfg_scale"><code class="docutils literal notranslate"><span class="pre">ImageMetadata.cfg_scale</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageMetadata.model_config"><code class="docutils literal notranslate"><span class="pre">ImageMetadata.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageMetadata.negative_prompt"><code class="docutils literal notranslate"><span class="pre">ImageMetadata.negative_prompt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageMetadata.prompt"><code class="docutils literal notranslate"><span class="pre">ImageMetadata.prompt</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageMetadata.seed"><code class="docutils literal notranslate"><span class="pre">ImageMetadata.seed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.types.ImageMetadata.steps"><code class="docutils literal notranslate"><span class="pre">ImageMetadata.steps</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#module-coinbase_agentkit.action_providers.hyperboliclabs.ai.utils">coinbase_agentkit.action_providers.hyperboliclabs.ai.utils module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.utils.save_base64_data"><code class="docutils literal notranslate"><span class="pre">save_base64_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.utils.save_text"><code class="docutils literal notranslate"><span class="pre">save_text()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#module-coinbase_agentkit.action_providers.hyperboliclabs.ai">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.AIActionProvider"><code class="docutils literal notranslate"><span class="pre">AIActionProvider</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.AIActionProvider.description"><code class="docutils literal notranslate"><span class="pre">AIActionProvider.description</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.AIActionProvider.generate_audio"><code class="docutils literal notranslate"><span class="pre">AIActionProvider.generate_audio()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.AIActionProvider.generate_image"><code class="docutils literal notranslate"><span class="pre">AIActionProvider.generate_image()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.AIActionProvider.generate_text"><code class="docutils literal notranslate"><span class="pre">AIActionProvider.generate_text()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html#coinbase_agentkit.action_providers.hyperboliclabs.ai.ai_action_provider"><code class="docutils literal notranslate"><span class="pre">ai_action_provider()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html">coinbase_agentkit.action_providers.hyperboliclabs.billing package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#module-coinbase_agentkit.action_providers.hyperboliclabs.billing.action_provider">coinbase_agentkit.action_providers.hyperboliclabs.billing.action_provider module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.action_provider.BillingActionProvider"><code class="docutils literal notranslate"><span class="pre">BillingActionProvider</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.action_provider.BillingActionProvider.get_current_balance"><code class="docutils literal notranslate"><span class="pre">BillingActionProvider.get_current_balance()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.action_provider.BillingActionProvider.get_purchase_history"><code class="docutils literal notranslate"><span class="pre">BillingActionProvider.get_purchase_history()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.action_provider.BillingActionProvider.get_spend_history"><code class="docutils literal notranslate"><span class="pre">BillingActionProvider.get_spend_history()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.action_provider.hyperbolic_billing_action_provider"><code class="docutils literal notranslate"><span class="pre">hyperbolic_billing_action_provider()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#module-coinbase_agentkit.action_providers.hyperboliclabs.billing.schemas">coinbase_agentkit.action_providers.hyperboliclabs.billing.schemas module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.schemas.GetCurrentBalanceSchema"><code class="docutils literal notranslate"><span class="pre">GetCurrentBalanceSchema</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.schemas.GetCurrentBalanceSchema.model_config"><code class="docutils literal notranslate"><span class="pre">GetCurrentBalanceSchema.model_config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.schemas.GetPurchaseHistorySchema"><code class="docutils literal notranslate"><span class="pre">GetPurchaseHistorySchema</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.schemas.GetPurchaseHistorySchema.model_config"><code class="docutils literal notranslate"><span class="pre">GetPurchaseHistorySchema.model_config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.schemas.GetSpendHistorySchema"><code class="docutils literal notranslate"><span class="pre">GetSpendHistorySchema</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.schemas.GetSpendHistorySchema.model_config"><code class="docutils literal notranslate"><span class="pre">GetSpendHistorySchema.model_config</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#module-coinbase_agentkit.action_providers.hyperboliclabs.billing.service">coinbase_agentkit.action_providers.hyperboliclabs.billing.service module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.service.BillingService"><code class="docutils literal notranslate"><span class="pre">BillingService</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.service.BillingService.get_balance"><code class="docutils literal notranslate"><span class="pre">BillingService.get_balance()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.service.BillingService.get_purchase_history"><code class="docutils literal notranslate"><span class="pre">BillingService.get_purchase_history()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#module-coinbase_agentkit.action_providers.hyperboliclabs.billing.types">coinbase_agentkit.action_providers.hyperboliclabs.billing.types module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.BillingBalanceResponse"><code class="docutils literal notranslate"><span class="pre">BillingBalanceResponse</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.BillingBalanceResponse.credits"><code class="docutils literal notranslate"><span class="pre">BillingBalanceResponse.credits</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.BillingBalanceResponse.model_config"><code class="docutils literal notranslate"><span class="pre">BillingBalanceResponse.model_config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.BillingPurchaseHistoryEntry"><code class="docutils literal notranslate"><span class="pre">BillingPurchaseHistoryEntry</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.BillingPurchaseHistoryEntry.amount"><code class="docutils literal notranslate"><span class="pre">BillingPurchaseHistoryEntry.amount</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.BillingPurchaseHistoryEntry.model_config"><code class="docutils literal notranslate"><span class="pre">BillingPurchaseHistoryEntry.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.BillingPurchaseHistoryEntry.source"><code class="docutils literal notranslate"><span class="pre">BillingPurchaseHistoryEntry.source</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.BillingPurchaseHistoryEntry.timestamp"><code class="docutils literal notranslate"><span class="pre">BillingPurchaseHistoryEntry.timestamp</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.BillingPurchaseHistoryResponse"><code class="docutils literal notranslate"><span class="pre">BillingPurchaseHistoryResponse</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.BillingPurchaseHistoryResponse.model_config"><code class="docutils literal notranslate"><span class="pre">BillingPurchaseHistoryResponse.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.BillingPurchaseHistoryResponse.purchase_history"><code class="docutils literal notranslate"><span class="pre">BillingPurchaseHistoryResponse.purchase_history</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.CpuHardware"><code class="docutils literal notranslate"><span class="pre">CpuHardware</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.CpuHardware.cores"><code class="docutils literal notranslate"><span class="pre">CpuHardware.cores</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.CpuHardware.hardware_type"><code class="docutils literal notranslate"><span class="pre">CpuHardware.hardware_type</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.CpuHardware.model"><code class="docutils literal notranslate"><span class="pre">CpuHardware.model</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.CpuHardware.model_config"><code class="docutils literal notranslate"><span class="pre">CpuHardware.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.CpuHardware.virtual_cores"><code class="docutils literal notranslate"><span class="pre">CpuHardware.virtual_cores</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.GpuHardware"><code class="docutils literal notranslate"><span class="pre">GpuHardware</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.GpuHardware.clock_speed"><code class="docutils literal notranslate"><span class="pre">GpuHardware.clock_speed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.GpuHardware.compute_power"><code class="docutils literal notranslate"><span class="pre">GpuHardware.compute_power</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.GpuHardware.hardware_type"><code class="docutils literal notranslate"><span class="pre">GpuHardware.hardware_type</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.GpuHardware.interface"><code class="docutils literal notranslate"><span class="pre">GpuHardware.interface</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.GpuHardware.model"><code class="docutils literal notranslate"><span class="pre">GpuHardware.model</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.GpuHardware.model_config"><code class="docutils literal notranslate"><span class="pre">GpuHardware.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.GpuHardware.ram"><code class="docutils literal notranslate"><span class="pre">GpuHardware.ram</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.HardwareInfo"><code class="docutils literal notranslate"><span class="pre">HardwareInfo</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.HardwareInfo.cpus"><code class="docutils literal notranslate"><span class="pre">HardwareInfo.cpus</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.HardwareInfo.gpus"><code class="docutils literal notranslate"><span class="pre">HardwareInfo.gpus</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.HardwareInfo.model_config"><code class="docutils literal notranslate"><span class="pre">HardwareInfo.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.HardwareInfo.ram"><code class="docutils literal notranslate"><span class="pre">HardwareInfo.ram</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.HardwareInfo.storage"><code class="docutils literal notranslate"><span class="pre">HardwareInfo.storage</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.Price"><code class="docutils literal notranslate"><span class="pre">Price</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.Price.agent"><code class="docutils literal notranslate"><span class="pre">Price.agent</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.Price.amount"><code class="docutils literal notranslate"><span class="pre">Price.amount</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.Price.model_config"><code class="docutils literal notranslate"><span class="pre">Price.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.Price.period"><code class="docutils literal notranslate"><span class="pre">Price.period</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.RamHardware"><code class="docutils literal notranslate"><span class="pre">RamHardware</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.RamHardware.capacity"><code class="docutils literal notranslate"><span class="pre">RamHardware.capacity</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.RamHardware.hardware_type"><code class="docutils literal notranslate"><span class="pre">RamHardware.hardware_type</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.RamHardware.model_config"><code class="docutils literal notranslate"><span class="pre">RamHardware.model_config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.StorageHardware"><code class="docutils literal notranslate"><span class="pre">StorageHardware</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.StorageHardware.capacity"><code class="docutils literal notranslate"><span class="pre">StorageHardware.capacity</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.StorageHardware.hardware_type"><code class="docutils literal notranslate"><span class="pre">StorageHardware.hardware_type</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.types.StorageHardware.model_config"><code class="docutils literal notranslate"><span class="pre">StorageHardware.model_config</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#module-coinbase_agentkit.action_providers.hyperboliclabs.billing.utils">coinbase_agentkit.action_providers.hyperboliclabs.billing.utils module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.utils.calculate_duration_seconds"><code class="docutils literal notranslate"><span class="pre">calculate_duration_seconds()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.utils.format_purchase_history"><code class="docutils literal notranslate"><span class="pre">format_purchase_history()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.utils.format_spend_history"><code class="docutils literal notranslate"><span class="pre">format_spend_history()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#module-coinbase_agentkit.action_providers.hyperboliclabs.billing">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.BillingActionProvider"><code class="docutils literal notranslate"><span class="pre">BillingActionProvider</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.BillingActionProvider.get_current_balance"><code class="docutils literal notranslate"><span class="pre">BillingActionProvider.get_current_balance()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.BillingActionProvider.get_purchase_history"><code class="docutils literal notranslate"><span class="pre">BillingActionProvider.get_purchase_history()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.BillingActionProvider.get_spend_history"><code class="docutils literal notranslate"><span class="pre">BillingActionProvider.get_spend_history()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html#coinbase_agentkit.action_providers.hyperboliclabs.billing.hyperbolic_billing_action_provider"><code class="docutils literal notranslate"><span class="pre">hyperbolic_billing_action_provider()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html">coinbase_agentkit.action_providers.hyperboliclabs.marketplace package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#module-coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.MarketplaceActionProvider"><code class="docutils literal notranslate"><span class="pre">MarketplaceActionProvider</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.MarketplaceActionProvider.get_available_gpus"><code class="docutils literal notranslate"><span class="pre">MarketplaceActionProvider.get_available_gpus()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.MarketplaceActionProvider.get_available_gpus_by_type"><code class="docutils literal notranslate"><span class="pre">MarketplaceActionProvider.get_available_gpus_by_type()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.MarketplaceActionProvider.get_available_gpus_types"><code class="docutils literal notranslate"><span class="pre">MarketplaceActionProvider.get_available_gpus_types()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.MarketplaceActionProvider.get_gpu_status"><code class="docutils literal notranslate"><span class="pre">MarketplaceActionProvider.get_gpu_status()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.MarketplaceActionProvider.rent_compute"><code class="docutils literal notranslate"><span class="pre">MarketplaceActionProvider.rent_compute()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.MarketplaceActionProvider.terminate_compute"><code class="docutils literal notranslate"><span class="pre">MarketplaceActionProvider.terminate_compute()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.hyperbolic_marketplace_action_provider"><code class="docutils literal notranslate"><span class="pre">hyperbolic_marketplace_action_provider()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#module-coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.GetAvailableGpusByTypeSchema"><code class="docutils literal notranslate"><span class="pre">GetAvailableGpusByTypeSchema</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.GetAvailableGpusByTypeSchema.gpu_model"><code class="docutils literal notranslate"><span class="pre">GetAvailableGpusByTypeSchema.gpu_model</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.GetAvailableGpusByTypeSchema.model_config"><code class="docutils literal notranslate"><span class="pre">GetAvailableGpusByTypeSchema.model_config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.GetAvailableGpusSchema"><code class="docutils literal notranslate"><span class="pre">GetAvailableGpusSchema</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.GetAvailableGpusSchema.model_config"><code class="docutils literal notranslate"><span class="pre">GetAvailableGpusSchema.model_config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.GetAvailableGpusTypesSchema"><code class="docutils literal notranslate"><span class="pre">GetAvailableGpusTypesSchema</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.GetAvailableGpusTypesSchema.model_config"><code class="docutils literal notranslate"><span class="pre">GetAvailableGpusTypesSchema.model_config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.GetGpuStatusSchema"><code class="docutils literal notranslate"><span class="pre">GetGpuStatusSchema</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.GetGpuStatusSchema.model_config"><code class="docutils literal notranslate"><span class="pre">GetGpuStatusSchema.model_config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.RentComputeSchema"><code class="docutils literal notranslate"><span class="pre">RentComputeSchema</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.RentComputeSchema.cluster_name"><code class="docutils literal notranslate"><span class="pre">RentComputeSchema.cluster_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.RentComputeSchema.gpu_count"><code class="docutils literal notranslate"><span class="pre">RentComputeSchema.gpu_count</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.RentComputeSchema.model_config"><code class="docutils literal notranslate"><span class="pre">RentComputeSchema.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.RentComputeSchema.node_name"><code class="docutils literal notranslate"><span class="pre">RentComputeSchema.node_name</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.TerminateComputeSchema"><code class="docutils literal notranslate"><span class="pre">TerminateComputeSchema</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.TerminateComputeSchema.id"><code class="docutils literal notranslate"><span class="pre">TerminateComputeSchema.id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.TerminateComputeSchema.model_config"><code class="docutils literal notranslate"><span class="pre">TerminateComputeSchema.model_config</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#module-coinbase_agentkit.action_providers.hyperboliclabs.marketplace.service">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.service module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.service.MarketplaceService"><code class="docutils literal notranslate"><span class="pre">MarketplaceService</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.service.MarketplaceService.get_available_instances"><code class="docutils literal notranslate"><span class="pre">MarketplaceService.get_available_instances()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.service.MarketplaceService.get_instance_history"><code class="docutils literal notranslate"><span class="pre">MarketplaceService.get_instance_history()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.service.MarketplaceService.get_rented_instances"><code class="docutils literal notranslate"><span class="pre">MarketplaceService.get_rented_instances()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.service.MarketplaceService.rent_instance"><code class="docutils literal notranslate"><span class="pre">MarketplaceService.rent_instance()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.service.MarketplaceService.terminate_instance"><code class="docutils literal notranslate"><span class="pre">MarketplaceService.terminate_instance()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#module-coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.AvailableInstance"><code class="docutils literal notranslate"><span class="pre">AvailableInstance</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.AvailableInstance.model_config"><code class="docutils literal notranslate"><span class="pre">AvailableInstance.model_config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.AvailableInstancesResponse"><code class="docutils literal notranslate"><span class="pre">AvailableInstancesResponse</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.AvailableInstancesResponse.instances"><code class="docutils literal notranslate"><span class="pre">AvailableInstancesResponse.instances</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.AvailableInstancesResponse.model_config"><code class="docutils literal notranslate"><span class="pre">AvailableInstancesResponse.model_config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.ContainerImage"><code class="docutils literal notranslate"><span class="pre">ContainerImage</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.ContainerImage.model_config"><code class="docutils literal notranslate"><span class="pre">ContainerImage.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.ContainerImage.name"><code class="docutils literal notranslate"><span class="pre">ContainerImage.name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.ContainerImage.port"><code class="docutils literal notranslate"><span class="pre">ContainerImage.port</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.ContainerImage.tag"><code class="docutils literal notranslate"><span class="pre">ContainerImage.tag</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.CpuHardware"><code class="docutils literal notranslate"><span class="pre">CpuHardware</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.CpuHardware.cores"><code class="docutils literal notranslate"><span class="pre">CpuHardware.cores</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.CpuHardware.hardware_type"><code class="docutils literal notranslate"><span class="pre">CpuHardware.hardware_type</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.CpuHardware.model"><code class="docutils literal notranslate"><span class="pre">CpuHardware.model</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.CpuHardware.model_config"><code class="docutils literal notranslate"><span class="pre">CpuHardware.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.CpuHardware.virtual_cores"><code class="docutils literal notranslate"><span class="pre">CpuHardware.virtual_cores</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.GpuHardware"><code class="docutils literal notranslate"><span class="pre">GpuHardware</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.GpuHardware.clock_speed"><code class="docutils literal notranslate"><span class="pre">GpuHardware.clock_speed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.GpuHardware.compute_power"><code class="docutils literal notranslate"><span class="pre">GpuHardware.compute_power</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.GpuHardware.hardware_type"><code class="docutils literal notranslate"><span class="pre">GpuHardware.hardware_type</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.GpuHardware.interface"><code class="docutils literal notranslate"><span class="pre">GpuHardware.interface</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.GpuHardware.model"><code class="docutils literal notranslate"><span class="pre">GpuHardware.model</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.GpuHardware.model_config"><code class="docutils literal notranslate"><span class="pre">GpuHardware.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.GpuHardware.ram"><code class="docutils literal notranslate"><span class="pre">GpuHardware.ram</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.HardwareInfo"><code class="docutils literal notranslate"><span class="pre">HardwareInfo</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.HardwareInfo.cpus"><code class="docutils literal notranslate"><span class="pre">HardwareInfo.cpus</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.HardwareInfo.gpus"><code class="docutils literal notranslate"><span class="pre">HardwareInfo.gpus</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.HardwareInfo.model_config"><code class="docutils literal notranslate"><span class="pre">HardwareInfo.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.HardwareInfo.ram"><code class="docutils literal notranslate"><span class="pre">HardwareInfo.ram</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.HardwareInfo.storage"><code class="docutils literal notranslate"><span class="pre">HardwareInfo.storage</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryEntry"><code class="docutils literal notranslate"><span class="pre">InstanceHistoryEntry</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryEntry.gpu_count"><code class="docutils literal notranslate"><span class="pre">InstanceHistoryEntry.gpu_count</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryEntry.hardware"><code class="docutils literal notranslate"><span class="pre">InstanceHistoryEntry.hardware</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryEntry.instance_name"><code class="docutils literal notranslate"><span class="pre">InstanceHistoryEntry.instance_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryEntry.model_config"><code class="docutils literal notranslate"><span class="pre">InstanceHistoryEntry.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryEntry.price"><code class="docutils literal notranslate"><span class="pre">InstanceHistoryEntry.price</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryEntry.started_at"><code class="docutils literal notranslate"><span class="pre">InstanceHistoryEntry.started_at</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryEntry.terminated_at"><code class="docutils literal notranslate"><span class="pre">InstanceHistoryEntry.terminated_at</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryResponse"><code class="docutils literal notranslate"><span class="pre">InstanceHistoryResponse</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryResponse.instance_history"><code class="docutils literal notranslate"><span class="pre">InstanceHistoryResponse.instance_history</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryResponse.model_config"><code class="docutils literal notranslate"><span class="pre">InstanceHistoryResponse.model_config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Location"><code class="docutils literal notranslate"><span class="pre">Location</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Location.model_config"><code class="docutils literal notranslate"><span class="pre">Location.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Location.region"><code class="docutils literal notranslate"><span class="pre">Location.region</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedGpuHardware"><code class="docutils literal notranslate"><span class="pre">NestedGpuHardware</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedGpuHardware.hardware_type"><code class="docutils literal notranslate"><span class="pre">NestedGpuHardware.hardware_type</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedGpuHardware.model"><code class="docutils literal notranslate"><span class="pre">NestedGpuHardware.model</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedGpuHardware.model_config"><code class="docutils literal notranslate"><span class="pre">NestedGpuHardware.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedGpuHardware.ram"><code class="docutils literal notranslate"><span class="pre">NestedGpuHardware.ram</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedHardwareComponent"><code class="docutils literal notranslate"><span class="pre">NestedHardwareComponent</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedHardwareComponent.gpu"><code class="docutils literal notranslate"><span class="pre">NestedHardwareComponent.gpu</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedHardwareComponent.model_config"><code class="docutils literal notranslate"><span class="pre">NestedHardwareComponent.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedHardwareComponent.storage"><code class="docutils literal notranslate"><span class="pre">NestedHardwareComponent.storage</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedInstance"><code class="docutils literal notranslate"><span class="pre">NestedInstance</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedInstance.hardware"><code class="docutils literal notranslate"><span class="pre">NestedInstance.hardware</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedInstance.id"><code class="docutils literal notranslate"><span class="pre">NestedInstance.id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedInstance.model_config"><code class="docutils literal notranslate"><span class="pre">NestedInstance.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedInstance.status"><code class="docutils literal notranslate"><span class="pre">NestedInstance.status</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedStorageHardware"><code class="docutils literal notranslate"><span class="pre">NestedStorageHardware</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedStorageHardware.capacity"><code class="docutils literal notranslate"><span class="pre">NestedStorageHardware.capacity</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedStorageHardware.hardware_type"><code class="docutils literal notranslate"><span class="pre">NestedStorageHardware.hardware_type</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedStorageHardware.model_config"><code class="docutils literal notranslate"><span class="pre">NestedStorageHardware.model_config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance"><code class="docutils literal notranslate"><span class="pre">NodeInstance</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.cluster_name"><code class="docutils literal notranslate"><span class="pre">NodeInstance.cluster_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.gpu_count"><code class="docutils literal notranslate"><span class="pre">NodeInstance.gpu_count</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.gpus_reserved"><code class="docutils literal notranslate"><span class="pre">NodeInstance.gpus_reserved</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.gpus_total"><code class="docutils literal notranslate"><span class="pre">NodeInstance.gpus_total</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.hardware"><code class="docutils literal notranslate"><span class="pre">NodeInstance.hardware</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.has_persistent_storage"><code class="docutils literal notranslate"><span class="pre">NodeInstance.has_persistent_storage</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.id"><code class="docutils literal notranslate"><span class="pre">NodeInstance.id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.instances"><code class="docutils literal notranslate"><span class="pre">NodeInstance.instances</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.location"><code class="docutils literal notranslate"><span class="pre">NodeInstance.location</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.model_config"><code class="docutils literal notranslate"><span class="pre">NodeInstance.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.network"><code class="docutils literal notranslate"><span class="pre">NodeInstance.network</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.owner"><code class="docutils literal notranslate"><span class="pre">NodeInstance.owner</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.pricing"><code class="docutils literal notranslate"><span class="pre">NodeInstance.pricing</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.reserved"><code class="docutils literal notranslate"><span class="pre">NodeInstance.reserved</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.status"><code class="docutils literal notranslate"><span class="pre">NodeInstance.status</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.supplier_id"><code class="docutils literal notranslate"><span class="pre">NodeInstance.supplier_id</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental"><code class="docutils literal notranslate"><span class="pre">NodeRental</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental.end"><code class="docutils literal notranslate"><span class="pre">NodeRental.end</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental.id"><code class="docutils literal notranslate"><span class="pre">NodeRental.id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental.instance"><code class="docutils literal notranslate"><span class="pre">NodeRental.instance</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental.model_config"><code class="docutils literal notranslate"><span class="pre">NodeRental.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental.ssh_access"><code class="docutils literal notranslate"><span class="pre">NodeRental.ssh_access</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental.ssh_command"><code class="docutils literal notranslate"><span class="pre">NodeRental.ssh_command</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental.start"><code class="docutils literal notranslate"><span class="pre">NodeRental.start</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental.status"><code class="docutils literal notranslate"><span class="pre">NodeRental.status</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Price"><code class="docutils literal notranslate"><span class="pre">Price</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Price.agent"><code class="docutils literal notranslate"><span class="pre">Price.agent</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Price.amount"><code class="docutils literal notranslate"><span class="pre">Price.amount</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Price.model_config"><code class="docutils literal notranslate"><span class="pre">Price.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Price.period"><code class="docutils literal notranslate"><span class="pre">Price.period</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.PricingInfo"><code class="docutils literal notranslate"><span class="pre">PricingInfo</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.PricingInfo.model_config"><code class="docutils literal notranslate"><span class="pre">PricingInfo.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.PricingInfo.price"><code class="docutils literal notranslate"><span class="pre">PricingInfo.price</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RamHardware"><code class="docutils literal notranslate"><span class="pre">RamHardware</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RamHardware.capacity"><code class="docutils literal notranslate"><span class="pre">RamHardware.capacity</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RamHardware.hardware_type"><code class="docutils literal notranslate"><span class="pre">RamHardware.hardware_type</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RamHardware.model_config"><code class="docutils literal notranslate"><span class="pre">RamHardware.model_config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceRequest"><code class="docutils literal notranslate"><span class="pre">RentInstanceRequest</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceRequest.cluster_name"><code class="docutils literal notranslate"><span class="pre">RentInstanceRequest.cluster_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceRequest.gpu_count"><code class="docutils literal notranslate"><span class="pre">RentInstanceRequest.gpu_count</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceRequest.image"><code class="docutils literal notranslate"><span class="pre">RentInstanceRequest.image</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceRequest.model_config"><code class="docutils literal notranslate"><span class="pre">RentInstanceRequest.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceRequest.node_name"><code class="docutils literal notranslate"><span class="pre">RentInstanceRequest.node_name</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceResponse"><code class="docutils literal notranslate"><span class="pre">RentInstanceResponse</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceResponse.instance_name"><code class="docutils literal notranslate"><span class="pre">RentInstanceResponse.instance_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceResponse.model_config"><code class="docutils literal notranslate"><span class="pre">RentInstanceResponse.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceResponse.status"><code class="docutils literal notranslate"><span class="pre">RentInstanceResponse.status</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentedInstancesResponse"><code class="docutils literal notranslate"><span class="pre">RentedInstancesResponse</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentedInstancesResponse.instances"><code class="docutils literal notranslate"><span class="pre">RentedInstancesResponse.instances</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentedInstancesResponse.model_config"><code class="docutils literal notranslate"><span class="pre">RentedInstancesResponse.model_config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.SSHAccess"><code class="docutils literal notranslate"><span class="pre">SSHAccess</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.SSHAccess.host"><code class="docutils literal notranslate"><span class="pre">SSHAccess.host</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.SSHAccess.key_path"><code class="docutils literal notranslate"><span class="pre">SSHAccess.key_path</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.SSHAccess.model_config"><code class="docutils literal notranslate"><span class="pre">SSHAccess.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.SSHAccess.ssh_command"><code class="docutils literal notranslate"><span class="pre">SSHAccess.ssh_command</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.SSHAccess.username"><code class="docutils literal notranslate"><span class="pre">SSHAccess.username</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.StorageHardware"><code class="docutils literal notranslate"><span class="pre">StorageHardware</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.StorageHardware.capacity"><code class="docutils literal notranslate"><span class="pre">StorageHardware.capacity</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.StorageHardware.hardware_type"><code class="docutils literal notranslate"><span class="pre">StorageHardware.hardware_type</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.StorageHardware.model_config"><code class="docutils literal notranslate"><span class="pre">StorageHardware.model_config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceRequest"><code class="docutils literal notranslate"><span class="pre">TerminateInstanceRequest</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceRequest.id"><code class="docutils literal notranslate"><span class="pre">TerminateInstanceRequest.id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceRequest.model_config"><code class="docutils literal notranslate"><span class="pre">TerminateInstanceRequest.model_config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceResponse"><code class="docutils literal notranslate"><span class="pre">TerminateInstanceResponse</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceResponse.error_code"><code class="docutils literal notranslate"><span class="pre">TerminateInstanceResponse.error_code</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceResponse.get_status"><code class="docutils literal notranslate"><span class="pre">TerminateInstanceResponse.get_status</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceResponse.message"><code class="docutils literal notranslate"><span class="pre">TerminateInstanceResponse.message</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceResponse.model_config"><code class="docutils literal notranslate"><span class="pre">TerminateInstanceResponse.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceResponse.status"><code class="docutils literal notranslate"><span class="pre">TerminateInstanceResponse.status</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#module-coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.format_all_gpu_instances"><code class="docutils literal notranslate"><span class="pre">format_all_gpu_instances()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.format_gpu_instance"><code class="docutils literal notranslate"><span class="pre">format_gpu_instance()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.format_gpu_instances_by_type"><code class="docutils literal notranslate"><span class="pre">format_gpu_instances_by_type()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.format_gpu_status"><code class="docutils literal notranslate"><span class="pre">format_gpu_status()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.format_gpu_types"><code class="docutils literal notranslate"><span class="pre">format_gpu_types()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.format_rent_compute_response"><code class="docutils literal notranslate"><span class="pre">format_rent_compute_response()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.format_terminate_compute_response"><code class="docutils literal notranslate"><span class="pre">format_terminate_compute_response()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.get_api_key"><code class="docutils literal notranslate"><span class="pre">get_api_key()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#module-coinbase_agentkit.action_providers.hyperboliclabs.marketplace">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.MarketplaceActionProvider"><code class="docutils literal notranslate"><span class="pre">MarketplaceActionProvider</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.MarketplaceActionProvider.get_available_gpus"><code class="docutils literal notranslate"><span class="pre">MarketplaceActionProvider.get_available_gpus()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.MarketplaceActionProvider.get_available_gpus_by_type"><code class="docutils literal notranslate"><span class="pre">MarketplaceActionProvider.get_available_gpus_by_type()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.MarketplaceActionProvider.get_available_gpus_types"><code class="docutils literal notranslate"><span class="pre">MarketplaceActionProvider.get_available_gpus_types()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.MarketplaceActionProvider.get_gpu_status"><code class="docutils literal notranslate"><span class="pre">MarketplaceActionProvider.get_gpu_status()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.MarketplaceActionProvider.rent_compute"><code class="docutils literal notranslate"><span class="pre">MarketplaceActionProvider.rent_compute()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.MarketplaceActionProvider.terminate_compute"><code class="docutils literal notranslate"><span class="pre">MarketplaceActionProvider.terminate_compute()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.html#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.hyperbolic_marketplace_action_provider"><code class="docutils literal notranslate"><span class="pre">hyperbolic_marketplace_action_provider()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html">coinbase_agentkit.action_providers.hyperboliclabs.settings package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#module-coinbase_agentkit.action_providers.hyperboliclabs.settings.action_provider">coinbase_agentkit.action_providers.hyperboliclabs.settings.action_provider module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#coinbase_agentkit.action_providers.hyperboliclabs.settings.action_provider.SettingsActionProvider"><code class="docutils literal notranslate"><span class="pre">SettingsActionProvider</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#coinbase_agentkit.action_providers.hyperboliclabs.settings.action_provider.SettingsActionProvider.link_wallet_address"><code class="docutils literal notranslate"><span class="pre">SettingsActionProvider.link_wallet_address()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#coinbase_agentkit.action_providers.hyperboliclabs.settings.action_provider.hyperbolic_settings_action_provider"><code class="docutils literal notranslate"><span class="pre">hyperbolic_settings_action_provider()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#module-coinbase_agentkit.action_providers.hyperboliclabs.settings.schemas">coinbase_agentkit.action_providers.hyperboliclabs.settings.schemas module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#coinbase_agentkit.action_providers.hyperboliclabs.settings.schemas.LinkWalletAddressSchema"><code class="docutils literal notranslate"><span class="pre">LinkWalletAddressSchema</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#coinbase_agentkit.action_providers.hyperboliclabs.settings.schemas.LinkWalletAddressSchema.address"><code class="docutils literal notranslate"><span class="pre">LinkWalletAddressSchema.address</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#coinbase_agentkit.action_providers.hyperboliclabs.settings.schemas.LinkWalletAddressSchema.model_config"><code class="docutils literal notranslate"><span class="pre">LinkWalletAddressSchema.model_config</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#module-coinbase_agentkit.action_providers.hyperboliclabs.settings.service">coinbase_agentkit.action_providers.hyperboliclabs.settings.service module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#coinbase_agentkit.action_providers.hyperboliclabs.settings.service.SettingsService"><code class="docutils literal notranslate"><span class="pre">SettingsService</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#coinbase_agentkit.action_providers.hyperboliclabs.settings.service.SettingsService.link_wallet"><code class="docutils literal notranslate"><span class="pre">SettingsService.link_wallet()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#module-coinbase_agentkit.action_providers.hyperboliclabs.settings.types">coinbase_agentkit.action_providers.hyperboliclabs.settings.types module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#coinbase_agentkit.action_providers.hyperboliclabs.settings.types.WalletLinkRequest"><code class="docutils literal notranslate"><span class="pre">WalletLinkRequest</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#coinbase_agentkit.action_providers.hyperboliclabs.settings.types.WalletLinkRequest.address"><code class="docutils literal notranslate"><span class="pre">WalletLinkRequest.address</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#coinbase_agentkit.action_providers.hyperboliclabs.settings.types.WalletLinkRequest.model_config"><code class="docutils literal notranslate"><span class="pre">WalletLinkRequest.model_config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#coinbase_agentkit.action_providers.hyperboliclabs.settings.types.WalletLinkResponse"><code class="docutils literal notranslate"><span class="pre">WalletLinkResponse</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#coinbase_agentkit.action_providers.hyperboliclabs.settings.types.WalletLinkResponse.error_code"><code class="docutils literal notranslate"><span class="pre">WalletLinkResponse.error_code</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#coinbase_agentkit.action_providers.hyperboliclabs.settings.types.WalletLinkResponse.message"><code class="docutils literal notranslate"><span class="pre">WalletLinkResponse.message</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#coinbase_agentkit.action_providers.hyperboliclabs.settings.types.WalletLinkResponse.model_config"><code class="docutils literal notranslate"><span class="pre">WalletLinkResponse.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#coinbase_agentkit.action_providers.hyperboliclabs.settings.types.WalletLinkResponse.status"><code class="docutils literal notranslate"><span class="pre">WalletLinkResponse.status</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#coinbase_agentkit.action_providers.hyperboliclabs.settings.types.WalletLinkResponse.success"><code class="docutils literal notranslate"><span class="pre">WalletLinkResponse.success</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#module-coinbase_agentkit.action_providers.hyperboliclabs.settings.utils">coinbase_agentkit.action_providers.hyperboliclabs.settings.utils module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#coinbase_agentkit.action_providers.hyperboliclabs.settings.utils.format_wallet_link_response"><code class="docutils literal notranslate"><span class="pre">format_wallet_link_response()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#module-coinbase_agentkit.action_providers.hyperboliclabs.settings">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#coinbase_agentkit.action_providers.hyperboliclabs.settings.SettingsActionProvider"><code class="docutils literal notranslate"><span class="pre">SettingsActionProvider</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#coinbase_agentkit.action_providers.hyperboliclabs.settings.SettingsActionProvider.link_wallet_address"><code class="docutils literal notranslate"><span class="pre">SettingsActionProvider.link_wallet_address()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html#coinbase_agentkit.action_providers.hyperboliclabs.settings.hyperbolic_settings_action_provider"><code class="docutils literal notranslate"><span class="pre">hyperbolic_settings_action_provider()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-coinbase_agentkit.action_providers.hyperboliclabs.action_provider">
+<span id="coinbase-agentkit-action-providers-hyperboliclabs-action-provider-module"></span><h2>coinbase_agentkit.action_providers.hyperboliclabs.action_provider module<a class="headerlink" href="#module-coinbase_agentkit.action_providers.hyperboliclabs.action_provider" title="Link to this heading">¶</a></h2>
+<p>Base class for Hyperbolic action providers.</p>
+<p>This module provides a base class for all Hyperbolic action providers
+with centralized API key handling.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.action_provider.ActionProvider">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.action_provider.</span></span><span class="sig-name descname"><span class="pre">ActionProvider</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">action_providers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.action_provider.ActionProvider" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="coinbase_agentkit.action_providers.html#coinbase_agentkit.action_providers.action_provider.ActionProvider" title="coinbase_agentkit.action_providers.action_provider.ActionProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">ActionProvider</span></code></a>[<code class="xref py py-obj docutils literal notranslate"><span class="pre">TWalletProvider</span></code>]</p>
+<p>Base class for all Hyperbolic action providers.</p>
+<p>This base class centralizes API key handling for all Hyperbolic action providers.
+It requires an API key which can be provided directly or through the
+HYPERBOLIC_API_KEY environment variable.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.action_provider.ActionProvider.supports_network">
+<span class="sig-name descname"><span class="pre">supports_network</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">network</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.action_provider.ActionProvider.supports_network" title="Link to this definition">¶</a></dt>
+<dd><p>Check if network is supported by Hyperbolic actions.</p>
+<p>Hyperbolic services are not network-specific, so this always returns True.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>network</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="coinbase_agentkit.network.html#coinbase_agentkit.network.network.Network" title="coinbase_agentkit.network.network.Network"><code class="xref py py-class docutils literal notranslate"><span class="pre">Network</span></code></a></span>) – The network to check.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Always True as Hyperbolic services are network-agnostic.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-coinbase_agentkit.action_providers.hyperboliclabs.constants">
+<span id="coinbase-agentkit-action-providers-hyperboliclabs-constants-module"></span><h2>coinbase_agentkit.action_providers.hyperboliclabs.constants module<a class="headerlink" href="#module-coinbase_agentkit.action_providers.hyperboliclabs.constants" title="Link to this heading">¶</a></h2>
+<p>Constants for Hyperbolic API integration.</p>
+</section>
+<section id="module-coinbase_agentkit.action_providers.hyperboliclabs.hyperbolic_action_provider">
+<span id="coinbase-agentkit-action-providers-hyperboliclabs-hyperbolic-action-provider-module"></span><h2>coinbase_agentkit.action_providers.hyperboliclabs.hyperbolic_action_provider module<a class="headerlink" href="#module-coinbase_agentkit.action_providers.hyperboliclabs.hyperbolic_action_provider" title="Link to this heading">¶</a></h2>
+<p>Hyperbolic action provider.</p>
+<p>This module provides a unified interface to all Hyperbolic platform services.
+It includes sub-providers for marketplace (GPU compute), billing, AI services, and account settings.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.hyperbolic_action_provider.HyperbolicActionProvider">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.hyperbolic_action_provider.</span></span><span class="sig-name descname"><span class="pre">HyperbolicActionProvider</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.hyperbolic_action_provider.HyperbolicActionProvider" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="coinbase_agentkit.action_providers.html#coinbase_agentkit.action_providers.action_provider.ActionProvider" title="coinbase_agentkit.action_providers.action_provider.ActionProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">ActionProvider</span></code></a></p>
+<p>Provides unified access to all Hyperbolic platform services.</p>
+<p>This provider aggregates functionality from all Hyperbolic action providers:
+- ai: text, image, and audio generation
+- billing: balance, spending history
+- marketplace: GPU compute resources
+- settings: account settings management</p>
+<p>It requires an API key which can be provided directly or through the
+HYPERBOLIC_API_KEY environment variable.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.hyperbolic_action_provider.HyperbolicActionProvider.supports_network">
+<span class="sig-name descname"><span class="pre">supports_network</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">network</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.hyperbolic_action_provider.HyperbolicActionProvider.supports_network" title="Link to this definition">¶</a></dt>
+<dd><p>Check if network is supported by Hyperbolic actions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>network</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="coinbase_agentkit.network.html#coinbase_agentkit.network.network.Network" title="coinbase_agentkit.network.network.Network"><code class="xref py py-class docutils literal notranslate"><span class="pre">Network</span></code></a></span>) – The network to check.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True, as Hyperbolic actions don’t require any specific network.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.hyperbolic_action_provider.hyperbolic_action_provider">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.hyperbolic_action_provider.</span></span><span class="sig-name descname"><span class="pre">hyperbolic_action_provider</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.hyperbolic_action_provider.hyperbolic_action_provider" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new instance of the HyperbolicActionProvider.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>api_key</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</span>) – Optional API key for authentication. If not provided,
+will attempt to read from HYPERBOLIC_API_KEY environment variable.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.hyperbolic_action_provider.HyperbolicActionProvider" title="coinbase_agentkit.action_providers.hyperboliclabs.hyperbolic_action_provider.HyperbolicActionProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">HyperbolicActionProvider</span></code></a></span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A new Hyperbolic action provider instance.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-coinbase_agentkit.action_providers.hyperboliclabs.service">
+<span id="coinbase-agentkit-action-providers-hyperboliclabs-service-module"></span><h2>coinbase_agentkit.action_providers.hyperboliclabs.service module<a class="headerlink" href="#module-coinbase_agentkit.action_providers.hyperboliclabs.service" title="Link to this heading">¶</a></h2>
+<p>Base service for making API requests to Hyperbolic platform.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.service.Base">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.service.</span></span><span class="sig-name descname"><span class="pre">Base</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">base_url</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.service.Base" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Base class with common functionality.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.service.Base.make_request">
+<span class="sig-name descname"><span class="pre">make_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">endpoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'POST'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.service.Base.make_request" title="Link to this definition">¶</a></dt>
+<dd><p>Make an API request to the service endpoint.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>endpoint</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – The endpoint path to call.</p></li>
+<li><p><strong>method</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – The HTTP method to use (default: “POST”).</p></li>
+<li><p><strong>data</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</span>) – Optional JSON body for the request.</p></li>
+<li><p><strong>params</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</span>) – Optional query parameters.</p></li>
+<li><p><strong>headers</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]]</span>) – Optional additional headers.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The raw HTTP response object.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>requests.Response</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>requests.HTTPError</strong> – If the API returns an error response (4xx, 5xx),
+    with the error message and code extracted from the response when available.</p></li>
+<li><p><strong>requests.RequestException</strong> – For other request-related errors.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-coinbase_agentkit.action_providers.hyperboliclabs.utils">
+<span id="coinbase-agentkit-action-providers-hyperboliclabs-utils-module"></span><h2>coinbase_agentkit.action_providers.hyperboliclabs.utils module<a class="headerlink" href="#module-coinbase_agentkit.action_providers.hyperboliclabs.utils" title="Link to this heading">¶</a></h2>
+<p>Utility functions for Hyperbolic action provider.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.utils.get_api_key">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.utils.</span></span><span class="sig-name descname"><span class="pre">get_api_key</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.utils.get_api_key" title="Link to this definition">¶</a></dt>
+<dd><p>Get Hyperbolic API key from environment variables.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The API key.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – If API key is not configured.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-coinbase_agentkit.action_providers.hyperboliclabs">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-coinbase_agentkit.action_providers.hyperboliclabs" title="Link to this heading">¶</a></h2>
+<p>Hyperbolic Labs Action Provider for renting compute resources through the Hyperbolic Platform.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.HyperbolicActionProvider">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.</span></span><span class="sig-name descname"><span class="pre">HyperbolicActionProvider</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.HyperbolicActionProvider" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="coinbase_agentkit.action_providers.html#coinbase_agentkit.action_providers.action_provider.ActionProvider" title="coinbase_agentkit.action_providers.action_provider.ActionProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">ActionProvider</span></code></a></p>
+<p>Provides unified access to all Hyperbolic platform services.</p>
+<p>This provider aggregates functionality from all Hyperbolic action providers:
+- ai: text, image, and audio generation
+- billing: balance, spending history
+- marketplace: GPU compute resources
+- settings: account settings management</p>
+<p>It requires an API key which can be provided directly or through the
+HYPERBOLIC_API_KEY environment variable.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.HyperbolicActionProvider.supports_network">
+<span class="sig-name descname"><span class="pre">supports_network</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">network</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.HyperbolicActionProvider.supports_network" title="Link to this definition">¶</a></dt>
+<dd><p>Check if network is supported by Hyperbolic actions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>network</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="coinbase_agentkit.network.html#coinbase_agentkit.network.network.Network" title="coinbase_agentkit.network.network.Network"><code class="xref py py-class docutils literal notranslate"><span class="pre">Network</span></code></a></span>) – The network to check.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True, as Hyperbolic actions don’t require any specific network.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.hyperbolic_action_provider">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.</span></span><span class="sig-name descname"><span class="pre">hyperbolic_action_provider</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.hyperbolic_action_provider" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new instance of the HyperbolicActionProvider.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>api_key</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</span>) – Optional API key for authentication. If not provided,
+will attempt to read from HYPERBOLIC_API_KEY environment variable.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.hyperbolic_action_provider.HyperbolicActionProvider" title="coinbase_agentkit.action_providers.hyperboliclabs.hyperbolic_action_provider.HyperbolicActionProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">HyperbolicActionProvider</span></code></a></span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A new Hyperbolic action provider instance.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Coinbase Agentkit</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">coinbase_agentkit</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="coinbase_agentkit.html">coinbase_agentkit package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">coinbase_agentkit</a><ul>
+  <li><a href="coinbase_agentkit.html">coinbase_agentkit package</a><ul>
+  <li><a href="coinbase_agentkit.action_providers.html">coinbase_agentkit.action_providers package</a><ul>
+      <li>Previous: <a href="coinbase_agentkit.action_providers.erc721.html" title="previous chapter">coinbase_agentkit.action_providers.erc721 package</a></li>
+      <li>Next: <a href="coinbase_agentkit.action_providers.hyperboliclabs.ai.html" title="next chapter">coinbase_agentkit.action_providers.hyperboliclabs.ai package</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/coinbase_agentkit.action_providers.hyperboliclabs.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,64 @@
+coinbase\_agentkit.action\_providers.hyperboliclabs package
+===========================================================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   coinbase_agentkit.action_providers.hyperboliclabs.ai
+   coinbase_agentkit.action_providers.hyperboliclabs.billing
+   coinbase_agentkit.action_providers.hyperboliclabs.marketplace
+   coinbase_agentkit.action_providers.hyperboliclabs.settings
+
+Submodules
+----------
+
+coinbase\_agentkit.action\_providers.hyperboliclabs.action\_provider module
+---------------------------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.action_providers.hyperboliclabs.action_provider
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+coinbase\_agentkit.action\_providers.hyperboliclabs.constants module
+--------------------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.action_providers.hyperboliclabs.constants
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+coinbase\_agentkit.action\_providers.hyperboliclabs.hyperbolic\_action\_provider module
+---------------------------------------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.action_providers.hyperboliclabs.hyperbolic_action_provider
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+coinbase\_agentkit.action\_providers.hyperboliclabs.service module
+------------------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.action_providers.hyperboliclabs.service
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+coinbase\_agentkit.action\_providers.hyperboliclabs.utils module
+----------------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.action_providers.hyperboliclabs.utils
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: coinbase_agentkit.action_providers.hyperboliclabs
+   :members:
+   :undoc-members:
+   :show-inheritance:

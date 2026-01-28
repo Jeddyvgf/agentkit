@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>coinbase_agentkit.action_providers.cdp package &#8212; Coinbase Agentkit 0.7.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=fe7df9b0"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="coinbase_agentkit.action_providers.compound package" href="coinbase_agentkit.action_providers.compound.html" />
+    <link rel="prev" title="coinbase_agentkit.action_providers.basename package" href="coinbase_agentkit.action_providers.basename.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="coinbase-agentkit-action-providers-cdp-package">
+<h1>coinbase_agentkit.action_providers.cdp package<a class="headerlink" href="#coinbase-agentkit-action-providers-cdp-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-coinbase_agentkit.action_providers.cdp.cdp_api_action_provider">
+<span id="coinbase-agentkit-action-providers-cdp-cdp-api-action-provider-module"></span><h2>coinbase_agentkit.action_providers.cdp.cdp_api_action_provider module<a class="headerlink" href="#module-coinbase_agentkit.action_providers.cdp.cdp_api_action_provider" title="Link to this heading">¶</a></h2>
+<p>CDP API action provider.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.cdp.cdp_api_action_provider.CdpApiActionProvider">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.cdp.cdp_api_action_provider.</span></span><span class="sig-name descname"><span class="pre">CdpApiActionProvider</span></span><a class="headerlink" href="#coinbase_agentkit.action_providers.cdp.cdp_api_action_provider.CdpApiActionProvider" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="coinbase_agentkit.action_providers.html#coinbase_agentkit.action_providers.action_provider.ActionProvider" title="coinbase_agentkit.action_providers.action_provider.ActionProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">ActionProvider</span></code></a>[<code class="xref py py-obj docutils literal notranslate"><span class="pre">TWalletProvider</span></code>]</p>
+<p>Provides actions for interacting with CDP API.</p>
+<p>This provider is used for any action that uses the CDP API, but does not require a CDP Wallet.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.cdp.cdp_api_action_provider.CdpApiActionProvider.request_faucet_funds">
+<span class="sig-name descname"><span class="pre">request_faucet_funds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet_provider</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.cdp.cdp_api_action_provider.CdpApiActionProvider.request_faucet_funds" title="Link to this definition">¶</a></dt>
+<dd><p>Request test tokens from the faucet.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet_provider</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">TWalletProvider</span></code>, bound= <a class="reference internal" href="coinbase_agentkit.wallet_providers.html#coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider" title="coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvmWalletProvider</span></code></a>)</span>) – The wallet provider instance.</p></li>
+<li><p><strong>args</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</span>) – Input arguments for the action.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the action response or error details.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.cdp.cdp_api_action_provider.CdpApiActionProvider.supports_network">
+<span class="sig-name descname"><span class="pre">supports_network</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">network</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.cdp.cdp_api_action_provider.CdpApiActionProvider.supports_network" title="Link to this definition">¶</a></dt>
+<dd><p>Check if the network is supported by this action provider.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>network</strong> (<a class="reference internal" href="coinbase_agentkit.network.html#coinbase_agentkit.network.Network" title="coinbase_agentkit.network.Network"><em>Network</em></a>) – The network to check support for.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Whether the network is supported.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.cdp.cdp_api_action_provider.CdpApiActionProvider.swap">
+<span class="sig-name descname"><span class="pre">swap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet_provider</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.cdp.cdp_api_action_provider.CdpApiActionProvider.swap" title="Link to this definition">¶</a></dt>
+<dd><p>Swap tokens using CDP API.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet_provider</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">TWalletProvider</span></code>, bound= <a class="reference internal" href="coinbase_agentkit.wallet_providers.html#coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider" title="coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvmWalletProvider</span></code></a>)</span>) – The wallet provider instance.</p></li>
+<li><p><strong>args</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</span>) – Input arguments for the action.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the action response or error details.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.cdp.cdp_api_action_provider.cdp_api_action_provider">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.cdp.cdp_api_action_provider.</span></span><span class="sig-name descname"><span class="pre">cdp_api_action_provider</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.cdp.cdp_api_action_provider.cdp_api_action_provider" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new CDP API action provider.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A new CDP API action provider instance.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#coinbase_agentkit.action_providers.cdp.cdp_api_action_provider.CdpApiActionProvider" title="coinbase_agentkit.action_providers.cdp.cdp_api_action_provider.CdpApiActionProvider">CdpApiActionProvider</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-coinbase_agentkit.action_providers.cdp.schemas">
+<span id="coinbase-agentkit-action-providers-cdp-schemas-module"></span><h2>coinbase_agentkit.action_providers.cdp.schemas module<a class="headerlink" href="#module-coinbase_agentkit.action_providers.cdp.schemas" title="Link to this heading">¶</a></h2>
+<p>Schemas for CDP action providers.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.cdp.schemas.RequestFaucetFundsSchema">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.cdp.schemas.</span></span><span class="sig-name descname"><span class="pre">RequestFaucetFundsSchema</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.cdp.schemas.RequestFaucetFundsSchema" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Input schema for requesting faucet funds.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.cdp.schemas.RequestFaucetFundsSchema.asset_id">
+<span class="sig-name descname"><span class="pre">asset_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.cdp.schemas.RequestFaucetFundsSchema.asset_id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.cdp.schemas.RequestFaucetFundsSchema.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.cdp.schemas.RequestFaucetFundsSchema.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.cdp.schemas.SwapSchema">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.cdp.schemas.</span></span><span class="sig-name descname"><span class="pre">SwapSchema</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.cdp.schemas.SwapSchema" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Input schema for token swapping.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.cdp.schemas.SwapSchema.amount">
+<span class="sig-name descname"><span class="pre">amount</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.cdp.schemas.SwapSchema.amount" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.cdp.schemas.SwapSchema.from_asset_id">
+<span class="sig-name descname"><span class="pre">from_asset_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.cdp.schemas.SwapSchema.from_asset_id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.cdp.schemas.SwapSchema.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.cdp.schemas.SwapSchema.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.cdp.schemas.SwapSchema.network">
+<span class="sig-name descname"><span class="pre">network</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.cdp.schemas.SwapSchema.network" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.cdp.schemas.SwapSchema.to_asset_id">
+<span class="sig-name descname"><span class="pre">to_asset_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.cdp.schemas.SwapSchema.to_asset_id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-coinbase_agentkit.action_providers.cdp">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-coinbase_agentkit.action_providers.cdp" title="Link to this heading">¶</a></h2>
+<p>CDP EVM Server action provider for CDP protocol interactions.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.cdp.cdp_api_action_provider">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.cdp.</span></span><span class="sig-name descname"><span class="pre">cdp_api_action_provider</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.cdp.cdp_api_action_provider" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new CDP API action provider.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A new CDP API action provider instance.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="coinbase_agentkit.action_providers.html#coinbase_agentkit.action_providers.CdpApiActionProvider" title="coinbase_agentkit.action_providers.CdpApiActionProvider">CdpApiActionProvider</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Coinbase Agentkit</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">coinbase_agentkit</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="coinbase_agentkit.html">coinbase_agentkit package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">coinbase_agentkit</a><ul>
+  <li><a href="coinbase_agentkit.html">coinbase_agentkit package</a><ul>
+  <li><a href="coinbase_agentkit.action_providers.html">coinbase_agentkit.action_providers package</a><ul>
+      <li>Previous: <a href="coinbase_agentkit.action_providers.basename.html" title="previous chapter">coinbase_agentkit.action_providers.basename package</a></li>
+      <li>Next: <a href="coinbase_agentkit.action_providers.compound.html" title="next chapter">coinbase_agentkit.action_providers.compound package</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/coinbase_agentkit.action_providers.cdp.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

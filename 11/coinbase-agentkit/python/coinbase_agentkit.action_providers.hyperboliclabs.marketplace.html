@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>coinbase_agentkit.action_providers.hyperboliclabs.marketplace package &#8212; Coinbase Agentkit 0.7.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=fe7df9b0"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="coinbase_agentkit.action_providers.hyperboliclabs.settings package" href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html" />
+    <link rel="prev" title="coinbase_agentkit.action_providers.hyperboliclabs.billing package" href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="coinbase-agentkit-action-providers-hyperboliclabs-marketplace-package">
+<h1>coinbase_agentkit.action_providers.hyperboliclabs.marketplace package<a class="headerlink" href="#coinbase-agentkit-action-providers-hyperboliclabs-marketplace-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider">
+<span id="coinbase-agentkit-action-providers-hyperboliclabs-marketplace-action-provider-module"></span><h2>coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider module<a class="headerlink" href="#module-coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider" title="Link to this heading">¶</a></h2>
+<p>Hyperbolic Marketplace action provider.</p>
+<p>This module provides actions for interacting with Hyperbolic marketplace services.
+It includes functionality for managing GPU instances and SSH access.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.MarketplaceActionProvider">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.</span></span><span class="sig-name descname"><span class="pre">MarketplaceActionProvider</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.MarketplaceActionProvider" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.html#coinbase_agentkit.action_providers.hyperboliclabs.action_provider.ActionProvider" title="coinbase_agentkit.action_providers.hyperboliclabs.action_provider.ActionProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">ActionProvider</span></code></a></p>
+<p>Provides actions for interacting with Hyperbolic marketplace.</p>
+<p>This provider enables interaction with the Hyperbolic marketplace for GPU compute resources.
+It requires an API key which can be provided directly or through the HYPERBOLIC_API_KEY
+environment variable.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.MarketplaceActionProvider.get_available_gpus">
+<span class="sig-name descname"><span class="pre">get_available_gpus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.MarketplaceActionProvider.get_available_gpus" title="Link to this definition">¶</a></dt>
+<dd><p>Retrieve available GPU instances from the marketplace.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>args</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Input arguments for the action.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the action response or error details.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.MarketplaceActionProvider.get_available_gpus_by_type">
+<span class="sig-name descname"><span class="pre">get_available_gpus_by_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.MarketplaceActionProvider.get_available_gpus_by_type" title="Link to this definition">¶</a></dt>
+<dd><p>Retrieve available GPU instances of a specific model from the marketplace.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>args</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Input arguments for the action.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the action response or error details.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.MarketplaceActionProvider.get_available_gpus_types">
+<span class="sig-name descname"><span class="pre">get_available_gpus_types</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.MarketplaceActionProvider.get_available_gpus_types" title="Link to this definition">¶</a></dt>
+<dd><p>Retrieve available GPU types/models from the marketplace.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>args</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Input arguments for the action.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the action response or error details.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.MarketplaceActionProvider.get_gpu_status">
+<span class="sig-name descname"><span class="pre">get_gpu_status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.MarketplaceActionProvider.get_gpu_status" title="Link to this definition">¶</a></dt>
+<dd><p>Retrieve status and SSH commands for currently rented GPUs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>args</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Input arguments for the action.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the action response or error details.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.MarketplaceActionProvider.rent_compute">
+<span class="sig-name descname"><span class="pre">rent_compute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.MarketplaceActionProvider.rent_compute" title="Link to this definition">¶</a></dt>
+<dd><p>Rents a GPU machine on the platform.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>args</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Input arguments for the action.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the action response or error details.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.MarketplaceActionProvider.terminate_compute">
+<span class="sig-name descname"><span class="pre">terminate_compute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.MarketplaceActionProvider.terminate_compute" title="Link to this definition">¶</a></dt>
+<dd><p>Terminates a GPU instance on the platform.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>args</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Input arguments for the action.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the action response or error details.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.hyperbolic_marketplace_action_provider">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.</span></span><span class="sig-name descname"><span class="pre">hyperbolic_marketplace_action_provider</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.hyperbolic_marketplace_action_provider" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new instance of the MarketplaceActionProvider.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>api_key</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</span>) – Optional API key for authentication. If not provided,
+will attempt to read from HYPERBOLIC_API_KEY environment variable.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.MarketplaceActionProvider" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.MarketplaceActionProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">MarketplaceActionProvider</span></code></a></span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A new Marketplace action provider instance.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If API key is not provided and not found in environment.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas">
+<span id="coinbase-agentkit-action-providers-hyperboliclabs-marketplace-schemas-module"></span><h2>coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas module<a class="headerlink" href="#module-coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas" title="Link to this heading">¶</a></h2>
+<p>Schemas for Hyperbolic marketplace actions.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.GetAvailableGpusByTypeSchema">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.</span></span><span class="sig-name descname"><span class="pre">GetAvailableGpusByTypeSchema</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.GetAvailableGpusByTypeSchema" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Schema for get_available_gpus_by_type action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.GetAvailableGpusByTypeSchema.gpu_model">
+<span class="sig-name descname"><span class="pre">gpu_model</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.GetAvailableGpusByTypeSchema.gpu_model" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.GetAvailableGpusByTypeSchema.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.GetAvailableGpusByTypeSchema.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.GetAvailableGpusSchema">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.</span></span><span class="sig-name descname"><span class="pre">GetAvailableGpusSchema</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.GetAvailableGpusSchema" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Schema for get_available_gpus action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.GetAvailableGpusSchema.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.GetAvailableGpusSchema.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.GetAvailableGpusTypesSchema">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.</span></span><span class="sig-name descname"><span class="pre">GetAvailableGpusTypesSchema</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.GetAvailableGpusTypesSchema" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Schema for get_available_gpus_types action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.GetAvailableGpusTypesSchema.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.GetAvailableGpusTypesSchema.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.GetGpuStatusSchema">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.</span></span><span class="sig-name descname"><span class="pre">GetGpuStatusSchema</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.GetGpuStatusSchema" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Schema for get_gpu_status action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.GetGpuStatusSchema.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.GetGpuStatusSchema.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.RentComputeSchema">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.</span></span><span class="sig-name descname"><span class="pre">RentComputeSchema</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.RentComputeSchema" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Schema for rent_compute action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.RentComputeSchema.cluster_name">
+<span class="sig-name descname"><span class="pre">cluster_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.RentComputeSchema.cluster_name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.RentComputeSchema.gpu_count">
+<span class="sig-name descname"><span class="pre">gpu_count</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.RentComputeSchema.gpu_count" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.RentComputeSchema.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.RentComputeSchema.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.RentComputeSchema.node_name">
+<span class="sig-name descname"><span class="pre">node_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.RentComputeSchema.node_name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.TerminateComputeSchema">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.</span></span><span class="sig-name descname"><span class="pre">TerminateComputeSchema</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.TerminateComputeSchema" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Schema for terminate_compute action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.TerminateComputeSchema.id">
+<span class="sig-name descname"><span class="pre">id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.TerminateComputeSchema.id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.TerminateComputeSchema.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.schemas.TerminateComputeSchema.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-coinbase_agentkit.action_providers.hyperboliclabs.marketplace.service">
+<span id="coinbase-agentkit-action-providers-hyperboliclabs-marketplace-service-module"></span><h2>coinbase_agentkit.action_providers.hyperboliclabs.marketplace.service module<a class="headerlink" href="#module-coinbase_agentkit.action_providers.hyperboliclabs.marketplace.service" title="Link to this heading">¶</a></h2>
+<p>Service for marketplace-related operations.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.service.MarketplaceService">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.service.</span></span><span class="sig-name descname"><span class="pre">MarketplaceService</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.service.MarketplaceService" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.html#coinbase_agentkit.action_providers.hyperboliclabs.service.Base" title="coinbase_agentkit.action_providers.hyperboliclabs.service.Base"><code class="xref py py-class docutils literal notranslate"><span class="pre">Base</span></code></a></p>
+<p>Service for marketplace-related operations.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.service.MarketplaceService.get_available_instances">
+<span class="sig-name descname"><span class="pre">get_available_instances</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.service.MarketplaceService.get_available_instances" title="Link to this definition">¶</a></dt>
+<dd><p>Get available GPU instances from the marketplace.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The marketplace instances data.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.AvailableInstancesResponse" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.AvailableInstancesResponse">AvailableInstancesResponse</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.service.MarketplaceService.get_instance_history">
+<span class="sig-name descname"><span class="pre">get_instance_history</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.service.MarketplaceService.get_instance_history" title="Link to this definition">¶</a></dt>
+<dd><p>Get GPU instance rental history.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The instance history data.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryResponse" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryResponse">InstanceHistoryResponse</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.service.MarketplaceService.get_rented_instances">
+<span class="sig-name descname"><span class="pre">get_rented_instances</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.service.MarketplaceService.get_rented_instances" title="Link to this definition">¶</a></dt>
+<dd><p>Get currently rented GPU instances.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The rented instances data.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentedInstancesResponse" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentedInstancesResponse">RentedInstancesResponse</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.service.MarketplaceService.rent_instance">
+<span class="sig-name descname"><span class="pre">rent_instance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.service.MarketplaceService.rent_instance" title="Link to this definition">¶</a></dt>
+<dd><p>Rent a GPU compute instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceRequest" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceRequest"><code class="xref py py-class docutils literal notranslate"><span class="pre">RentInstanceRequest</span></code></a></span>) – The RentInstanceRequest object containing rental parameters.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The rental response data.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceResponse" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceResponse">RentInstanceResponse</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.service.MarketplaceService.terminate_instance">
+<span class="sig-name descname"><span class="pre">terminate_instance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.service.MarketplaceService.terminate_instance" title="Link to this definition">¶</a></dt>
+<dd><p>Terminate a GPU compute instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceRequest" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceRequest"><code class="xref py py-class docutils literal notranslate"><span class="pre">TerminateInstanceRequest</span></code></a></span>) – The TerminateInstanceRequest object containing the instance ID.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The termination response data.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceResponse" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceResponse">TerminateInstanceResponse</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types">
+<span id="coinbase-agentkit-action-providers-hyperboliclabs-marketplace-types-module"></span><h2>coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types module<a class="headerlink" href="#module-coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types" title="Link to this heading">¶</a></h2>
+<p>Types for Hyperbolic marketplace operations.</p>
+<p>This module provides type definitions for marketplace API communication.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.AvailableInstance">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.</span></span><span class="sig-name descname"><span class="pre">AvailableInstance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.AvailableInstance" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeInstance</span></code></a></p>
+<p>Available instance information.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.AvailableInstance.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.AvailableInstance.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.AvailableInstancesResponse">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.</span></span><span class="sig-name descname"><span class="pre">AvailableInstancesResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.AvailableInstancesResponse" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Response for available instances.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.AvailableInstancesResponse.instances">
+<span class="sig-name descname"><span class="pre">instances</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code><span class="pre">[</span><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.AvailableInstance" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.AvailableInstance"><code class="xref py py-class docutils literal notranslate"><span class="pre">AvailableInstance</span></code></a><span class="pre">]</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.AvailableInstancesResponse.instances" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.AvailableInstancesResponse.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.AvailableInstancesResponse.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.ContainerImage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.</span></span><span class="sig-name descname"><span class="pre">ContainerImage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.ContainerImage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Container image configuration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.ContainerImage.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.ContainerImage.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.ContainerImage.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.ContainerImage.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.ContainerImage.port">
+<span class="sig-name descname"><span class="pre">port</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.ContainerImage.port" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.ContainerImage.tag">
+<span class="sig-name descname"><span class="pre">tag</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.ContainerImage.tag" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.CpuHardware">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.</span></span><span class="sig-name descname"><span class="pre">CpuHardware</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.CpuHardware" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>CPU hardware information.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.CpuHardware.cores">
+<span class="sig-name descname"><span class="pre">cores</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.CpuHardware.cores" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.CpuHardware.hardware_type">
+<span class="sig-name descname"><span class="pre">hardware_type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.CpuHardware.hardware_type" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.CpuHardware.model">
+<span class="sig-name descname"><span class="pre">model</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.CpuHardware.model" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.CpuHardware.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.CpuHardware.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.CpuHardware.virtual_cores">
+<span class="sig-name descname"><span class="pre">virtual_cores</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.CpuHardware.virtual_cores" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.GpuHardware">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.</span></span><span class="sig-name descname"><span class="pre">GpuHardware</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.GpuHardware" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>GPU hardware information.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.GpuHardware.clock_speed">
+<span class="sig-name descname"><span class="pre">clock_speed</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.GpuHardware.clock_speed" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.GpuHardware.compute_power">
+<span class="sig-name descname"><span class="pre">compute_power</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.GpuHardware.compute_power" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.GpuHardware.hardware_type">
+<span class="sig-name descname"><span class="pre">hardware_type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.GpuHardware.hardware_type" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.GpuHardware.interface">
+<span class="sig-name descname"><span class="pre">interface</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.GpuHardware.interface" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.GpuHardware.model">
+<span class="sig-name descname"><span class="pre">model</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.GpuHardware.model" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.GpuHardware.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.GpuHardware.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.GpuHardware.ram">
+<span class="sig-name descname"><span class="pre">ram</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.GpuHardware.ram" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.HardwareInfo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.</span></span><span class="sig-name descname"><span class="pre">HardwareInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.HardwareInfo" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Complete hardware information.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.HardwareInfo.cpus">
+<span class="sig-name descname"><span class="pre">cpus</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code><span class="pre">[</span><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.CpuHardware" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.CpuHardware"><code class="xref py py-class docutils literal notranslate"><span class="pre">CpuHardware</span></code></a><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.HardwareInfo.cpus" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.HardwareInfo.gpus">
+<span class="sig-name descname"><span class="pre">gpus</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code><span class="pre">[</span><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.GpuHardware" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.GpuHardware"><code class="xref py py-class docutils literal notranslate"><span class="pre">GpuHardware</span></code></a><span class="pre">]</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.HardwareInfo.gpus" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.HardwareInfo.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.HardwareInfo.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.HardwareInfo.ram">
+<span class="sig-name descname"><span class="pre">ram</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code><span class="pre">[</span><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RamHardware" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RamHardware"><code class="xref py py-class docutils literal notranslate"><span class="pre">RamHardware</span></code></a><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.HardwareInfo.ram" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.HardwareInfo.storage">
+<span class="sig-name descname"><span class="pre">storage</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code><span class="pre">[</span><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.StorageHardware" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.StorageHardware"><code class="xref py py-class docutils literal notranslate"><span class="pre">StorageHardware</span></code></a><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.HardwareInfo.storage" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryEntry">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.</span></span><span class="sig-name descname"><span class="pre">InstanceHistoryEntry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryEntry" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Instance history entry.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryEntry.gpu_count">
+<span class="sig-name descname"><span class="pre">gpu_count</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryEntry.gpu_count" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryEntry.hardware">
+<span class="sig-name descname"><span class="pre">hardware</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.HardwareInfo" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.HardwareInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">HardwareInfo</span></code></a></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryEntry.hardware" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryEntry.instance_name">
+<span class="sig-name descname"><span class="pre">instance_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryEntry.instance_name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryEntry.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryEntry.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryEntry.price">
+<span class="sig-name descname"><span class="pre">price</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Price" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Price"><code class="xref py py-class docutils literal notranslate"><span class="pre">Price</span></code></a></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryEntry.price" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryEntry.started_at">
+<span class="sig-name descname"><span class="pre">started_at</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryEntry.started_at" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryEntry.terminated_at">
+<span class="sig-name descname"><span class="pre">terminated_at</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryEntry.terminated_at" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryResponse">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.</span></span><span class="sig-name descname"><span class="pre">InstanceHistoryResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryResponse" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Response for instance history.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryResponse.instance_history">
+<span class="sig-name descname"><span class="pre">instance_history</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code><span class="pre">[</span><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryEntry" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryEntry"><code class="xref py py-class docutils literal notranslate"><span class="pre">InstanceHistoryEntry</span></code></a><span class="pre">]</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryResponse.instance_history" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryResponse.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.InstanceHistoryResponse.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Location">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.</span></span><span class="sig-name descname"><span class="pre">Location</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Location" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Location information.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Location.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Location.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Location.region">
+<span class="sig-name descname"><span class="pre">region</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Location.region" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedGpuHardware">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.</span></span><span class="sig-name descname"><span class="pre">NestedGpuHardware</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedGpuHardware" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>GPU hardware information for nested instances.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedGpuHardware.hardware_type">
+<span class="sig-name descname"><span class="pre">hardware_type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedGpuHardware.hardware_type" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedGpuHardware.model">
+<span class="sig-name descname"><span class="pre">model</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedGpuHardware.model" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedGpuHardware.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedGpuHardware.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedGpuHardware.ram">
+<span class="sig-name descname"><span class="pre">ram</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedGpuHardware.ram" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedHardwareComponent">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.</span></span><span class="sig-name descname"><span class="pre">NestedHardwareComponent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedHardwareComponent" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>A single hardware component in the nested structure.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedHardwareComponent.gpu">
+<span class="sig-name descname"><span class="pre">gpu</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedGpuHardware" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedGpuHardware"><code class="xref py py-class docutils literal notranslate"><span class="pre">NestedGpuHardware</span></code></a> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedHardwareComponent.gpu" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedHardwareComponent.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedHardwareComponent.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedHardwareComponent.storage">
+<span class="sig-name descname"><span class="pre">storage</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedStorageHardware" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedStorageHardware"><code class="xref py py-class docutils literal notranslate"><span class="pre">NestedStorageHardware</span></code></a> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedHardwareComponent.storage" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedInstance">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.</span></span><span class="sig-name descname"><span class="pre">NestedInstance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedInstance" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Instance information in nested format.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedInstance.hardware">
+<span class="sig-name descname"><span class="pre">hardware</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code><span class="pre">[</span><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedHardwareComponent" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedHardwareComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">NestedHardwareComponent</span></code></a><span class="pre">]</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedInstance.hardware" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedInstance.id">
+<span class="sig-name descname"><span class="pre">id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedInstance.id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedInstance.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedInstance.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedInstance.status">
+<span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedInstance.status" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedStorageHardware">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.</span></span><span class="sig-name descname"><span class="pre">NestedStorageHardware</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedStorageHardware" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Storage hardware information for nested instances.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedStorageHardware.capacity">
+<span class="sig-name descname"><span class="pre">capacity</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedStorageHardware.capacity" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedStorageHardware.hardware_type">
+<span class="sig-name descname"><span class="pre">hardware_type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedStorageHardware.hardware_type" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedStorageHardware.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedStorageHardware.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.</span></span><span class="sig-name descname"><span class="pre">NodeInstance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Top-level node information.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.cluster_name">
+<span class="sig-name descname"><span class="pre">cluster_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.cluster_name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.gpu_count">
+<span class="sig-name descname"><span class="pre">gpu_count</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.gpu_count" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.gpus_reserved">
+<span class="sig-name descname"><span class="pre">gpus_reserved</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.gpus_reserved" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.gpus_total">
+<span class="sig-name descname"><span class="pre">gpus_total</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.gpus_total" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.hardware">
+<span class="sig-name descname"><span class="pre">hardware</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.HardwareInfo" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.HardwareInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">HardwareInfo</span></code></a></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.hardware" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.has_persistent_storage">
+<span class="sig-name descname"><span class="pre">has_persistent_storage</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.has_persistent_storage" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.id">
+<span class="sig-name descname"><span class="pre">id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.instances">
+<span class="sig-name descname"><span class="pre">instances</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code><span class="pre">[</span><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedInstance" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NestedInstance"><code class="xref py py-class docutils literal notranslate"><span class="pre">NestedInstance</span></code></a><span class="pre">]</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.instances" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.location">
+<span class="sig-name descname"><span class="pre">location</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Location" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Location"><code class="xref py py-class docutils literal notranslate"><span class="pre">Location</span></code></a> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.location" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.network">
+<span class="sig-name descname"><span class="pre">network</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">,</span> <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code><span class="pre">]</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.network" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.owner">
+<span class="sig-name descname"><span class="pre">owner</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.owner" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.pricing">
+<span class="sig-name descname"><span class="pre">pricing</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.PricingInfo" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.PricingInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">PricingInfo</span></code></a> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.pricing" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.reserved">
+<span class="sig-name descname"><span class="pre">reserved</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.reserved" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.status">
+<span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.status" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.supplier_id">
+<span class="sig-name descname"><span class="pre">supplier_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance.supplier_id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.</span></span><span class="sig-name descname"><span class="pre">NodeRental</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Record of a rented compute node.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental.end">
+<span class="sig-name descname"><span class="pre">end</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental.end" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental.id">
+<span class="sig-name descname"><span class="pre">id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental.id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental.instance">
+<span class="sig-name descname"><span class="pre">instance</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeInstance"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeInstance</span></code></a></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental.instance" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'populate_by_name':</span> <span class="pre">True}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental.ssh_access">
+<span class="sig-name descname"><span class="pre">ssh_access</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.SSHAccess" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.SSHAccess"><code class="xref py py-class docutils literal notranslate"><span class="pre">SSHAccess</span></code></a> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental.ssh_access" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental.ssh_command">
+<span class="sig-name descname"><span class="pre">ssh_command</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental.ssh_command" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental.start">
+<span class="sig-name descname"><span class="pre">start</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental.start" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental.status">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental.status" title="Link to this definition">¶</a></dt>
+<dd><p>Get the node status from the nested instance.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Price">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.</span></span><span class="sig-name descname"><span class="pre">Price</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Price" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Price information.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Price.agent">
+<span class="sig-name descname"><span class="pre">agent</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Price.agent" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Price.amount">
+<span class="sig-name descname"><span class="pre">amount</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Price.amount" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Price.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Price.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Price.period">
+<span class="sig-name descname"><span class="pre">period</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Price.period" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.PricingInfo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.</span></span><span class="sig-name descname"><span class="pre">PricingInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.PricingInfo" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Pricing information for an instance.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.PricingInfo.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.PricingInfo.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.PricingInfo.price">
+<span class="sig-name descname"><span class="pre">price</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Price" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.Price"><code class="xref py py-class docutils literal notranslate"><span class="pre">Price</span></code></a></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.PricingInfo.price" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RamHardware">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.</span></span><span class="sig-name descname"><span class="pre">RamHardware</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RamHardware" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>RAM hardware information.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RamHardware.capacity">
+<span class="sig-name descname"><span class="pre">capacity</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RamHardware.capacity" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RamHardware.hardware_type">
+<span class="sig-name descname"><span class="pre">hardware_type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RamHardware.hardware_type" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RamHardware.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RamHardware.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceRequest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.</span></span><span class="sig-name descname"><span class="pre">RentInstanceRequest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceRequest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Request to rent an instance.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceRequest.cluster_name">
+<span class="sig-name descname"><span class="pre">cluster_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceRequest.cluster_name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceRequest.gpu_count">
+<span class="sig-name descname"><span class="pre">gpu_count</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceRequest.gpu_count" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceRequest.image">
+<span class="sig-name descname"><span class="pre">image</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.ContainerImage" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.ContainerImage"><code class="xref py py-class docutils literal notranslate"><span class="pre">ContainerImage</span></code></a> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceRequest.image" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceRequest.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceRequest.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceRequest.node_name">
+<span class="sig-name descname"><span class="pre">node_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceRequest.node_name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceResponse">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.</span></span><span class="sig-name descname"><span class="pre">RentInstanceResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceResponse" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Response from rent instance API endpoint.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceResponse.instance_name">
+<span class="sig-name descname"><span class="pre">instance_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceResponse.instance_name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceResponse.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceResponse.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceResponse.status">
+<span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceResponse.status" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentedInstancesResponse">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.</span></span><span class="sig-name descname"><span class="pre">RentedInstancesResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentedInstancesResponse" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Response for rented instances.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentedInstancesResponse.instances">
+<span class="sig-name descname"><span class="pre">instances</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code><span class="pre">[</span><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeRental</span></code></a><span class="pre">]</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentedInstancesResponse.instances" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentedInstancesResponse.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentedInstancesResponse.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.SSHAccess">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.</span></span><span class="sig-name descname"><span class="pre">SSHAccess</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.SSHAccess" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>SSH access information for connecting to a remote instance.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.SSHAccess.host">
+<span class="sig-name descname"><span class="pre">host</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.SSHAccess.host" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.SSHAccess.key_path">
+<span class="sig-name descname"><span class="pre">key_path</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.SSHAccess.key_path" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.SSHAccess.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.SSHAccess.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.SSHAccess.ssh_command">
+<span class="sig-name descname"><span class="pre">ssh_command</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.SSHAccess.ssh_command" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.SSHAccess.username">
+<span class="sig-name descname"><span class="pre">username</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.SSHAccess.username" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.StorageHardware">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.</span></span><span class="sig-name descname"><span class="pre">StorageHardware</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.StorageHardware" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Storage hardware information.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.StorageHardware.capacity">
+<span class="sig-name descname"><span class="pre">capacity</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.StorageHardware.capacity" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.StorageHardware.hardware_type">
+<span class="sig-name descname"><span class="pre">hardware_type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.StorageHardware.hardware_type" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.StorageHardware.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.StorageHardware.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceRequest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.</span></span><span class="sig-name descname"><span class="pre">TerminateInstanceRequest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceRequest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Request to terminate an instance.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceRequest.id">
+<span class="sig-name descname"><span class="pre">id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceRequest.id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceRequest.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceRequest.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceResponse">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.</span></span><span class="sig-name descname"><span class="pre">TerminateInstanceResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceResponse" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Response from terminate instance API endpoint.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceResponse.error_code">
+<span class="sig-name descname"><span class="pre">error_code</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceResponse.error_code" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceResponse.get_status">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceResponse.get_status" title="Link to this definition">¶</a></dt>
+<dd><p>Return status string based on fields for backward compatibility.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceResponse.message">
+<span class="sig-name descname"><span class="pre">message</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceResponse.message" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceResponse.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceResponse.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceResponse.status">
+<span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceResponse.status" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils">
+<span id="coinbase-agentkit-action-providers-hyperboliclabs-marketplace-utils-module"></span><h2>coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils module<a class="headerlink" href="#module-coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils" title="Link to this heading">¶</a></h2>
+<p>Utility functions for Hyperbolic Marketplace action provider.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.format_all_gpu_instances">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.</span></span><span class="sig-name descname"><span class="pre">format_all_gpu_instances</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instances</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.format_all_gpu_instances" title="Link to this definition">¶</a></dt>
+<dd><p>Format a list of all available GPU instances.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>instances</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code>[<a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.AvailableInstance" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.AvailableInstance"><code class="xref py py-class docutils literal notranslate"><span class="pre">AvailableInstance</span></code></a>]</span>) – List of AvailableInstance objects.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Formatted string with all available GPU instances.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.format_gpu_instance">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.</span></span><span class="sig-name descname"><span class="pre">format_gpu_instance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.format_gpu_instance" title="Link to this definition">¶</a></dt>
+<dd><p>Format a single GPU instance into a readable string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>instance</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.AvailableInstance" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.AvailableInstance"><code class="xref py py-class docutils literal notranslate"><span class="pre">AvailableInstance</span></code></a></span>) – AvailableInstance object containing instance details.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Formatted string if instance has available GPUs, None otherwise.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str | None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.format_gpu_instances_by_type">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.</span></span><span class="sig-name descname"><span class="pre">format_gpu_instances_by_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instances</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gpu_model</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.format_gpu_instances_by_type" title="Link to this definition">¶</a></dt>
+<dd><p>Format a list of available GPU instances of a specific model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>instances</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code>[<a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.AvailableInstance" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.AvailableInstance"><code class="xref py py-class docutils literal notranslate"><span class="pre">AvailableInstance</span></code></a>]</span>) – List of AvailableInstance objects.</p></li>
+<li><p><strong>gpu_model</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – The specific GPU model to filter by.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Formatted string with available GPU instances of the specified model.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.format_gpu_status">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.</span></span><span class="sig-name descname"><span class="pre">format_gpu_status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.format_gpu_status" title="Link to this definition">¶</a></dt>
+<dd><p>Format a rented GPU instance status into a readable string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>instance</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.NodeRental"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeRental</span></code></a></span>) – NodeRental object containing instance details.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Formatted status string.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.format_gpu_types">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.</span></span><span class="sig-name descname"><span class="pre">format_gpu_types</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instances</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.format_gpu_types" title="Link to this definition">¶</a></dt>
+<dd><p>Format a list of available GPU types/models.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>instances</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code>[<a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.AvailableInstance" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.AvailableInstance"><code class="xref py py-class docutils literal notranslate"><span class="pre">AvailableInstance</span></code></a>]</span>) – List of AvailableInstance objects.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Formatted string with available GPU types.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.format_rent_compute_response">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.</span></span><span class="sig-name descname"><span class="pre">format_rent_compute_response</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">response_data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.format_rent_compute_response" title="Link to this definition">¶</a></dt>
+<dd><p>Format compute rental response into a readable string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>response_data</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceResponse" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.RentInstanceResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">RentInstanceResponse</span></code></a></span>) – RentInstanceResponse object from compute rental API.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Formatted response string with next steps.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.format_terminate_compute_response">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.</span></span><span class="sig-name descname"><span class="pre">format_terminate_compute_response</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">response_data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.format_terminate_compute_response" title="Link to this definition">¶</a></dt>
+<dd><p>Format compute termination response into a readable string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>response_data</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceResponse" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.types.TerminateInstanceResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">TerminateInstanceResponse</span></code></a></span>) – TerminateInstanceResponse object from compute termination API.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Formatted response string with next steps.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.get_api_key">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.</span></span><span class="sig-name descname"><span class="pre">get_api_key</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.utils.get_api_key" title="Link to this definition">¶</a></dt>
+<dd><p>Get Hyperbolic API key from environment variables.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The API key.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – If API key is not configured.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-coinbase_agentkit.action_providers.hyperboliclabs.marketplace">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-coinbase_agentkit.action_providers.hyperboliclabs.marketplace" title="Link to this heading">¶</a></h2>
+<p>Hyperbolic Marketplace action provider.</p>
+<p>This package contains functionality for interacting with Hyperbolic’s marketplace services,
+including managing GPU instances and SSH access.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.MarketplaceActionProvider">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.</span></span><span class="sig-name descname"><span class="pre">MarketplaceActionProvider</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.MarketplaceActionProvider" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="coinbase_agentkit.action_providers.hyperboliclabs.html#coinbase_agentkit.action_providers.hyperboliclabs.action_provider.ActionProvider" title="coinbase_agentkit.action_providers.hyperboliclabs.action_provider.ActionProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">ActionProvider</span></code></a></p>
+<p>Provides actions for interacting with Hyperbolic marketplace.</p>
+<p>This provider enables interaction with the Hyperbolic marketplace for GPU compute resources.
+It requires an API key which can be provided directly or through the HYPERBOLIC_API_KEY
+environment variable.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.MarketplaceActionProvider.get_available_gpus">
+<span class="sig-name descname"><span class="pre">get_available_gpus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.MarketplaceActionProvider.get_available_gpus" title="Link to this definition">¶</a></dt>
+<dd><p>Retrieve available GPU instances from the marketplace.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>args</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Input arguments for the action.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the action response or error details.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.MarketplaceActionProvider.get_available_gpus_by_type">
+<span class="sig-name descname"><span class="pre">get_available_gpus_by_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.MarketplaceActionProvider.get_available_gpus_by_type" title="Link to this definition">¶</a></dt>
+<dd><p>Retrieve available GPU instances of a specific model from the marketplace.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>args</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Input arguments for the action.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the action response or error details.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.MarketplaceActionProvider.get_available_gpus_types">
+<span class="sig-name descname"><span class="pre">get_available_gpus_types</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.MarketplaceActionProvider.get_available_gpus_types" title="Link to this definition">¶</a></dt>
+<dd><p>Retrieve available GPU types/models from the marketplace.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>args</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Input arguments for the action.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the action response or error details.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.MarketplaceActionProvider.get_gpu_status">
+<span class="sig-name descname"><span class="pre">get_gpu_status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.MarketplaceActionProvider.get_gpu_status" title="Link to this definition">¶</a></dt>
+<dd><p>Retrieve status and SSH commands for currently rented GPUs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>args</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Input arguments for the action.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the action response or error details.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.MarketplaceActionProvider.rent_compute">
+<span class="sig-name descname"><span class="pre">rent_compute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.MarketplaceActionProvider.rent_compute" title="Link to this definition">¶</a></dt>
+<dd><p>Rents a GPU machine on the platform.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>args</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Input arguments for the action.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the action response or error details.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.MarketplaceActionProvider.terminate_compute">
+<span class="sig-name descname"><span class="pre">terminate_compute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.MarketplaceActionProvider.terminate_compute" title="Link to this definition">¶</a></dt>
+<dd><p>Terminates a GPU instance on the platform.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>args</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Input arguments for the action.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the action response or error details.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.hyperbolic_marketplace_action_provider">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.hyperboliclabs.marketplace.</span></span><span class="sig-name descname"><span class="pre">hyperbolic_marketplace_action_provider</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.hyperbolic_marketplace_action_provider" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new instance of the MarketplaceActionProvider.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>api_key</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</span>) – Optional API key for authentication. If not provided,
+will attempt to read from HYPERBOLIC_API_KEY environment variable.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.MarketplaceActionProvider" title="coinbase_agentkit.action_providers.hyperboliclabs.marketplace.action_provider.MarketplaceActionProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">MarketplaceActionProvider</span></code></a></span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A new Marketplace action provider instance.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If API key is not provided and not found in environment.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Coinbase Agentkit</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">coinbase_agentkit</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="coinbase_agentkit.html">coinbase_agentkit package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">coinbase_agentkit</a><ul>
+  <li><a href="coinbase_agentkit.html">coinbase_agentkit package</a><ul>
+  <li><a href="coinbase_agentkit.action_providers.html">coinbase_agentkit.action_providers package</a><ul>
+  <li><a href="coinbase_agentkit.action_providers.hyperboliclabs.html">coinbase_agentkit.action_providers.hyperboliclabs package</a><ul>
+      <li>Previous: <a href="coinbase_agentkit.action_providers.hyperboliclabs.billing.html" title="previous chapter">coinbase_agentkit.action_providers.hyperboliclabs.billing package</a></li>
+      <li>Next: <a href="coinbase_agentkit.action_providers.hyperboliclabs.settings.html" title="next chapter">coinbase_agentkit.action_providers.hyperboliclabs.settings package</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/coinbase_agentkit.action_providers.hyperboliclabs.marketplace.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

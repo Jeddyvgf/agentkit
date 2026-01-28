@@ -1,0 +1,29 @@
+coinbase\_agentkit.action\_providers.x402 package
+=================================================
+
+Submodules
+----------
+
+coinbase\_agentkit.action\_providers.x402.schemas module
+--------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.action_providers.x402.schemas
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+coinbase\_agentkit.action\_providers.x402.x402\_action\_provider module
+-----------------------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.action_providers.x402.x402_action_provider
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: coinbase_agentkit.action_providers.x402
+   :members:
+   :undoc-members:
+   :show-inheritance:

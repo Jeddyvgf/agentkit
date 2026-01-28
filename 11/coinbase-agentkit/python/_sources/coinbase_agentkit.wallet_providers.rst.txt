@@ -1,0 +1,61 @@
+coinbase\_agentkit.wallet\_providers package
+============================================
+
+Submodules
+----------
+
+coinbase\_agentkit.wallet\_providers.cdp\_evm\_wallet\_provider module
+----------------------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.wallet_providers.cdp_evm_wallet_provider
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+coinbase\_agentkit.wallet\_providers.cdp\_smart\_wallet\_provider module
+------------------------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.wallet_providers.cdp_smart_wallet_provider
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+coinbase\_agentkit.wallet\_providers.cdp\_solana\_wallet\_provider module
+-------------------------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.wallet_providers.cdp_solana_wallet_provider
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+coinbase\_agentkit.wallet\_providers.eth\_account\_wallet\_provider module
+--------------------------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.wallet_providers.eth_account_wallet_provider
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+coinbase\_agentkit.wallet\_providers.evm\_wallet\_provider module
+-----------------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.wallet_providers.evm_wallet_provider
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+coinbase\_agentkit.wallet\_providers.wallet\_provider module
+------------------------------------------------------------
+
+.. automodule:: coinbase_agentkit.wallet_providers.wallet_provider
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: coinbase_agentkit.wallet_providers
+   :members:
+   :undoc-members:
+   :show-inheritance:

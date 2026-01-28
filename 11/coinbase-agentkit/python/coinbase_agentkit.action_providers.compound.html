@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>coinbase_agentkit.action_providers.compound package &#8212; Coinbase Agentkit 0.7.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=fe7df9b0"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="coinbase_agentkit.action_providers.erc20 package" href="coinbase_agentkit.action_providers.erc20.html" />
+    <link rel="prev" title="coinbase_agentkit.action_providers.cdp package" href="coinbase_agentkit.action_providers.cdp.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="coinbase-agentkit-action-providers-compound-package">
+<h1>coinbase_agentkit.action_providers.compound package<a class="headerlink" href="#coinbase-agentkit-action-providers-compound-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-coinbase_agentkit.action_providers.compound.compound_action_provider">
+<span id="coinbase-agentkit-action-providers-compound-compound-action-provider-module"></span><h2>coinbase_agentkit.action_providers.compound.compound_action_provider module<a class="headerlink" href="#module-coinbase_agentkit.action_providers.compound.compound_action_provider" title="Link to this heading">¶</a></h2>
+<p>Compound action provider for interacting with Compound protocol.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.compound_action_provider.CompoundActionProvider">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.compound.compound_action_provider.</span></span><span class="sig-name descname"><span class="pre">CompoundActionProvider</span></span><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.compound_action_provider.CompoundActionProvider" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="coinbase_agentkit.action_providers.html#coinbase_agentkit.action_providers.action_provider.ActionProvider" title="coinbase_agentkit.action_providers.action_provider.ActionProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">ActionProvider</span></code></a>[<a class="reference internal" href="coinbase_agentkit.wallet_providers.html#coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider" title="coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvmWalletProvider</span></code></a>]</p>
+<p>Provides actions for interacting with Compound protocol.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.compound_action_provider.CompoundActionProvider.borrow">
+<span class="sig-name descname"><span class="pre">borrow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet_provider</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.compound_action_provider.CompoundActionProvider.borrow" title="Link to this definition">¶</a></dt>
+<dd><p>Borrow base assets from Compound.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet_provider</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="coinbase_agentkit.wallet_providers.html#coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider" title="coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvmWalletProvider</span></code></a></span>) – The wallet to use for the borrow operation.</p></li>
+<li><p><strong>args</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</span>) – The input arguments for the borrow operation.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the result of the borrow operation.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.compound_action_provider.CompoundActionProvider.get_portfolio">
+<span class="sig-name descname"><span class="pre">get_portfolio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet_provider</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.compound_action_provider.CompoundActionProvider.get_portfolio" title="Link to this definition">¶</a></dt>
+<dd><p>Get portfolio details from Compound.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet_provider</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="coinbase_agentkit.wallet_providers.html#coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider" title="coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvmWalletProvider</span></code></a></span>) – The wallet to use for getting details.</p></li>
+<li><p><strong>args</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</span>) – The input arguments containing comet_address and account.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A markdown formatted string with portfolio details.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.compound_action_provider.CompoundActionProvider.repay">
+<span class="sig-name descname"><span class="pre">repay</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet_provider</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.compound_action_provider.CompoundActionProvider.repay" title="Link to this definition">¶</a></dt>
+<dd><p>Repay borrowed assets to Compound.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet_provider</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="coinbase_agentkit.wallet_providers.html#coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider" title="coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvmWalletProvider</span></code></a></span>) – The wallet to use for the repay operation.</p></li>
+<li><p><strong>args</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</span>) – The input arguments for the repay operation.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the result of the repay operation.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.compound_action_provider.CompoundActionProvider.supply">
+<span class="sig-name descname"><span class="pre">supply</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet_provider</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.compound_action_provider.CompoundActionProvider.supply" title="Link to this definition">¶</a></dt>
+<dd><p>Supply collateral assets to Compound.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet_provider</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="coinbase_agentkit.wallet_providers.html#coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider" title="coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvmWalletProvider</span></code></a></span>) – The wallet to use for the supply operation.</p></li>
+<li><p><strong>args</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</span>) – The input arguments for the supply operation.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the result of the supply operation.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.compound_action_provider.CompoundActionProvider.supports_network">
+<span class="sig-name descname"><span class="pre">supports_network</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">network</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.compound_action_provider.CompoundActionProvider.supports_network" title="Link to this definition">¶</a></dt>
+<dd><p>Check if network is supported by Compound.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.compound_action_provider.CompoundActionProvider.withdraw">
+<span class="sig-name descname"><span class="pre">withdraw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet_provider</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.compound_action_provider.CompoundActionProvider.withdraw" title="Link to this definition">¶</a></dt>
+<dd><p>Withdraw collateral assets from Compound.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet_provider</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="coinbase_agentkit.wallet_providers.html#coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider" title="coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvmWalletProvider</span></code></a></span>) – The wallet to use for the withdraw operation.</p></li>
+<li><p><strong>args</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</span>) – The input arguments for the withdraw operation.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the result of the withdraw operation.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.compound_action_provider.compound_action_provider">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.compound.compound_action_provider.</span></span><span class="sig-name descname"><span class="pre">compound_action_provider</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.compound_action_provider.compound_action_provider" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new CompoundActionProvider instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#coinbase_agentkit.action_providers.compound.compound_action_provider.CompoundActionProvider" title="coinbase_agentkit.action_providers.compound.compound_action_provider.CompoundActionProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">CompoundActionProvider</span></code></a></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-coinbase_agentkit.action_providers.compound.constants">
+<span id="coinbase-agentkit-action-providers-compound-constants-module"></span><h2>coinbase_agentkit.action_providers.compound.constants module<a class="headerlink" href="#module-coinbase_agentkit.action_providers.compound.constants" title="Link to this heading">¶</a></h2>
+<p>Constants for Compound action provider.</p>
+</section>
+<section id="module-coinbase_agentkit.action_providers.compound.schemas">
+<span id="coinbase-agentkit-action-providers-compound-schemas-module"></span><h2>coinbase_agentkit.action_providers.compound.schemas module<a class="headerlink" href="#module-coinbase_agentkit.action_providers.compound.schemas" title="Link to this heading">¶</a></h2>
+<p>Schemas for Compound action provider.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.schemas.CompoundBorrowSchema">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.compound.schemas.</span></span><span class="sig-name descname"><span class="pre">CompoundBorrowSchema</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.schemas.CompoundBorrowSchema" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Input schema for borrowing assets from Compound.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.schemas.CompoundBorrowSchema.amount">
+<span class="sig-name descname"><span class="pre">amount</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.schemas.CompoundBorrowSchema.amount" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.schemas.CompoundBorrowSchema.asset_id">
+<span class="sig-name descname"><span class="pre">asset_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code><span class="pre">[</span><code class="docutils literal notranslate"><span class="pre">'weth'</span></code><span class="pre">,</span> <code class="docutils literal notranslate"><span class="pre">'usdc'</span></code><span class="pre">]</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.schemas.CompoundBorrowSchema.asset_id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.schemas.CompoundBorrowSchema.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.schemas.CompoundBorrowSchema.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.schemas.CompoundPortfolioSchema">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.compound.schemas.</span></span><span class="sig-name descname"><span class="pre">CompoundPortfolioSchema</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.schemas.CompoundPortfolioSchema" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Input schema for getting portfolio details from Compound.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.schemas.CompoundPortfolioSchema.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.schemas.CompoundPortfolioSchema.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.schemas.CompoundRepaySchema">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.compound.schemas.</span></span><span class="sig-name descname"><span class="pre">CompoundRepaySchema</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.schemas.CompoundRepaySchema" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Input schema for repaying borrowed assets to Compound.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.schemas.CompoundRepaySchema.amount">
+<span class="sig-name descname"><span class="pre">amount</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.schemas.CompoundRepaySchema.amount" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.schemas.CompoundRepaySchema.asset_id">
+<span class="sig-name descname"><span class="pre">asset_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code><span class="pre">[</span><code class="docutils literal notranslate"><span class="pre">'weth'</span></code><span class="pre">,</span> <code class="docutils literal notranslate"><span class="pre">'usdc'</span></code><span class="pre">]</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.schemas.CompoundRepaySchema.asset_id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.schemas.CompoundRepaySchema.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.schemas.CompoundRepaySchema.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.schemas.CompoundSupplySchema">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.compound.schemas.</span></span><span class="sig-name descname"><span class="pre">CompoundSupplySchema</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.schemas.CompoundSupplySchema" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Input schema for supplying assets to Compound.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.schemas.CompoundSupplySchema.amount">
+<span class="sig-name descname"><span class="pre">amount</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.schemas.CompoundSupplySchema.amount" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.schemas.CompoundSupplySchema.asset_id">
+<span class="sig-name descname"><span class="pre">asset_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code><span class="pre">[</span><code class="docutils literal notranslate"><span class="pre">'weth'</span></code><span class="pre">,</span> <code class="docutils literal notranslate"><span class="pre">'cbeth'</span></code><span class="pre">,</span> <code class="docutils literal notranslate"><span class="pre">'cbbtc'</span></code><span class="pre">,</span> <code class="docutils literal notranslate"><span class="pre">'wsteth'</span></code><span class="pre">,</span> <code class="docutils literal notranslate"><span class="pre">'usdc'</span></code><span class="pre">]</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.schemas.CompoundSupplySchema.asset_id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.schemas.CompoundSupplySchema.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.schemas.CompoundSupplySchema.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.schemas.CompoundWithdrawSchema">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.compound.schemas.</span></span><span class="sig-name descname"><span class="pre">CompoundWithdrawSchema</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.schemas.CompoundWithdrawSchema" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Input schema for withdrawing assets from Compound.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.schemas.CompoundWithdrawSchema.amount">
+<span class="sig-name descname"><span class="pre">amount</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.schemas.CompoundWithdrawSchema.amount" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.schemas.CompoundWithdrawSchema.asset_id">
+<span class="sig-name descname"><span class="pre">asset_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code><span class="pre">[</span><code class="docutils literal notranslate"><span class="pre">'weth'</span></code><span class="pre">,</span> <code class="docutils literal notranslate"><span class="pre">'cbeth'</span></code><span class="pre">,</span> <code class="docutils literal notranslate"><span class="pre">'cbbtc'</span></code><span class="pre">,</span> <code class="docutils literal notranslate"><span class="pre">'wsteth'</span></code><span class="pre">,</span> <code class="docutils literal notranslate"><span class="pre">'usdc'</span></code><span class="pre">]</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.schemas.CompoundWithdrawSchema.asset_id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.schemas.CompoundWithdrawSchema.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.schemas.CompoundWithdrawSchema.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-coinbase_agentkit.action_providers.compound.utils">
+<span id="coinbase-agentkit-action-providers-compound-utils-module"></span><h2>coinbase_agentkit.action_providers.compound.utils module<a class="headerlink" href="#module-coinbase_agentkit.action_providers.compound.utils" title="Link to this heading">¶</a></h2>
+<p>Utility functions for Compound action provider.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.utils.format_amount_from_decimals">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.compound.utils.</span></span><span class="sig-name descname"><span class="pre">format_amount_from_decimals</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">amount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decimals</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.utils.format_amount_from_decimals" title="Link to this definition">¶</a></dt>
+<dd><p>Format an atomic amount to a human-readable string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>amount</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></span>) – The amount in atomic units.</p></li>
+<li><p><strong>decimals</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></span>) – The number of decimals for the token.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The amount as a human-readable string.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.utils.format_amount_with_decimals">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.compound.utils.</span></span><span class="sig-name descname"><span class="pre">format_amount_with_decimals</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">amount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decimals</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.utils.format_amount_with_decimals" title="Link to this definition">¶</a></dt>
+<dd><p>Format a human-readable amount with the correct number of decimals.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>amount</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – The amount as a string (e.g. “0.1”).</p></li>
+<li><p><strong>decimals</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></span>) – The number of decimals for the token.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The amount in atomic units.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.utils.get_base_token_address">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.compound.utils.</span></span><span class="sig-name descname"><span class="pre">get_base_token_address</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comet_address</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.utils.get_base_token_address" title="Link to this definition">¶</a></dt>
+<dd><p>Get the base token address from the Compound market.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="coinbase_agentkit.wallet_providers.html#coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider" title="coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvmWalletProvider</span></code></a></span>) – The wallet provider for reading from contracts.</p></li>
+<li><p><strong>comet_address</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – The address of the Compound Comet contract.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The address of the base token.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.utils.get_borrow_details">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.compound.utils.</span></span><span class="sig-name descname"><span class="pre">get_borrow_details</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compound_address</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.utils.get_borrow_details" title="Link to this definition">¶</a></dt>
+<dd><p>Get the borrow amount, token symbol, and price for a wallet’s position.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="coinbase_agentkit.wallet_providers.html#coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider" title="coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvmWalletProvider</span></code></a></span>) – The wallet to check the position for.</p></li>
+<li><p><strong>compound_address</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – The address of the Compound market.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Dictionary containing:</dt><dd><p>Token Symbol (str): The symbol of the base token.
+Borrow Amount (Decimal): The human-readable amount borrowed.
+Price (Decimal): The price of the base token in USD.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.utils.get_collateral_balance">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.compound.utils.</span></span><span class="sig-name descname"><span class="pre">get_collateral_balance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compound_address</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">asset_address</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.utils.get_collateral_balance" title="Link to this definition">¶</a></dt>
+<dd><p>Get the collateral balance of a specific asset for a wallet using wallet.read_contract.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="coinbase_agentkit.wallet_providers.html#coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider" title="coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvmWalletProvider</span></code></a></span>) – The wallet to check the balance for.</p></li>
+<li><p><strong>compound_address</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – The address of the Compound market.</p></li>
+<li><p><strong>asset_address</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – The address of the asset to check.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The collateral balance in atomic units.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.utils.get_health_ratio">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.compound.utils.</span></span><span class="sig-name descname"><span class="pre">get_health_ratio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compound_address</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.utils.get_health_ratio" title="Link to this definition">¶</a></dt>
+<dd><p>Calculate the current health ratio of a wallet’s Compound position.</p>
+<dl class="simple">
+<dt>Health ratio is calculated using human-readable values:</dt><dd><ul class="simple">
+<li><p>Borrow value = (human borrow amount) * (price)</p></li>
+<li><p>Collateral value = Σ (human supply amount * price * collateral factor)</p></li>
+</ul>
+</dd>
+</dl>
+<p>A ratio &gt;= 1 indicates a healthy position.
+Returns infinity if there are no borrows.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="coinbase_agentkit.wallet_providers.html#coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider" title="coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvmWalletProvider</span></code></a></span>) – The wallet to check the position for.</p></li>
+<li><p><strong>compound_address</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – The address of the Compound market.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The current health ratio.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Decimal</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.utils.get_health_ratio_after_borrow">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.compound.utils.</span></span><span class="sig-name descname"><span class="pre">get_health_ratio_after_borrow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compound_address</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">borrow_amount</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.utils.get_health_ratio_after_borrow" title="Link to this definition">¶</a></dt>
+<dd><p>Calculate what the health ratio would be after a proposed borrow.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="coinbase_agentkit.wallet_providers.html#coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider" title="coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvmWalletProvider</span></code></a></span>) – The wallet to check the position for.</p></li>
+<li><p><strong>compound_address</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – The address of the Compound market.</p></li>
+<li><p><strong>borrow_amount</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – The additional amount to borrow in atomic units.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>The projected health ratio after the borrow.</dt><dd><p>Returns infinity if there would be no borrows.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Decimal</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.utils.get_health_ratio_after_withdraw">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.compound.utils.</span></span><span class="sig-name descname"><span class="pre">get_health_ratio_after_withdraw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compound_address</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">asset_address</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">withdraw_amount</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.utils.get_health_ratio_after_withdraw" title="Link to this definition">¶</a></dt>
+<dd><p>Calculate what the health ratio would be after a proposed withdrawal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="coinbase_agentkit.wallet_providers.html#coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider" title="coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvmWalletProvider</span></code></a></span>) – The wallet to check the position for.</p></li>
+<li><p><strong>compound_address</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – The address of the Compound market.</p></li>
+<li><p><strong>asset_address</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – The address of the asset to withdraw.</p></li>
+<li><p><strong>withdraw_amount</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – The amount to withdraw in atomic units.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>The projected health ratio after the withdrawal.</dt><dd><p>Returns infinity if there would be no borrows.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Decimal</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.utils.get_portfolio_details_markdown">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.compound.utils.</span></span><span class="sig-name descname"><span class="pre">get_portfolio_details_markdown</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comet_address</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.utils.get_portfolio_details_markdown" title="Link to this definition">¶</a></dt>
+<dd><p>Get formatted portfolio details in markdown.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="coinbase_agentkit.wallet_providers.html#coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider" title="coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvmWalletProvider</span></code></a></span>) – The wallet to use for getting details</p></li>
+<li><p><strong>comet_address</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – The address of the Compound Comet contract</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Markdown formatted portfolio details</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.utils.get_price_feed_data">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.compound.utils.</span></span><span class="sig-name descname"><span class="pre">get_price_feed_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">price_feed_address</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.utils.get_price_feed_data" title="Link to this definition">¶</a></dt>
+<dd><p>Get the latest price data from a Chainlink price feed using wallet.read_contract.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="coinbase_agentkit.wallet_providers.html#coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider" title="coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvmWalletProvider</span></code></a></span>) – The wallet provider for reading from contracts.</p></li>
+<li><p><strong>price_feed_address</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – The address of the price feed contract.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The price and timestamp.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[int, int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.utils.get_supply_details">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.compound.utils.</span></span><span class="sig-name descname"><span class="pre">get_supply_details</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compound_address</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.utils.get_supply_details" title="Link to this definition">¶</a></dt>
+<dd><p>Get supply details for all assets supplied by the wallet.</p>
+<p>For each asset supplied the raw collateral balance (atomic units) is converted to a human-readable
+value using token decimals. Additionally, the price (in 8-decimals) is converted to USD and the
+collateral factor is converted from a raw 1e18 value to a fraction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="coinbase_agentkit.wallet_providers.html#coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider" title="coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvmWalletProvider</span></code></a></span>) – The wallet to check the position for.</p></li>
+<li><p><strong>compound_address</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – The address of the Compound market.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>List of dictionaries containing:</dt><dd><p>Token Symbol (str): Symbol of the supplied token.
+Supply Amount (Decimal): Human-readable supplied amount.
+Price (Decimal): Price in USD.
+Collateral Factor (Decimal): Borrow collateral factor as a fraction.
+Decimals (int): Number of decimals for the token.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[dict]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.utils.get_token_balance">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.compound.utils.</span></span><span class="sig-name descname"><span class="pre">get_token_balance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">token_address</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.utils.get_token_balance" title="Link to this definition">¶</a></dt>
+<dd><p>Get the balance of a token for an account using wallet.read_contract.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="coinbase_agentkit.wallet_providers.html#coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider" title="coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvmWalletProvider</span></code></a></span>) – The wallet provider for reading from contracts.</p></li>
+<li><p><strong>token_address</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – The address of the token.</p></li>
+<li><p><strong>account</strong> – The address of the account.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The balance in atomic units.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.utils.get_token_decimals">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.compound.utils.</span></span><span class="sig-name descname"><span class="pre">get_token_decimals</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">token_address</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.utils.get_token_decimals" title="Link to this definition">¶</a></dt>
+<dd><p>Get the number of decimals for a token using wallet.read_contract.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="coinbase_agentkit.wallet_providers.html#coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider" title="coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvmWalletProvider</span></code></a></span>) – The wallet provider for reading from contracts.</p></li>
+<li><p><strong>token_address</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – The address of the token.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The number of decimals for the token.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="coinbase_agentkit.action_providers.compound.utils.get_token_symbol">
+<span class="sig-prename descclassname"><span class="pre">coinbase_agentkit.action_providers.compound.utils.</span></span><span class="sig-name descname"><span class="pre">get_token_symbol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">token_address</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coinbase_agentkit.action_providers.compound.utils.get_token_symbol" title="Link to this definition">¶</a></dt>
+<dd><p>Get a token’s symbol from its contract using wallet.read_contract.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="coinbase_agentkit.wallet_providers.html#coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider" title="coinbase_agentkit.wallet_providers.evm_wallet_provider.EvmWalletProvider"><code class="xref py py-class docutils literal notranslate"><span class="pre">EvmWalletProvider</span></code></a></span>) – The wallet provider for reading from contracts.</p></li>
+<li><p><strong>token_address</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – The address of the token contract.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The token symbol.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-coinbase_agentkit.action_providers.compound">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-coinbase_agentkit.action_providers.compound" title="Link to this heading">¶</a></h2>
+<p>Compound action provider for borrowing and lending.</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Coinbase Agentkit</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">coinbase_agentkit</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="coinbase_agentkit.html">coinbase_agentkit package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">coinbase_agentkit</a><ul>
+  <li><a href="coinbase_agentkit.html">coinbase_agentkit package</a><ul>
+  <li><a href="coinbase_agentkit.action_providers.html">coinbase_agentkit.action_providers package</a><ul>
+      <li>Previous: <a href="coinbase_agentkit.action_providers.cdp.html" title="previous chapter">coinbase_agentkit.action_providers.cdp package</a></li>
+      <li>Next: <a href="coinbase_agentkit.action_providers.erc20.html" title="next chapter">coinbase_agentkit.action_providers.erc20 package</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/coinbase_agentkit.action_providers.compound.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
