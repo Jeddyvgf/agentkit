@@ -183,7 +183,7 @@ agentkit/
 │       ├── openai-agents-sdk-cdp-chatbot/
 │       ├── openai-agents-sdk-cdp-voice-chatbot/
 │       ├── openai-agents-sdk-smart-wallet-chatbot/
-│       └── mabdy-token-deployment/
+│       └── mandy-coin-on-base/
 ```
 
 ## 🤝 Contributing
