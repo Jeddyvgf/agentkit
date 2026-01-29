@@ -4,6 +4,8 @@ import * as path from "node:path";
 import { GeoPoint } from "./types";
 
 const EARTH_RADIUS_KM = 6371;
+const EXAMPLE_ROOT_DIR =
+  path.basename(__dirname) === "dist" ? path.resolve(__dirname, "..") : __dirname;
 
 export function clamp(value: number, min: number, max: number): number {
   return Math.min(Math.max(value, min), max);
@@ -53,5 +55,5 @@ export async function loadJsonFile<T>(filePath: string): Promise<T> {
 }
 
 export function resolveDataPath(...parts: string[]): string {
-  return path.resolve(process.cwd(), ...parts);
+  return path.resolve(EXAMPLE_ROOT_DIR, ...parts);
 }
