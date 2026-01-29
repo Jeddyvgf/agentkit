@@ -9,9 +9,10 @@ const EXAMPLE_ROOT_DIR =
 
 /**
  * Clamp a numeric value to the inclusive range [min, max].
- * @param value Value to clamp.
- * @param min Minimum allowable value.
- * @param max Maximum allowable value.
+ *
+ * @param value - Value to clamp.
+ * @param min - Minimum allowable value.
+ * @param max - Maximum allowable value.
  * @returns The clamped value.
  */
 export function clamp(value: number, min: number, max: number): number {
@@ -20,7 +21,8 @@ export function clamp(value: number, min: number, max: number): number {
 
 /**
  * Format a duration in seconds as a short human-readable string.
- * @param totalSeconds Duration in seconds.
+ *
+ * @param totalSeconds - Duration in seconds.
  * @returns Formatted duration string.
  */
 export function formatDuration(totalSeconds: number): string {
@@ -38,7 +40,8 @@ export function formatDuration(totalSeconds: number): string {
 
 /**
  * Format a distance (in km) with a sensible precision.
- * @param distanceKm Distance in kilometers.
+ *
+ * @param distanceKm - Distance in kilometers.
  * @returns Formatted distance string.
  */
 export function formatKm(distanceKm: number): string {
@@ -50,7 +53,8 @@ export function formatKm(distanceKm: number): string {
 
 /**
  * Normalize freeform input text for matching/search.
- * @param value Raw user input string.
+ *
+ * @param value - Raw user input string.
  * @returns Normalized string.
  */
 export function normalizeText(value: string): string {
@@ -59,8 +63,9 @@ export function normalizeText(value: string): string {
 
 /**
  * Compute great-circle distance between two points using the haversine formula.
- * @param start Starting coordinate.
- * @param end Ending coordinate.
+ *
+ * @param start - Starting coordinate.
+ * @param end - Ending coordinate.
  * @returns Distance in kilometers.
  */
 export function haversineKm(start: GeoPoint, end: GeoPoint): number {
@@ -78,7 +83,8 @@ export function haversineKm(start: GeoPoint, end: GeoPoint): number {
 
 /**
  * Load and parse a JSON file from disk.
- * @param filePath Path to the JSON file.
+ *
+ * @param filePath - Path to the JSON file.
  * @returns Parsed JSON payload typed as T.
  */
 export async function loadJsonFile<T>(filePath: string): Promise<T> {
@@ -91,7 +97,8 @@ export async function loadJsonFile<T>(filePath: string): Promise<T> {
  *
  * This avoids reliance on `process.cwd()`, which can vary depending on how the
  * demo is launched.
- * @param parts Path segments to resolve.
+ *
+ * @param parts - Path segments to resolve.
  * @returns An absolute path within the example directory.
  */
 export function resolveDataPath(...parts: string[]): string {
