@@ -38,7 +38,7 @@ Set `.env` values:
 
 - `DEPLOYER_PRIVATE_KEY=...`
 - `ETHERSCAN_API_KEY=...`
-- `FEE_COLLECTOR_ADDRESS=0x...`
+- `FEE_COLLECTOR_ADDRESS=0x74bC275D4bfde7902D74f282d4e087F62d384D12` (default already set in scripts)
 - `OWNER_ADDRESS=0x...` (recommended: multisig)
 - `CREATE2_SALT=KLEANKUT_FEE_HUB_V1` (or a 32-byte hex salt)
 - chain RPC URLs you plan to deploy to

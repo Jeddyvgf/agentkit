@@ -2,6 +2,7 @@ require("dotenv").config();
 const hre = require("hardhat");
 
 const DETERMINISTIC_DEPLOYER = "0x4e59B44847B379578588920cA78FbF26c0B4956C";
+const DEFAULT_FEE_COLLECTOR_ADDRESS = "0x74bC275D4bfde7902D74f282d4e087F62d384D12";
 
 function resolveSalt(rawSalt) {
   if (!rawSalt) {
@@ -19,12 +20,8 @@ async function main() {
   const [deployer] = await hre.ethers.getSigners();
 
   const owner = process.env.OWNER_ADDRESS || deployer.address;
-  const collector = process.env.FEE_COLLECTOR_ADDRESS;
+  const collector = process.env.FEE_COLLECTOR_ADDRESS || DEFAULT_FEE_COLLECTOR_ADDRESS;
   const salt = resolveSalt(process.env.CREATE2_SALT);
-
-  if (!collector) {
-    throw new Error("Set FEE_COLLECTOR_ADDRESS in your environment.");
-  }
 
   if (!hre.ethers.isAddress(owner) || !hre.ethers.isAddress(collector)) {
     throw new Error("OWNER_ADDRESS and FEE_COLLECTOR_ADDRESS must be valid EVM addresses.");
