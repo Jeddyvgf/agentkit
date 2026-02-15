@@ -1,7 +1,7 @@
 require("dotenv").config();
 const hre = require("hardhat");
 
-const DETERMINISTIC_DEPLOYER = "0x4e59B44847B379578588920cA78FbF26c0B4956C";
+const DETERMINISTIC_DEPLOYER = "0x4e59b44847b379578588920ca78fbf26c0b4956c";
 const DEFAULT_FEE_COLLECTOR_ADDRESS = "0x74bC275D4bfde7902D74f282d4e087F62d384D12";
 
 function resolveSalt(rawSalt) {
