@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etherscan Linked Contract Browser dApp</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Etherscan Linked Contract Browser dApp</h1>
+      <p class="subtitle">
+        Pull contract metadata, linked contracts, and ERC-20 token links directly from a web3
+        browser.
+      </p>
+
+      <section class="panel">
+        <h2>Inputs</h2>
+
+        <label class="field">
+          <span>Etherscan API Key</span>
+          <input id="apiKey" type="password" placeholder="Enter your Etherscan API key" />
+        </label>
+
+        <div class="grid">
+          <label class="field">
+            <span>Chain ID</span>
+            <input id="chainId" type="number" min="1" value="1" />
+          </label>
+          <label class="field">
+            <span>API URL</span>
+            <input id="apiUrl" type="text" value="https://api.etherscan.io/v2/api" />
+          </label>
+        </div>
+
+        <label class="field">
+          <span>Target Address (contract or wallet)</span>
+          <input
+            id="targetAddress"
+            type="text"
+            placeholder="0x..."
+            autocomplete="off"
+            spellcheck="false"
+          />
+        </label>
+
+        <div class="grid">
+          <label class="field">
+            <span>Max Normal/Internal Tx</span>
+            <input id="maxTransactions" type="number" min="1" max="10000" value="200" />
+          </label>
+          <label class="field">
+            <span>Max ERC-20 Transfer Events</span>
+            <input id="maxTokenTransfers" type="number" min="1" max="10000" value="400" />
+          </label>
+        </div>
+
+        <div class="actions">
+          <button id="connectWalletBtn" type="button">Connect Wallet</button>
+          <button id="useWalletAddressBtn" type="button" disabled>Use Wallet Address</button>
+          <button id="fetchBtn" type="button" class="primary">Fetch Linked Data</button>
+          <button id="downloadBtn" type="button" disabled>Download JSON</button>
+        </div>
+
+        <div id="walletState" class="status neutral">Wallet not connected.</div>
+        <div id="status" class="status neutral">Ready.</div>
+      </section>
+
+      <section class="panel">
+        <h2>Summary</h2>
+        <pre id="summary" class="summary">No data yet.</pre>
+      </section>
+
+      <section class="panel">
+        <h2>Linked Contracts</h2>
+        <div class="tableWrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Address</th>
+                <th>Relation Types</th>
+                <th>Relation Counts</th>
+              </tr>
+            </thead>
+            <tbody id="linkedContractsBody">
+              <tr>
+                <td colspan="3">No data yet.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>ERC-20 Tokens</h2>
+        <div class="tableWrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Token Address</th>
+                <th>Name</th>
+                <th>Symbol</th>
+                <th>Decimals</th>
+                <th>Transfers</th>
+                <th>In</th>
+                <th>Out</th>
+              </tr>
+            </thead>
+            <tbody id="tokensBody">
+              <tr>
+                <td colspan="7">No data yet.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Raw JSON</h2>
+        <pre id="jsonOutput" class="json">No data yet.</pre>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
