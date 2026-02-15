@@ -10,6 +10,11 @@
     "test": "hardhat test",
     "clean": "hardhat clean",
     "build": "hardhat compile",
+    "verify:ethereum": "hardhat verify --network ethereum",
+    "verify:base": "hardhat verify --network base",
+    "verify:bsc": "hardhat verify --network bsc",
+    "verify:polygon": "hardhat verify --network polygon",
+    "verify:arbitrum": "hardhat verify --network arbitrum",
     "deploy:ethereum": "hardhat run scripts/deploy.js --network ethereum",
     "deploy:base": "hardhat run scripts/deploy.js --network base",
     "deploy:bsc": "hardhat run scripts/deploy.js --network bsc",
@@ -20,7 +25,8 @@
     "deploy:create2:bsc": "hardhat run scripts/deploy-create2.js --network bsc",
     "deploy:create2:polygon": "hardhat run scripts/deploy-create2.js --network polygon",
     "deploy:create2:arbitrum": "hardhat run scripts/deploy-create2.js --network arbitrum",
-    "predict:create2": "hardhat run scripts/predict-create2.js"
+    "predict:create2": "hardhat run scripts/predict-create2.js",
+    "abi:fetch": "node scripts/fetch-abi.js"
   },
   "keywords": [],
   "author": "",

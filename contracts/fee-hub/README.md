@@ -37,6 +37,7 @@ cp .env.example .env
 Set `.env` values:
 
 - `DEPLOYER_PRIVATE_KEY=...`
+- `ETHERSCAN_API_KEY=...`
 - `FEE_COLLECTOR_ADDRESS=0x...`
 - `OWNER_ADDRESS=0x...` (recommended: multisig)
 - `CREATE2_SALT=KLEANKUT_FEE_HUB_V1` (or a 32-byte hex salt)
@@ -76,6 +77,34 @@ npm run deploy:create2:bsc
 npm run deploy:create2:polygon
 npm run deploy:create2:arbitrum
 ```
+
+## Fetch ABI from Etherscan
+
+You can fetch any verified contract ABI from Etherscan-compatible chains and save it locally:
+
+```bash
+npm run abi:fetch -- --network ethereum --address 0xYourContract
+```
+
+Optional flags:
+
+- `--chain-id <id>` to override network mapping
+- `--out <path>` to customize output file
+- `--apikey <key>` to pass key inline (prefer `.env`)
+
+Example output path:
+
+- `abis/ethereum-0xyourcontract.json`
+
+## Verify deployment on explorer
+
+After deploy, verify with constructor args:
+
+```bash
+npm run verify:base -- <DEPLOYED_ADDRESS> "<OWNER_ADDRESS>" "<FEE_COLLECTOR_ADDRESS>"
+```
+
+Available verify scripts: `verify:ethereum`, `verify:base`, `verify:bsc`, `verify:polygon`, `verify:arbitrum`
 
 ## Security checklist before production
 
