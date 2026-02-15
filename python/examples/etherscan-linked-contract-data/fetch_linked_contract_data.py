@@ -8,6 +8,7 @@ import json
 import os
 import re
 import sys
+import time
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -33,11 +34,13 @@ class EtherscanClient:
         api_url: str = DEFAULT_API_URL,
         chain_id: int = 1,
         timeout_seconds: int = 20,
+        max_retries: int = 4,
     ):
         self.api_key = api_key
         self.api_url = api_url
         self.chain_id = chain_id
         self.timeout_seconds = timeout_seconds
+        self.max_retries = max_retries
 
     def call(
         self,
@@ -56,29 +59,36 @@ class EtherscanClient:
         }
         request_url = f"{self.api_url}?{urlencode(query)}"
 
-        try:
-            with urlopen(request_url, timeout=self.timeout_seconds) as response:
-                payload = json.loads(response.read().decode("utf-8"))
-        except (HTTPError, URLError, TimeoutError) as exc:
-            raise EtherscanError(f"Request failed for {module}.{action}: {exc}") from exc
-        except json.JSONDecodeError as exc:
-            raise EtherscanError(f"Invalid JSON from {module}.{action}: {exc}") from exc
+        for attempt in range(self.max_retries + 1):
+            try:
+                with urlopen(request_url, timeout=self.timeout_seconds) as response:
+                    payload = json.loads(response.read().decode("utf-8"))
+            except (HTTPError, URLError, TimeoutError) as exc:
+                raise EtherscanError(f"Request failed for {module}.{action}: {exc}") from exc
+            except json.JSONDecodeError as exc:
+                raise EtherscanError(f"Invalid JSON from {module}.{action}: {exc}") from exc
 
-        status = str(payload.get("status", ""))
-        message = str(payload.get("message", ""))
-        result = payload.get("result")
+            status = str(payload.get("status", ""))
+            message = str(payload.get("message", ""))
+            result = payload.get("result")
 
-        if status == "1":
-            return result
+            if status == "1":
+                return result
 
-        if isinstance(result, str):
-            result_lower = result.lower()
-            if any(marker.lower() in result_lower for marker in empty_result_markers):
-                return []
+            result_lower = str(result).lower()
+            if "rate limit" in result_lower and attempt < self.max_retries:
+                time.sleep(0.4 * (2**attempt))
+                continue
 
-        raise EtherscanError(
-            f"{module}.{action} returned status={status}, message={message}, result={result}"
-        )
+            if isinstance(result, str):
+                if any(marker.lower() in result_lower for marker in empty_result_markers):
+                    return []
+
+            raise EtherscanError(
+                f"{module}.{action} returned status={status}, message={message}, result={result}"
+            )
+
+        raise EtherscanError(f"{module}.{action} failed after retries")
 
 
 def normalize_address(address: str) -> str:

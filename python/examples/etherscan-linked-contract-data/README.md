@@ -10,6 +10,8 @@ The report includes:
   - internal transaction counterparties
 - ERC-20 token contracts linked by transfer history (`account/tokentx`)
 
+The script automatically retries short-lived API rate-limit responses.
+
 ## Requirements
 
 - Python 3.10+
