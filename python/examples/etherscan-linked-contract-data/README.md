@@ -34,8 +34,9 @@ python fetch_linked_contract_data.py --address 0xa0b86991c6218b36c1d19d4a2e9eb0c
 
 ## Optional flags
 
-- `--api-url`: Use a different Etherscan-compatible endpoint.
-  - Example for Sepolia: `https://api-sepolia.etherscan.io/api`
+- `--api-url`: Override API URL (defaults to Etherscan V2: `https://api.etherscan.io/v2/api`)
+- `--chain-id`: Set target EVM chain ID (default: `1`)
+  - Example for Sepolia: `11155111`
 - `--max-transactions`: Limit normal/internal transactions inspected (default: `200`)
 - `--max-token-transfers`: Limit ERC-20 transfer events inspected (default: `400`)
 - `--timeout-seconds`: HTTP timeout per request (default: `20`)

@@ -16,7 +16,7 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import urlopen
 
-DEFAULT_API_URL = "https://api.etherscan.io/api"
+DEFAULT_API_URL = "https://api.etherscan.io/v2/api"
 ADDRESS_PATTERN = re.compile(r"^0x[a-fA-F0-9]{40}$")
 
 
@@ -27,9 +27,16 @@ class EtherscanError(RuntimeError):
 class EtherscanClient:
     """Minimal Etherscan API client."""
 
-    def __init__(self, api_key: str, api_url: str = DEFAULT_API_URL, timeout_seconds: int = 20):
+    def __init__(
+        self,
+        api_key: str,
+        api_url: str = DEFAULT_API_URL,
+        chain_id: int = 1,
+        timeout_seconds: int = 20,
+    ):
         self.api_key = api_key
         self.api_url = api_url
+        self.chain_id = chain_id
         self.timeout_seconds = timeout_seconds
 
     def call(
@@ -41,6 +48,7 @@ class EtherscanClient:
     ) -> Any:
         """Call an Etherscan API endpoint and return its `result` field."""
         query = {
+            "chainid": self.chain_id,
             "module": module,
             "action": action,
             "apikey": self.api_key,
@@ -249,6 +257,7 @@ def build_report(
     api_key: str,
     address: str,
     api_url: str,
+    chain_id: int,
     max_transactions: int,
     max_token_transfers: int,
     timeout_seconds: int,
@@ -257,7 +266,12 @@ def build_report(
     if not is_valid_address(address):
         raise ValueError("Address must be a valid EVM address (0x + 40 hex characters).")
 
-    client = EtherscanClient(api_key=api_key, api_url=api_url, timeout_seconds=timeout_seconds)
+    client = EtherscanClient(
+        api_key=api_key,
+        api_url=api_url,
+        chain_id=chain_id,
+        timeout_seconds=timeout_seconds,
+    )
     warnings: list[str] = []
 
     source_rows = safe_call(
@@ -375,6 +389,7 @@ def build_report(
     report = {
         "queried_at_utc": datetime.now(timezone.utc).isoformat(),
         "api_url": api_url,
+        "chain_id": chain_id,
         "target_address": normalize_address(address),
         "contract": {
             "contract_name": source_row.get("ContractName") or None,
@@ -431,6 +446,12 @@ def parse_args() -> argparse.Namespace:
         help=f"Etherscan-compatible API URL. Defaults to {DEFAULT_API_URL}.",
     )
     parser.add_argument(
+        "--chain-id",
+        type=int,
+        default=int(os.getenv("ETHERSCAN_CHAIN_ID", "1")),
+        help="EVM chain ID for Etherscan V2 queries (default: 1 for Ethereum mainnet).",
+    )
+    parser.add_argument(
         "--max-transactions",
         type=int,
         default=200,
@@ -472,6 +493,7 @@ def main() -> int:
             api_key=args.api_key,
             address=args.address,
             api_url=args.api_url,
+            chain_id=args.chain_id,
             max_transactions=args.max_transactions,
             max_token_transfers=args.max_token_transfers,
             timeout_seconds=args.timeout_seconds,
