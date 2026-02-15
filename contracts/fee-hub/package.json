@@ -1,0 +1,37 @@
+{
+  "name": "kleankut-fee-hub",
+  "version": "1.0.0",
+  "description": "KleanKut unified fee hub contracts and deployment scripts",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "hardhat test",
+    "clean": "hardhat clean",
+    "build": "hardhat compile",
+    "deploy:ethereum": "hardhat run scripts/deploy.js --network ethereum",
+    "deploy:base": "hardhat run scripts/deploy.js --network base",
+    "deploy:bsc": "hardhat run scripts/deploy.js --network bsc",
+    "deploy:polygon": "hardhat run scripts/deploy.js --network polygon",
+    "deploy:arbitrum": "hardhat run scripts/deploy.js --network arbitrum",
+    "deploy:create2:ethereum": "hardhat run scripts/deploy-create2.js --network ethereum",
+    "deploy:create2:base": "hardhat run scripts/deploy-create2.js --network base",
+    "deploy:create2:bsc": "hardhat run scripts/deploy-create2.js --network bsc",
+    "deploy:create2:polygon": "hardhat run scripts/deploy-create2.js --network polygon",
+    "deploy:create2:arbitrum": "hardhat run scripts/deploy-create2.js --network arbitrum",
+    "predict:create2": "hardhat run scripts/predict-create2.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "BUSL-1.1",
+  "private": true,
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "dotenv": "^17.3.1",
+    "hardhat": "^2.28.6"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0"
+  }
+}
