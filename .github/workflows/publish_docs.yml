@@ -2,10 +2,23 @@ name: Publish Docs to Github Pages
 
 on:
   workflow_dispatch:
+    inputs:
+      external_repository:
+        description: "Optional. Deploy docs to a different repository in the form 'owner/repo'. Leave blank to deploy to this repository."
+        required: false
+        type: string
+        default: ""
+      external_publish_branch:
+        description: "Branch to publish docs to (used only when external_repository is set)."
+        required: false
+        type: string
+        default: "gh-pages"
 
 jobs:
   build-and-deploy-docs:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
@@ -90,9 +103,20 @@ jobs:
           mkdir -p docs/coinbase-agentkit-langchain/python
           cp -r python/framework-extensions/langchain/docs/_build/html/* docs/coinbase-agentkit-langchain/python
 
-      - name: Deploy to Github Pages
+      - name: Deploy to Github Pages (this repository)
+        if: ${{ inputs.external_repository == '' }}
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          keep_files: false
+
+      - name: Deploy to Github Pages (external repository)
+        if: ${{ inputs.external_repository != '' }}
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.GH_PAGES_TOKEN }}
+          external_repository: ${{ inputs.external_repository }}
+          publish_branch: ${{ inputs.external_publish_branch }}
           publish_dir: ./docs
           keep_files: false
