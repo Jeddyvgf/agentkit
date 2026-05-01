@@ -9,8 +9,8 @@ from coinbase_agentkit import (
 
 ENV_FILE = Path(__file__).with_name(".env.local")
 SUPPORTED_NETWORKS = {"base-mainnet", "base-sepolia"}
-DEFAULT_TOKEN_NAME = "Mabdy"
-DEFAULT_TOKEN_SYMBOL = "MABDY"
+DEFAULT_TOKEN_NAME = "Mandy Coin"
+DEFAULT_TOKEN_SYMBOL = "MANDY"
 
 
 def load_env_file(path: Path) -> None:
