@@ -21,7 +21,7 @@
     "@coinbase/agentkit-langchain": "workspace:*",
     "@langchain/langgraph": "^0.2.21",
     "@langchain/openai": "^0.3.14",
-    "@langchain/core": "^0.3.19",
+    "@langchain/core": "^1.2.1",
     "dotenv": "^16.4.5",
     "zod": "^3.22.4",
     "@xmtp/node-sdk": "1.0.2",
