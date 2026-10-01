@@ -1,0 +1,134 @@
+{
+  "tracks": [
+    {
+      "id": "trk-001",
+      "title": "Midnight Drive",
+      "artist": "Nova Pulse",
+      "album": "City Lights",
+      "genre": "Synthwave",
+      "bpm": 98,
+      "durationSec": 252,
+      "rating": 4.7,
+      "tags": ["night", "focus"]
+    },
+    {
+      "id": "trk-002",
+      "title": "Open Road",
+      "artist": "Signal Coast",
+      "album": "Headlines",
+      "genre": "Rock",
+      "bpm": 118,
+      "durationSec": 214,
+      "rating": 4.4,
+      "tags": ["drive", "live"]
+    },
+    {
+      "id": "trk-003",
+      "title": "Morning Air",
+      "artist": "Skylane",
+      "album": "Daybreak",
+      "genre": "Ambient",
+      "bpm": 72,
+      "durationSec": 304,
+      "rating": 4.3,
+      "tags": ["calm", "focus"]
+    },
+    {
+      "id": "trk-004",
+      "title": "City Rush",
+      "artist": "Pulse Reactor",
+      "album": "Traffic Patterns",
+      "genre": "Electronic",
+      "bpm": 128,
+      "durationSec": 238,
+      "rating": 4.6,
+      "tags": ["drive", "energy"]
+    },
+    {
+      "id": "trk-005",
+      "title": "Golden Hour Live",
+      "artist": "Horizon Lane",
+      "album": "Live Sessions",
+      "genre": "Indie",
+      "bpm": 104,
+      "durationSec": 265,
+      "rating": 4.5,
+      "tags": ["live", "sunset"]
+    },
+    {
+      "id": "trk-006",
+      "title": "Bassline Motion",
+      "artist": "Circuit Tide",
+      "album": "Night Circuit",
+      "genre": "House",
+      "bpm": 124,
+      "durationSec": 246,
+      "rating": 4.2,
+      "tags": ["club", "energy"]
+    },
+    {
+      "id": "trk-007",
+      "title": "Summit View",
+      "artist": "Northern Maps",
+      "album": "Altitude",
+      "genre": "Instrumental",
+      "bpm": 90,
+      "durationSec": 279,
+      "rating": 4.4,
+      "tags": ["focus", "drive"]
+    },
+    {
+      "id": "trk-008",
+      "title": "Deep Space Lounge",
+      "artist": "Vanta",
+      "album": "Orbit",
+      "genre": "Chill",
+      "bpm": 80,
+      "durationSec": 301,
+      "rating": 4.1,
+      "tags": ["night", "calm"]
+    },
+    {
+      "id": "trk-009",
+      "title": "Festival Lights",
+      "artist": "Atlas Echo",
+      "album": "Live Circuit",
+      "genre": "Pop",
+      "bpm": 126,
+      "durationSec": 221,
+      "rating": 4.5,
+      "tags": ["live", "energy"]
+    },
+    {
+      "id": "trk-010",
+      "title": "Steady Ascent",
+      "artist": "Summit Drive",
+      "album": "Switchbacks",
+      "genre": "Rock",
+      "bpm": 110,
+      "durationSec": 245,
+      "rating": 4.0,
+      "tags": ["drive", "focus"]
+    }
+  ],
+  "playlists": [
+    {
+      "id": "pl-001",
+      "name": "Highway Focus",
+      "description": "Balanced mix for long drives",
+      "trackIds": ["trk-001", "trk-003", "trk-007", "trk-010"]
+    },
+    {
+      "id": "pl-002",
+      "name": "Live Energy",
+      "description": "High energy live set",
+      "trackIds": ["trk-002", "trk-004", "trk-005", "trk-009"]
+    },
+    {
+      "id": "pl-003",
+      "name": "Night Cruise",
+      "description": "Smooth late-night blend",
+      "trackIds": ["trk-001", "trk-008", "trk-006"]
+    }
+  ]
+}

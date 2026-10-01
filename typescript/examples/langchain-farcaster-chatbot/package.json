@@ -3,7 +3,7 @@
   "description": "Farcaster Agentkit Node.js SDK Chatbot Example",
   "version": "1.0.0",
   "private": true,
-  "license": "Apache-2.0",
+  "license": "LicenseRef-Klean-Kut-Proprietary",
   "scripts": {
     "start": "NODE_OPTIONS='--no-warnings' ts-node ./chatbot.ts",
     "dev": "nodemon ./chatbot.ts",

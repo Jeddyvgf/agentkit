@@ -5,6 +5,7 @@ from unittest.mock import Mock, patch
 import pytest
 import requests
 
+import coinbase_agentkit.action_providers.x402.x402_action_provider as x402_action_provider_module
 from coinbase_agentkit.wallet_providers.evm_wallet_provider import EvmWalletProvider
 
 # Mock data constants
@@ -86,26 +87,27 @@ def mock_requests():
 @pytest.fixture
 def mock_x402_requests():
     """Create a mock for x402_requests session."""
-    with patch("x402.clients.requests.x402_requests", autospec=True) as mock_x402:
-        mock_session = Mock()
-        mock_x402.return_value = mock_session
+    mock_x402 = Mock()
+    mock_session = Mock()
+    mock_x402.return_value = mock_session
 
-        # Create a successful paid response
-        paid_response = Mock(spec=requests.Response)
-        paid_response.status_code = 200
-        paid_response.headers = {
-            "content-type": "application/json",
-            "x-payment-response": "mock_payment_response",
-        }
-        paid_response.json.return_value = {"data": "paid_success"}
-        mock_session.request.return_value = paid_response
+    # Create a successful paid response
+    paid_response = Mock(spec=requests.Response)
+    paid_response.status_code = 200
+    paid_response.headers = {
+        "content-type": "application/json",
+        "x-payment-response": "mock_payment_response",
+    }
+    paid_response.json.return_value = {"data": "paid_success"}
+    mock_session.request.return_value = paid_response
 
+    with patch.object(x402_action_provider_module, "x402_requests", mock_x402):
         yield mock_x402
 
 
 @pytest.fixture
 def mock_decode_payment():
     """Create a mock for decode_x_payment_response."""
-    with patch("x402.clients.base.decode_x_payment_response", autospec=True) as mock_decode:
-        mock_decode.return_value = MOCK_PAYMENT_PROOF
+    mock_decode = Mock(return_value=MOCK_PAYMENT_PROOF)
+    with patch.object(x402_action_provider_module, "decode_x_payment_response", mock_decode):
         yield mock_decode

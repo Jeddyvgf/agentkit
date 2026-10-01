@@ -66,4 +66,4 @@ Select "1. chat mode" and start telling your Agent to do things onchain!
 
 ## License
 
-Apache-2.0
+Klean-Kut Technologies LLC Proprietary License. See LICENSE.md in the repository root.

@@ -63,4 +63,4 @@ Select "1. chat mode" and start interacting with your Smart Wallet agent!
 
 ## License
 
-Apache-2.0
+Klean-Kut Technologies LLC Proprietary License. See LICENSE.md in the repository root.

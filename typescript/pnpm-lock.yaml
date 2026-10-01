@@ -230,6 +230,8 @@ importers:
         specifier: ^2.4.9
         version: 2.4.9
 
+  examples/car-infotainment-assistant: {}
+
   examples/langchain-cdp-chatbot:
     dependencies:
       '@coinbase/agentkit':
