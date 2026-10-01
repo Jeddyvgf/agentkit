@@ -1,6 +1,6 @@
-# Mabdy Token Deployment Example
+# Mandy Coin (Base) Deployment Example
 
-This example deploys a Zora Wow ERC20 memecoin named Mabdy using AgentKit and the WOW action provider.
+This example deploys a Zora WOW ERC20 memecoin named Mandy Coin using AgentKit and the WOW action provider on Base.
 
 ## Requirements
 - Python 3.10+
@@ -11,8 +11,8 @@ This example deploys a Zora Wow ERC20 memecoin named Mabdy using AgentKit and th
 ## Configure
 1. Fill out `.env.local` with your credentials and preferences.
 2. Optional overrides:
-   - `TOKEN_NAME` (defaults to `Mabdy`)
-   - `TOKEN_SYMBOL` (defaults to `MABDY`)
+   - `TOKEN_NAME` (defaults to `Mandy Coin`)
+   - `TOKEN_SYMBOL` (defaults to `MANDY`)
    - `TOKEN_URI` (custom metadata URI)
 
 The script reads `.env.local` if present and does not override any environment variables you already set.
